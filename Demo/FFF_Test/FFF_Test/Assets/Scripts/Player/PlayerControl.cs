@@ -96,7 +96,7 @@ public class PlayerControl : MonoBehaviour
         }
         // Move
         // If the player is not moving forward, then move forward slowly. (Add a check for direction in x)
-        if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0)
+		if (Input.GetAxis("FlyTowards") == 0)
         {
 
 
