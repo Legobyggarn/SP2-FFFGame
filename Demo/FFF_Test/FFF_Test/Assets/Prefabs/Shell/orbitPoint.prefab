@@ -4467,7 +4467,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418248}
@@ -19400,8 +19400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da3e12f93ff11a4fa37e08fd00830df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeedX: 10
-  rotationSpeedY: 0
+  rotationSpeedX: 0
+  rotationSpeedY: 10
   rotationSpeedZ: 0
 --- !u!114 &11433302
 MonoBehaviour:
@@ -23455,7 +23455,7 @@ MonoBehaviour:
   maxDistance: 5
   useDistance: 1
   distanceOverVolume: 1
-  notifyNumShellChunks: {fileID: 0}
+  notifyNumShellChunks: {fileID: 195700}
 --- !u!114 &11471324
 MonoBehaviour:
   m_ObjectHideFlags: 1

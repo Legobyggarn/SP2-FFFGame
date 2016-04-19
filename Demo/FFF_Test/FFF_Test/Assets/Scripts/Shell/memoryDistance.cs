@@ -91,7 +91,7 @@ public class memoryDistance : MonoBehaviour {
 				core.transform.localPosition += new Vector3 (0, coreFix, 0);
 		
 
-				Debug.Log("Prec:   " +prec);
+				//Debug.Log("Prec:   " +prec);
 			}
 			else 
 			{
