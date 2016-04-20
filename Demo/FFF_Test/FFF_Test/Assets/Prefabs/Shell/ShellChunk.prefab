@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 11422386}
   - 64: {fileID: 6464594}
   - 114: {fileID: 11402058}
+  - 114: {fileID: 11475544}
   m_Layer: 0
   m_Name: ShellChunk
   m_TagString: ShellChunk
@@ -45,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 1.97, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458624}
@@ -169,6 +170,24 @@ MonoBehaviour:
   maxHealth: 100
   gracePeriod: 0.5
   hitPartSys: {fileID: 0}
+--- !u!114 &11475544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be18865eb4287f4381b18e7ef72cd1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 5
+  debugLineLength: 25
+  centerPoint: {x: 0, y: 50, z: 0}
+  towardsCenter: 0
+  towardsCenterAsNormal: 0
+  reflectNormal: 1
+  invertDirection: 0
 --- !u!114 &11499524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,7 +203,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 1
   minShellChunkScale: 0.4
   maxShellChunkScale: 0.6
   playerTransform: {fileID: 0}
@@ -220,6 +239,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: rotate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: bounceForce
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

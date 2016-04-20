@@ -18,7 +18,7 @@ public class TestShootShellChunkScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (Input.GetKeyDown (KeyCode.T)) {
+		if (Input.GetKeyDown(KeyCode.T)) {
 			GameObject go = Instantiate(testShellChunk, testSpawn.position, Quaternion.identity) as GameObject;
 			go.GetComponent<Rigidbody>().AddForce (transform.forward * 1000f);
 		}

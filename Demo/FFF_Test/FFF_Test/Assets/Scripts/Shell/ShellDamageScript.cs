@@ -22,9 +22,18 @@ public class ShellDamageScript : MonoBehaviour {
 	private bool isHit;
 	private float currHealth;
 	private float gracePeriodTimer;
-	private bool activeGracePeriod;
+	private bool activeGracePeriod = true;
+
+	// The rigidbody, for a test...
+	private Rigidbody rigidBody;
 
 	// Getters/Setters
+	public float Health {
+		get {
+			return currHealth;
+		}
+	}
+
 	public bool GracePeriodActive {
 		get {
 			return activeGracePeriod;
@@ -41,6 +50,12 @@ public class ShellDamageScript : MonoBehaviour {
 		activeGracePeriod = true;
 		//Debug.Log ("Grace period has begun");
 
+		// Test, set rigidbody to kinematic while under grace period (no collisions?)
+		// Instead disable collision detection
+		rigidBody = GetComponent<Rigidbody>();
+		//rigidBody.isKinematic = false;
+		//rigidBody.detectCollisions = false;
+
 	}
 	
 	// Update is called once per frame
@@ -50,6 +65,10 @@ public class ShellDamageScript : MonoBehaviour {
 		if (activeGracePeriod && gracePeriodTimer >= gracePeriod) {
 			activeGracePeriod = false;
 			//Debug.Log ("Grace period has ended");
+
+			// Set rigidbody to not be kinematic (i.e react to collision)
+			// Instead enable collision detection
+			//rigidBody.detectCollisions = true;
 		} 
 
 		else {
@@ -71,7 +90,7 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (GetComponent<ObjectVolumeScript>().Active) {
+				if (GetComponent<ObjectVolumeScript> ().Active) {
 					// Take damage
 					currHealth -= bulletDamage;
 					//Debug.Log ("Health: " + currHealth);
@@ -85,7 +104,7 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (!activeGracePeriod && GetComponent<ObjectVolumeScript>().Active) {
+				if (!activeGracePeriod && GetComponent<ObjectVolumeScript> ().Active) {
 					// Use collision.relativeVelocity instead of calculating it yourself...
 					Vector3 myVector = transform.GetComponent<Rigidbody> ().velocity;
 					Vector3 itsVector = collision.transform.GetComponent<Rigidbody> ().velocity;
@@ -101,8 +120,8 @@ public class ShellDamageScript : MonoBehaviour {
 		} 
 
 		else if (collision.gameObject.tag == "Player") {
-			Debug.Log("Player hit by shell chunk");
-		}
+			Debug.Log ("Player hit by shell chunk");
+		}	
 
 	}
 

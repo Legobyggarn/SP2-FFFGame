@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ObjectVolumeScript : MonoBehaviour {
 
+	// TODO: Add functionality to change the mass of the rigidbody depending on the calculated volume of the object.
+
 	// Public
 	public float minVolume;
 
