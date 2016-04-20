@@ -26,9 +26,7 @@
 [LOG] Thread::initThread                       : - Stacksize 65536.  Stack pointer 0000000000000000 : usesemaphore = 0 : sleeptime = 1
 [LOG] Thread::callback                         : * FMOD Studio bank load thread started
 [LOG] Profile::init                            : Profiler listening on port: 9264
-[ERR] FMOD_OS_File_Open                        : GetLastError = 00000005 (filename = \\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.strings.bank)
 [ERR] RuntimeBankModel::openFile               : Failed to open file '\\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.strings.bank'
-[ERR] FMOD_OS_File_Open                        : GetLastError = 00000005 (filename = \\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.bank)
 [ERR] RuntimeBankModel::openFile               : Failed to open file '\\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.bank'
 [LOG] Thread::callback                         : * FMOD Studio update thread finished
 [LOG] Thread::close                            : FMOD Studio update thread thread destroyed

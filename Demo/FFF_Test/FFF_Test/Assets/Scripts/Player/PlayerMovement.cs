@@ -4,12 +4,13 @@ using System.Collections.Generic;
 public class PlayerMovement : MonoBehaviour {
 
 	// STRAFE/DIRECTION Variables
-	public Transform PlayerTransform;
+	public Transform PlayerStrafeTransform;
+	public Transform PlayerRotationTransform;
 	private Transform OculusTransform;
 	public CharacterController charactercontroller;
-	enum DIRECTIONS { UP, DOWN, RIGHT, LEFT, FORWARD, BACK };
+	enum DIRECTIONS { UP, DOWN, RIGHT, LEFT, FORWARD, BACK, DIR_X, DIR_Y, DIR_Z };
 
-	private bool OculusSuperMod = false;
+	public bool OculusSuperMod;
 	public float MaxSpeedStrafe;
 	public float MinSpeedStrafe;
 	public bool StaticStrafeSpeed;
@@ -29,6 +30,10 @@ public class PlayerMovement : MonoBehaviour {
 	private DirectionVariables mDirBack;
 	private DirectionVariables mDirLeft;
 	private DirectionVariables mDirRight;
+
+	private DirectionVariables mDirX;
+	private DirectionVariables mDirY;
+	private DirectionVariables mDirZ;
 	private Vector3 MovementVector;
 	private Vector3 direction;
 	struct DirectionVariables
@@ -41,25 +46,87 @@ public class PlayerMovement : MonoBehaviour {
 			mDir = dir;
 			mInputName = inputname;
 			mInputValue = inputvalue;
+			mAxisPercentage = 0;
+
+		}
+		public DirectionVariables(DIRECTIONS dir, string inputname)
+		{
+			mCurrentSpeed = 0;
+			mTimeToStepSpeedINC = 0;
+			mTimeToStepSpeedDEC = 0;
+			mDir = dir;
+			mInputName = inputname;
+			mInputValue = 0;
+			mAxisPercentage = 0;
+
 		}
 		public float mCurrentSpeed;
 		public float mTimeToStepSpeedINC;
 		public float mTimeToStepSpeedDEC;
-		private int mInputValue;
+		public float mAxisPercentage;
+		public int mInputValue;
 		public DIRECTIONS mDir;
-		string mInputName;
+		public string mInputName;
+		public void UpdateInputValue()
+		{
+			float x = Input.GetAxis(mInputName);
+			mAxisPercentage = Mathf.Abs(x);
+
+		}
 		public bool ButtonIsDown()
 		{
-			if(Input.GetAxis(mInputName) == mInputValue)
+			float value = mInputValue / 2;
+			if(mInputValue == 1)
 			{
-				return true;
+				if(Input.GetAxis(mInputName) > value)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+
 			}
 			else
 			{
-				return false;
+				if(Input.GetAxis(mInputName) < value)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
 			}
+		}
+		public bool getInput()
+		{
+			return true;
 
 		}
+		public float getPosOrNeg()
+		{
+			float tresh = 0.2f;
+			float r = 1f;
+			float input = Input.GetAxis (mInputName);
+			if (input < -tresh) {
+				Debug.Log ("move back!");
+				return -r;
+
+			}
+			else if (input > tresh) {
+				Debug.Log ("move forward!");
+				return r;
+			}
+			else  {
+				Debug.Log ("move Dont!");
+				return 0;
+			}
+			return 0;
+		}
+
+
 
 	}
 	List<DirectionVariables> mDirList;
@@ -94,7 +161,7 @@ public class PlayerMovement : MonoBehaviour {
 		charactercontroller = GetComponent<CharacterController>();
 		InitializeDirectionController();
 		InitializeRotation();
-		OculusSuperMod = false;
+		//	OculusSuperMod = false;
 	}
 
 	// Update is called once per frame
@@ -276,7 +343,7 @@ public class PlayerMovement : MonoBehaviour {
 			mult = Time.deltaTime * rot.mRotPercantage * RotationSpeed;
 
 			Rot = Vector3.up * mult;
-			PlayerTransform.Rotate(Rot);
+			PlayerRotationTransform.Rotate(Rot);
 
 			break;
 
@@ -287,7 +354,7 @@ public class PlayerMovement : MonoBehaviour {
 			mult = Time.deltaTime * rot.mRotPercantage * RotationSpeed;
 
 			Rot = Vector3.right * mult;
-			PlayerTransform.Rotate(Rot);
+			PlayerRotationTransform.Rotate(Rot);
 
 			break;
 
@@ -298,7 +365,7 @@ public class PlayerMovement : MonoBehaviour {
 			mult = Time.deltaTime * rot.mRotPercantage * RotationSpeed;
 
 			Rot = Vector3.forward * mult;
-			PlayerTransform.Rotate(-Rot);
+			PlayerRotationTransform.Rotate(-Rot);
 
 			break;
 
@@ -313,7 +380,7 @@ public class PlayerMovement : MonoBehaviour {
 	private void InitializeDirectionController()
 	{
 		mDirList = new List<DirectionVariables>();
-		mDirUp = new DirectionVariables(DIRECTIONS.UP, "UpDown", 1);
+		/*mDirUp = new DirectionVariables(DIRECTIONS.UP, "UpDown", 1);
 		mDirDown = new DirectionVariables(DIRECTIONS.DOWN, "UpDown", -1);
 		mDirForward = new DirectionVariables(DIRECTIONS.FORWARD, "Vertical", 1);
 		mDirBack = new DirectionVariables(DIRECTIONS.BACK, "Vertical", -1);
@@ -325,7 +392,15 @@ public class PlayerMovement : MonoBehaviour {
 		mDirList.Add(mDirForward);
 		mDirList.Add(mDirBack);
 		mDirList.Add(mDirLeft);
-		mDirList.Add(mDirRight);
+		mDirList.Add(mDirRight);*/
+
+		mDirX = new DirectionVariables (DIRECTIONS.DIR_X, "Horizontal");
+		mDirY = new DirectionVariables (DIRECTIONS.DIR_Y, "UpDown");
+		mDirZ = new DirectionVariables (DIRECTIONS.DIR_Z, "Vertical");
+
+		mDirList.Add(mDirX);
+		mDirList.Add(mDirY);
+		mDirList.Add(mDirZ);
 	}
 	private void Strafer()
 	{
@@ -334,13 +409,16 @@ public class PlayerMovement : MonoBehaviour {
 			DirectionVariables dir = mDirList[i];
 			if (StaticStrafeSpeed)
 			{
-				dir = CheckStaticInput(dir);
+				
+				//dir = CheckStaticInput(dir);
+				dir = DynamicStaticInput(dir);
 			}
 			else if (!StaticStrafeSpeed)
 			{
 				if (UseSmoothAcceleration)
 				{
 					dir = CheckSmoothInput(dir);
+					//dir = SpeedControlStrafe(dir);
 				}
 				else
 				{
@@ -349,7 +427,7 @@ public class PlayerMovement : MonoBehaviour {
 				}
 			}
 
-			dir = SpeedControlStrafe(dir);
+			//dir = SpeedControlStrafe(dir);
 			CalculateMovement(dir);
 
 			mDirList[i] = dir;
@@ -357,71 +435,112 @@ public class PlayerMovement : MonoBehaviour {
 		move(MovementVector);
 		MovementVector = Vector3.zero;
 	}
+
+	private DirectionVariables DynamicStaticInput(DirectionVariables dir)
+	{
+		dir.mCurrentSpeed = Input.GetAxis (dir.mInputName) * StaticSpeed;
+
+		return dir;
+	}
+
 	private DirectionVariables CheckStaticInput(DirectionVariables dir)
 	{
-		if(dir.ButtonIsDown())
-		{
-			dir.mCurrentSpeed = StaticSpeed;
-		}
-		else
-		{
-			dir.mCurrentSpeed = 0;
-		}
+		
+		dir.mCurrentSpeed = StaticSpeed * dir.getPosOrNeg();
+		
 		return dir;
 	}
 	private void CalculateMovement(DirectionVariables dir)
 	{
 		switch (dir.mDir)
 		{
+		/*
 		case DIRECTIONS.UP:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.up;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.up;
 			MovementVector += direction;
 			//  Debug.Log("Up speed " + direction);
 
 			break;
 		case DIRECTIONS.DOWN:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.up;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.up;
 			MovementVector -= direction;
 			//  Debug.Log("Down speed " + direction);
 			break;
 		case DIRECTIONS.RIGHT:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.right;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.right;
 			MovementVector += direction;
 			//  Debug.Log("Right speed " + direction);
 			break;
 		case DIRECTIONS.LEFT:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.right;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.right;
 			MovementVector -= direction;
 			//  Debug.Log("Left speed " + direction);
 			break;
 		case DIRECTIONS.FORWARD:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.forward;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.forward;
 			MovementVector += direction;
 			//   Debug.Log("Forward speed " + direction);
 			break;
 		case DIRECTIONS.BACK:
-			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerTransform.forward;
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.forward;
 			MovementVector -= direction;
+			//   Debug.Log("Back speed " + direction);
+			break;
+			*/
+		case DIRECTIONS.DIR_X:
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.right;
+		//	Debug.Log ("X dir is " + direction);
+			MovementVector += direction;
+			//  Debug.Log("Left speed " + direction);
+			break;
+		case DIRECTIONS.DIR_Y:
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.up;
+		//	Debug.Log("Y dir is " + direction);
+			MovementVector += direction;
+			//   Debug.Log("Forward speed " + direction);
+			break;
+		case DIRECTIONS.DIR_Z:
+			
+			direction = dir.mCurrentSpeed * Time.deltaTime * PlayerStrafeTransform.forward;
+			MovementVector += direction;
 			//   Debug.Log("Back speed " + direction);
 			break;
 		}
 	}
 	private void move(Vector3 moveV)
 	{
-
+		//Debug.Log ("move vector " + moveV);
 		charactercontroller.Move(moveV);
 	}
 	private DirectionVariables CheckSmoothInput(DirectionVariables dir)
-	{
+	{/*
 		if (dir.ButtonIsDown())
 		{
-			dir.mCurrentSpeed += SmoothAcceleration;
+			dir.UpdateInputValue();
+			if (dir.mCurrentSpeed < MaxSpeedStrafe * dir.mAxisPercentage)
+			{
+				dir.mCurrentSpeed += SmoothAcceleration;
+
+			}
+			else {
+				dir.mCurrentSpeed -= SmoothDeacceleration;
+			}
 		}
 		else
 		{
 			dir.mCurrentSpeed -= SmoothDeacceleration;
 		}
 
+		*/
+		if (dir.mCurrentSpeed < MaxSpeedStrafe * Input.GetAxis (dir.mInputName)) {
+			Debug.Log ("INCREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
+			dir.mCurrentSpeed += SmoothAcceleration;
+
+		} else if (dir.mCurrentSpeed > MaxSpeedStrafe * Input.GetAxis (dir.mInputName)) {
+			Debug.Log ("DECREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
+			dir.mCurrentSpeed -= SmoothDeacceleration;
+
+		} 
 		return dir;
 	}
 	private DirectionVariables CheckStepSpeedInput(DirectionVariables dir)

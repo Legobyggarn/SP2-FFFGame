@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Shoot : MonoBehaviour {
-
+	Animator anim;
+	int fireHash = Animator.StringToHash("New Trigger");
     // Public variables
     public GameObject spawnPoint; // Spawn position of bullet
     public GameObject bulletPrefab; // Object to spawn as bullet/projectile
@@ -24,7 +25,7 @@ public class Shoot : MonoBehaviour {
         reloadTimer = reloadTime;
         isLoaded = true;
         chargeTimer = 0.0f;
-
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +36,7 @@ public class Shoot : MonoBehaviour {
             if (isLoaded) { // Can shoot (reload finished)
                 if (chargeTimer >= chargeTime) { // Can shoot (charge up finished)
                     // Play fire animation...
-
+					anim.SetTrigger (fireHash);
                     // Instantiate projectile...
                     // Fire projectile (add force)...
                     GameObject go = Instantiate(bulletPrefab, spawnPoint.transform.position, transform.rotation) as GameObject;
