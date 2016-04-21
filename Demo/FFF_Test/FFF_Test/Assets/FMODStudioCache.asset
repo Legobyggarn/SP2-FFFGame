@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks: []
   EditorEvents: []
-  MasterBankRef: {fileID: 11470704}
+  MasterBankRef: {fileID: 11467400}
   stringsBankWriteTime: 0
   cacheVersion: 1
 --- !u!114 &11403768
@@ -88,6 +88,28 @@ MonoBehaviour:
   Min: 0
   Max: 8
   Default: 0
+--- !u!114 &11420214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Concept/Music_C
+  guid: d93cfd682dce054d84e4585352177a85
+  Banks:
+  - {fileID: 11467400}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 11493858}
+  MinDistance: 0
+  MaxDistance: 0
 --- !u!114 &11426890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +183,46 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &11462102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Concept/Player_Shoot2_C
+  guid: 98b9757d19c2bf41b22f7d0bb9398f14
+  Banks:
+  - {fileID: 11467400}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &11467400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: \\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop\Master
+    Bank.bank
+  lastModified: 635962944080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 9397664
+  Exists: 1
 --- !u!114 &11470704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +302,79 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &11493858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 8
+  Default: 0
+--- !u!114 &11496508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Concept/Player_Flying
+  guid: bd29ae4d69226246b73763443c1db99d
+  Banks:
+  - {fileID: 11467400}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+--- !u!114 &11496558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Concept/Player_Shoot_C
+  guid: db2beaf37e9edf488236477791253bb0
+  Banks:
+  - {fileID: 11467400}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 11497244}
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &11497244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Concept_X
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &11498004
 MonoBehaviour:
   m_ObjectHideFlags: 0

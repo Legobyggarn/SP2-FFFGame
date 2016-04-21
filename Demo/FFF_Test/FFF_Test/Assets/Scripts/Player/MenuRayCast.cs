@@ -8,6 +8,8 @@ public class MenuRayCast : MonoBehaviour {
 	public GameObject laserSpawn;
 	public GameObject laserPrefab;
 
+	//public LineRenderer laserLineRenderer;
+
 	// Private
 	private float timeSinceLastShot;
 	private float maxSceneChangeTime = 3;
@@ -55,12 +57,21 @@ public class MenuRayCast : MonoBehaviour {
 						Application.Quit();
 					}
 
+				/*
+				// Show laser (-lineRenderer)
+				laserLineRenderer.enabled = true;
+				laserLineRenderer.GetComponent<LineRenderer> ().SetPosition (0, laserSpawn.transform.position);
+				laserLineRenderer.GetComponent<LineRenderer>().SetPosition(1, hit.point);
+				*/
+
+					
 					//Spawn laser
 					go = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
 					//Vector3 laserSpawnPoint = transform.position + transform.forward + -transform.up * 0.5f;
 					go.GetComponent<LineRenderer>().SetPosition(0, laserSpawn.transform.position );
 					go.GetComponent<LineRenderer>().SetPosition(1, hit.point);
 					//go.transform.SetParent(this);
+					
 
 					// Set has shoot
 					timeSinceLastShot = 0.0f;
@@ -71,11 +82,18 @@ public class MenuRayCast : MonoBehaviour {
 		else {
 			if (timeSinceLastShot >= shotDelay) { // Shot delay over
 				lifeTime = true;
-				Destroy (go.transform.gameObject);
+				if (go != null) {
+					Destroy (go.transform.gameObject);		
+				}
 			}
 			else {
 				timeSinceLastShot += Time.deltaTime;
 			}
+
+			/*
+			// Hide laser (-lineRenderer)
+			laserLineRenderer.enabled = false
+			*/
 		}
 
 	}
