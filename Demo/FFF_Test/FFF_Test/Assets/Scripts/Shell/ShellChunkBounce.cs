@@ -38,7 +38,8 @@ public class ShellChunkBounce : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		
+
+		/*
 		// Bounce (if not in grace period, or collided with a projectile)
 		if (collision.gameObject.tag != "Bullet") {
 			if (!GetComponent<ShellDamageScript>().GracePeriodActive) {
@@ -51,11 +52,11 @@ public class ShellChunkBounce : MonoBehaviour {
 				Vector3 endPoint = new Vector3();
 
 				if (towardsCenter) { // Shell chunks bounce so that they will start moving towards the position defined in the center variable
-					/*
+					///
 					// Apply a force equal to the inverted force of the object (to make it stay in place, so later forces acctually take effect)
 					Vector3 velocity = GetComponent<Rigidbody> ().velocity;
 					GetComponent<Rigidbody> ().AddForce (-velocity, ForceMode.Impulse);
-					*/
+					///
 
 					// Apply force...
 					Vector3 dirVector = centerPoint - transform.position; // Get the direction vector
@@ -68,11 +69,11 @@ public class ShellChunkBounce : MonoBehaviour {
 				} 
 
 				else if (towardsCenterAsNormal) { // Shell chunks bounce of walls using the vector against the center variable as a normal to reflect about
-					/*
+					///
 					// Apply a force equal to the inverted force of the object (to make it stay in place, so later forces acctually take effect)
 					Vector3 velocity = GetComponent<Rigidbody>().velocity;
 					GetComponent<Rigidbody>().AddForce (-velocity, ForceMode.Impulse);
-					*/
+					///
 
 					// Apply force...
 					Vector3 inVector = lastForward;
@@ -99,11 +100,11 @@ public class ShellChunkBounce : MonoBehaviour {
 				} 
 
 				else if (reflectNormal) { // Shell chunks reflect about the actual normal of the surface/plane that it collides with
-					/*
+					///
 					// Apply a force equal to the inverted force of the object (to make it stay in place, so later forces acctually take effect)
 					Vector3 velocity = GetComponent<Rigidbody>().velocity;
 					GetComponent<Rigidbody>().AddForce (-velocity, ForceMode.Impulse);
-					*/
+					///
 
 					// Apply force (and find the "real" normal)...
 					// InVector
@@ -178,32 +179,63 @@ public class ShellChunkBounce : MonoBehaviour {
 				Debug.DrawLine (startPoint, endPoint, Color.red, 2f, false);
 
 			}
+			*/
+
+
+
+
+			/*
+			Debug.DrawLine(contact.point, contact.normal * lineLength, Color.white, 3.0f, true);
+			Debug.DrawLine(contact.point, reclectionPoint * lineLength, Color.red, 3.0f, false);
+			*/
+
+
+			/*
+			foreach (ContactPoint contact in collision.contacts) {
+				//  print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
+				//  drawMyLine(contact.point, contact.normal, Color.white);
+				Debug.DrawLine(contact.point, contact.normal * lineLength, Color.white, 3.0f, false);
+
+				///
+				Rigidbody rb = GetComponent<Rigidbody>();
+
+				Vector3 velDir = rb.angularVelocity;
+				Vector3 reflectionPoint = Vector3.Reflect(velDir, contact.normal);
+
+				Debug.DrawLine(contact.point, reflectionPoint * lineLength, Color.red, 3.0f, false);
+				///
+			}
+			*/
+
+			Vector3 velocity = GetComponent<Rigidbody>().velocity;
+			//Debug.Log("Colliding velocity: " + velocity + " | Speed: " + velocity.magnitude);
+
+			// Debug line
+			/*
+			Vector3 startPointOut = transform.position;
+			Vector3 endPointOut = transform.position - velocity.normalized * debugLineLength;
+			Debug.DrawLine (startPointOut, endPointOut, Color.green, 2f, false);
+			*/
+
 		}
 
+		void OnCollisionExit(Collision collision) {
 
-		/*
-		Debug.DrawLine(contact.point, contact.normal * lineLength, Color.white, 3.0f, true);
-		Debug.DrawLine(contact.point, reclectionPoint * lineLength, Color.red, 3.0f, false);
-		*/
+			if (!GetComponent<ShellDamageScript> ().GracePeriodActive) {
+				Vector3 velocity = GetComponent<Rigidbody>().velocity;
+				//Debug.Log("Leaving velocity: " + velocity + " | Speed: " + velocity.magnitude);
 
+				// Add force
+				GetComponent<Rigidbody> ().AddForce (velocity.normalized * bounceForce, ForceMode.Impulse);
+			
+				// Debug line
+				Vector3 startPointOut = transform.position;
+				Vector3 endPointOut = transform.position + velocity.normalized * debugLineLength;
+				Debug.DrawLine (startPointOut, endPointOut, Color.red, 2f, false);
+			}
 
-		/*
-		foreach (ContactPoint contact in collision.contacts) {
-			//  print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
-			//  drawMyLine(contact.point, contact.normal, Color.white);
-			Debug.DrawLine(contact.point, contact.normal * lineLength, Color.white, 3.0f, false);
-
-			///
-			Rigidbody rb = GetComponent<Rigidbody>();
-
-			Vector3 velDir = rb.angularVelocity;
-			Vector3 reflectionPoint = Vector3.Reflect(velDir, contact.normal);
-
-			Debug.DrawLine(contact.point, reflectionPoint * lineLength, Color.red, 3.0f, false);
-			///
 		}
-		*/
 
-	}
+	//}
 
 }
