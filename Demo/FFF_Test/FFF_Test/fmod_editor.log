@@ -26,10 +26,6 @@
 [LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
 [LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
 [LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
-[LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
-[LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
-[LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
-[LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
 [LOG] Thread::callback                         : * FMOD Studio bank load thread finished
 [LOG] Thread::close                            : FMOD Studio bank load thread thread destroyed
 [LOG] Thread::callback                         : * FMOD Studio sample load thread finished

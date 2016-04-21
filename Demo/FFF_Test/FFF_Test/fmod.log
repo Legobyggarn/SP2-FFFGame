@@ -26,10 +26,6 @@
 [LOG] Thread::initThread                       : - Stacksize 65536.  Stack pointer 0000000000000000 : usesemaphore = 0 : sleeptime = 1
 [LOG] Thread::callback                         : * FMOD Studio bank load thread started
 [LOG] Profile::init                            : Profiler listening on port: 9264
-<<<<<<< HEAD
-[ERR] RuntimeBankModel::openFile               : Failed to open file '\\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.strings.bank'
-[ERR] RuntimeBankModel::openFile               : Failed to open file '\\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build\Desktop/Master Bank.bank'
-=======
 [LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
 [LOG] Manager::readBank                        : fileversion = 72, compatVersion = 70 (oldest = 44, newest = 72)
 [LOG] SystemI::createSoundInternal             : filename =  : mode 0a000202
@@ -116,7 +112,6 @@
 [LOG] SoundI::release                          : release subsounds. (0000000030B9AFA8)
 [LOG] SoundI::release                          :     (null) (0000000030B9B118)
 [LOG] SoundI::release                          : release codec. (0000000030B9AFA8)
->>>>>>> origin/Develop
 [LOG] Thread::callback                         : * FMOD Studio update thread finished
 [LOG] Thread::close                            : FMOD Studio update thread thread destroyed
 [LOG] Thread::callback                         : * FMOD Studio bank load thread finished
