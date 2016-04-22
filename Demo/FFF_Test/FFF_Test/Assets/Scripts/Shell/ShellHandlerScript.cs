@@ -59,11 +59,20 @@ public class ShellHandlerScript : MonoBehaviour {
 	// Notify that a collision with the shell has occured (parameter should contain the collided shell piece)
 	public void shellCollision(GameObject go) {
 		//...
+
 		go.GetComponent<MeshCollider>().enabled = false;
 		go.GetComponent<MeshRenderer>().enabled = false;
+
 		availSpots.Add(go);
+
+		// Tell shell part to shrink the shell part
+		//go.GetComponent<ShellPartScript>().ShrinkShell();
+
 		// Tell script controlling orbit to decrease number of shell parts left
 		memoryDistanceScript.decrementNumChildren();
+
+		// "Grow" back the memory bit.
+
 	}
 
 	// Notify that the core has been hit (parameter should contain the object that collided with the core)
@@ -77,7 +86,6 @@ public class ShellHandlerScript : MonoBehaviour {
 			bool found = false;
 			int i = 0;
 			foreach (GameObject game_object in availSpots) {
-				Debug.Log("Next");
 				// The volumen of the current game object from 'availSpots'
 				float availGOVolume = game_object.GetComponent<ObjectVolumeScript>().Volume;
 				// If the size is roughly the same.
@@ -127,7 +135,9 @@ public class ShellHandlerScript : MonoBehaviour {
 
 	//...
 	public void coreCollisionDistance(GameObject go) {
-		
+
+		float startAvail = availSpots.Count;
+
 		// TODO: Add to a priority queue (min), based on distance from position of object colliding with core
 		// For now, create without using a list, and use bubble sort to sort the list
 
@@ -163,13 +173,21 @@ public class ShellHandlerScript : MonoBehaviour {
 		List<int> toRemove = new List<int>();
 		float filled = 0f;
 		for (int i = 0; i < closeObjects.Count; i++) {
+			Debug.Log ("Current volume: " + closeObjects [i].CloseGameObject.GetComponent<ObjectVolumeScript> ().Volume + " | " + (go.GetComponent<ObjectVolumeScript>().Volume - filled));
 			if (closeObjects[i].CloseGameObject.GetComponent<ObjectVolumeScript>().Volume < (go.GetComponent<ObjectVolumeScript>().Volume - filled)) {
+				Debug.Log("Part added");
 				// Add to 'filled'
 				filled += closeObjects[i].CloseGameObject.GetComponent<ObjectVolumeScript>().Volume;
 				// Reactivate object
-				closeObjects[i].CloseGameObject.GetComponent<MeshCollider>().enabled = true;
+
+				//closeObjects[i].CloseGameObject.GetComponent<MeshCollider>().enabled = true;
 				closeObjects[i].CloseGameObject.GetComponent<MeshRenderer>().enabled = true;
+
 				closeObjects[i].CloseGameObject.GetComponent<ShellDamageScript>().ResetHealth();
+
+				// Tell shell part to grow the shell part back
+				closeObjects[i].CloseGameObject.GetComponent<ShellPartScript>().GrowShell();
+
 				// Remove the object from 'availSpots'
 				availSpots.Remove(closeObjects[i].CloseGameObject);
 
@@ -212,11 +230,8 @@ public class ShellHandlerScript : MonoBehaviour {
 		*/
 
 		// DEBUG OUTPUT
-		//Debug.Log("Filled: " + filled + " | Volume to fill: " + go.GetComponent<ObjectVolumeScript>().Volume);
 		float filledPerc = (filled/go.GetComponent<ObjectVolumeScript>().Volume)*100; // Percentage of collided chunk recreated
-		//Debug.Log ("Filled: " + filled + " | Remain filled: " + remainFilled);
-		//Debug.Log ("Filled: " + remainFilled + " | Object: " + go.GetComponent<ObjectVolumeScript> ().Volume);
-		Debug.Log ("Filled: " + filledPerc + "%");	
+		Debug.Log ("Filled: " + filledPerc + "% with " + startAvail + " available");	
 
 	}
 

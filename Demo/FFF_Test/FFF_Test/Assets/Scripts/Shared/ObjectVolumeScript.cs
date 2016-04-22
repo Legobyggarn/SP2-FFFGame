@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ObjectVolumeScript : MonoBehaviour {
 
+	// TODO: Add functionality to change the mass of the rigidbody depending on the calculated volume of the object.
+
 	// Public
 	public float minVolume;
 
@@ -24,12 +26,12 @@ public class ObjectVolumeScript : MonoBehaviour {
 	}
 
 	void Start() {
-
+		
 	}
 
 	// Calculate the volume of the object (from mesh collider) (parameter game object to calculate the volume of
 	public void calcVolume(MeshCollider mesh_collider, MeshRenderer mesh_renderer) { // Mesh renderer only for debug
-
+		
 		// Calculate volume
 		Vector3 size = mesh_collider.bounds.size;
 		volume = size.x * size.y * size.z;
@@ -40,6 +42,9 @@ public class ObjectVolumeScript : MonoBehaviour {
 		else {
 			active = true;
 		}
+
+		// Re-calculate scale
+		recalculateScale();
 
 		//Debug.Log("Bounding volume: " + size);
 
@@ -55,7 +60,7 @@ public class ObjectVolumeScript : MonoBehaviour {
 	}
 
 	public void calcVolumeDeactivate(MeshCollider mesh_collider, MeshRenderer mesh_renderer) { // Mesh renderer only for debug
-
+		
 		// Calculate volume
 		Vector3 size = mesh_collider.bounds.size;
 		volume = size.x * size.y * size.z;
@@ -63,6 +68,7 @@ public class ObjectVolumeScript : MonoBehaviour {
 		if (volume < minVolume) {
 			active = false;
 		} 
+
 		else {
 			active = true;
 		}
@@ -76,6 +82,18 @@ public class ObjectVolumeScript : MonoBehaviour {
 			// Temp. Turn material red
 			mesh_renderer.material.color = Color.red;
 		}
+
+		// Re-calculate scale
+		recalculateScale();
+
+	}
+
+	private void recalculateScale() {
+
+		// Scale...
+		// Find gameObject
+		GameObject globalScaleGO = GameObject.Find("GLOBAL_SCALE");
+		transform.localScale *= globalScaleGO.GetComponent<GlobalScaleScript>().shellScale;
 
 	}
 
