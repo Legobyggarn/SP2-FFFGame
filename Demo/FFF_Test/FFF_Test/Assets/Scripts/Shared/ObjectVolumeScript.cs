@@ -68,6 +68,7 @@ public class ObjectVolumeScript : MonoBehaviour {
 		if (volume < minVolume) {
 			active = false;
 		} 
+
 		else {
 			active = true;
 		}

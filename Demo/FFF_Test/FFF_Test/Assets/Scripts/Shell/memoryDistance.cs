@@ -97,7 +97,7 @@ public class memoryDistance : MonoBehaviour {
 
 				// Change the position of the core
 				core.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				core.transform.localPosition += new Vector3 (0, coreFix, 0);
+				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 		
 
 				//Debug.Log("Prec:   " +prec);
