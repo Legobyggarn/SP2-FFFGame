@@ -111,16 +111,16 @@ public class PlayerMovement : MonoBehaviour {
 			float r = 1f;
 			float input = Input.GetAxis (mInputName);
 			if (input < -tresh) {
-				Debug.Log ("move back!");
+			//	Debug.Log ("move back!");
 				return -r;
 
 			}
 			else if (input > tresh) {
-				Debug.Log ("move forward!");
+			//	Debug.Log ("move forward!");
 				return r;
 			}
 			else  {
-				Debug.Log ("move Dont!");
+				//Debug.Log ("move Dont!");
 				return 0;
 			}
 			return 0;
@@ -533,11 +533,11 @@ public class PlayerMovement : MonoBehaviour {
 
 		*/
 		if (dir.mCurrentSpeed < MaxSpeedStrafe * Input.GetAxis (dir.mInputName)) {
-			Debug.Log ("INCREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
+			//Debug.Log ("INCREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
 			dir.mCurrentSpeed += SmoothAcceleration;
 
 		} else if (dir.mCurrentSpeed > MaxSpeedStrafe * Input.GetAxis (dir.mInputName)) {
-			Debug.Log ("DECREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
+			//Debug.Log ("DECREASE SPEED, current speed " + dir.mCurrentSpeed + " limit: " + MaxSpeedStrafe * Input.GetAxis (dir.mInputName));
 			dir.mCurrentSpeed -= SmoothDeacceleration;
 
 		} 

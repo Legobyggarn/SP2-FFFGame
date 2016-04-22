@@ -237,7 +237,7 @@ Prefab:
       objectReference: {fileID: 726106266}
     - target: {fileID: 11469934, guid: bc5beecc5e61325428a8e25fb50f9a72, type: 2}
       propertyPath: lerpTime
-      value: 6
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc5beecc5e61325428a8e25fb50f9a72, type: 2}

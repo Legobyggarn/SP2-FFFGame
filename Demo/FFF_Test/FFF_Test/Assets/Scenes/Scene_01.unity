@@ -117,6 +117,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1638147
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -270,6 +277,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &32620402
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -405,6 +419,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &74397806
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -497,6 +518,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &75822328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -589,6 +617,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &82516021
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -681,6 +716,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &98779742
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -773,6 +815,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &100231020
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -865,6 +914,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &104663534
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -957,6 +1013,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &106722763
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1049,6 +1112,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &109953430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1141,6 +1211,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &115422017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1233,6 +1310,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &126417251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1325,6 +1409,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &153983801
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1417,6 +1508,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &158534718
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1509,6 +1607,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &198316627
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1601,6 +1706,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &202535151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1693,6 +1805,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &212422800
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1753,6 +1872,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &233674321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 233674323}
+  - 114: {fileID: 233674322}
+  m_Layer: 0
+  m_Name: GLOBAL_SCALE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233674322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233674321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3939a7dfdd7169d42b386f8f1c392ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shellScale: 3
+--- !u!4 &233674323
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233674321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.797, y: 15.613, z: 11.592999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &253563315 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100128, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -1785,6 +1944,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &253563318
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1845,6 +2011,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &254523753 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 440560, guid: fcba5112326a651419ee1626796a1071, type: 2}
+  m_PrefabInternal: {fileID: 1534064385}
 --- !u!1 &278412795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,6 +2078,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &280139940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2000,6 +2177,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &288881493
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2092,6 +2276,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &295424028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2184,6 +2375,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &353028122
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2276,6 +2474,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &377845727
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2368,6 +2573,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &397466290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2460,6 +2672,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &402174690
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2552,6 +2771,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &405487842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2644,6 +2870,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &407923592
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2736,6 +2969,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &409612945
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2828,6 +3068,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &418540306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2920,6 +3167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &421319408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3012,6 +3266,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &428121836
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3104,6 +3365,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &435229568
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3164,6 +3432,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &435230268 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 147200, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+  m_PrefabInternal: {fileID: 1078519704}
 --- !u!1 &447750500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,6 +3561,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &452587854
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3381,6 +3660,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &458493753
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3473,6 +3759,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &469729906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3533,6 +3826,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &482375278
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 254523753}
+    m_Modifications:
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.787
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &485736287 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -3565,6 +3900,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &485736290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3657,6 +3999,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &489991279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3749,6 +4098,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &516159462
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3841,6 +4197,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &525737121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3933,6 +4296,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &567533679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3993,48 +4363,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1001 &574687191
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 674782038}
-    m_Modifications:
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.007999897
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.00000005960466
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.00000002980233
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &576793791
 GameObject:
   m_ObjectHideFlags: 0
@@ -4128,6 +4456,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &579625714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4220,6 +4555,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &614104168
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4373,6 +4715,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &625815921
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4526,6 +4875,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &629853040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4618,6 +4974,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &663938060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4710,6 +5073,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &664752306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4802,6 +5172,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &673339927
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4862,10 +5239,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!4 &674782038 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 451610, guid: 49aeb0814000fa84ea33e8cdb94739f0, type: 2}
-  m_PrefabInternal: {fileID: 220863824}
 --- !u!1001 &678705577
 Prefab:
   m_ObjectHideFlags: 0
@@ -7032,6 +7405,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &683770055
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7124,6 +7504,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &713714311
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7216,6 +7603,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &743278699
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7308,6 +7702,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &761463639
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7400,6 +7801,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &765223085
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7492,6 +7900,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &771504164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7584,6 +7999,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &771798966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7676,6 +8098,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &777407678
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7768,6 +8197,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &783224714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7860,6 +8296,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &802891595
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7952,6 +8395,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &819205019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8044,6 +8494,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &823528917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8136,6 +8593,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &843002545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8228,6 +8692,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &884610481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8320,6 +8791,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &894331374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8412,6 +8890,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &914103225
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8504,6 +8989,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &919908196
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8596,6 +9088,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &925261875
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8749,6 +9248,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &943070689
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8841,6 +9347,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &956300988
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8933,6 +9446,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &962190524
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9025,6 +9545,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &964640643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9146,6 +9673,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &986166997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9238,6 +9772,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1013850815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9330,6 +9871,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1044283555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9422,6 +9970,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1069660514
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9514,6 +10069,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1071270212
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10272,7 +10834,663 @@ Prefab:
     - target: {fileID: 11484460, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
       propertyPath: st
       value: 
-      objectReference: {fileID: 1902693102}
+      objectReference: {fileID: 1392134016}
+    - target: {fileID: 11499710, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11498514, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11498008, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497984, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497678, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497586, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497016, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496610, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496602, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496202, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11493628, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492750, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492164, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492028, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11489814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11489740, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11487254, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11486658, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11486356, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11485740, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11485446, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11484370, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11481614, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11481012, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480888, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480820, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480722, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11479702, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11478960, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11477236, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11476132, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11475220, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11474158, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11474040, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11472646, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11472610, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471522, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471476, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471324, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11470096, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11469792, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468716, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468390, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468170, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11467284, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11465892, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11465732, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11464436, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11463964, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461942, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461916, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461692, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461324, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461268, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11460166, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11460022, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11459404, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11459332, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458926, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458858, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458772, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11457974, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11457006, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456820, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456790, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456348, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456016, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455782, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455518, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455310, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454636, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454452, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454350, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11453370, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11451486, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450802, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450508, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450406, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450152, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11449154, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447666, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447484, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447154, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447008, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11446902, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11446276, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11444956, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11444412, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11443378, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11441824, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11440582, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11440520, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11439750, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11439098, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437858, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437344, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437230, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435652, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435642, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435452, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435350, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435242, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11434590, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11433814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11433710, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11432564, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11431998, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11428210, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427664, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427492, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427162, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11426128, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11425428, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11424726, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11424262, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11423770, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422512, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422364, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422322, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422204, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421972, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421384, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421250, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420822, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420218, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420174, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11419760, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11416568, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11413204, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11413058, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11412668, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11411458, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410910, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410864, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410290, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410276, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11409092, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408870, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408786, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408508, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407794, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407684, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407484, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407234, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407126, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407050, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11406466, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405954, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405866, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405000, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11404382, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11404308, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403662, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403608, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403456, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403378, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403196, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402936, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402908, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402138, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402082, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11401044, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11400860, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11400538, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: coreGO
+      value: 
+      objectReference: {fileID: 435230268}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
   m_IsPrefabParent: 0
@@ -10308,6 +11526,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1091775594
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10400,6 +11625,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1092226618
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10492,6 +11724,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1110194296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10584,6 +11823,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1114865751
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10676,6 +11922,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1148047588
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10768,6 +12021,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1152267663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10876,6 +12136,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1155730999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10968,6 +12235,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1160279371
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11060,6 +12334,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1179143911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11152,6 +12433,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1179370224
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11244,6 +12532,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1180238582
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11336,6 +12631,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1187186661
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11469,6 +12771,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1200022777
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11561,6 +12870,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1208725081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11653,6 +12969,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1221600297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11745,6 +13068,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1225548003
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11837,6 +13167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1227796936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11973,6 +13310,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1290398607
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12081,6 +13425,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1333470511
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12173,6 +13524,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1339289647
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12265,6 +13623,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1345023237
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12357,6 +13722,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1346738184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12449,6 +13821,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1359068967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12541,6 +13920,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1377540774
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12601,6 +13987,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1392134016 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11487374, guid: 005622a050af0cd4fa5b690b42c92cce,
+    type: 2}
+  m_PrefabInternal: {fileID: 482375278}
+  m_Script: {fileID: 11500000, guid: d52583f3de15f9b428a66fae29c510d7, type: 3}
 --- !u!1 &1411307619 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100160, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -12633,6 +14025,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1411307622
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12725,6 +14124,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1435376377
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12817,6 +14223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1483728368
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12909,6 +14322,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1489723232
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13001,6 +14421,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1494223917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13109,6 +14536,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1523297177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13186,7 +14620,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 479890, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.729
+      value: 16.4
       objectReference: {fileID: 0}
     - target: {fileID: 479890, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13210,7 +14644,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 479890, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -13223,6 +14657,26 @@ Prefab:
     - target: {fileID: 13577328, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425752, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: StaticStrafeSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425752, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: RotationSpeed
+      value: 51.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: maxSpeed
+      value: 14.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: acceleration
+      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
@@ -13259,6 +14713,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1543645280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13351,6 +14812,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1573753022
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13443,6 +14911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1575426816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13535,6 +15010,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1580311866
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13627,6 +15109,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1581272741
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13719,6 +15208,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1585982830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13811,6 +15307,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1586368756
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13903,6 +15406,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1592474409
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13995,6 +15505,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1619905004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14087,6 +15604,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1620172233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14237,6 +15761,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1629962407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14329,6 +15860,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1632470515
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14421,6 +15959,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1639373012
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14513,6 +16058,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1652980334
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14605,6 +16157,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1681872393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14758,6 +16317,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1705445317
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14850,6 +16416,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1711537613
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14942,6 +16515,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1753025934
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15050,6 +16630,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1777415867
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15142,6 +16729,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1780035375
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15234,6 +16828,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1786702820
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15326,6 +16927,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1788007620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15418,6 +17026,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1804613489
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15510,6 +17125,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1807925722
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15602,6 +17224,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1812867417
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15694,6 +17323,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1815092206
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15786,6 +17422,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1844915784
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15878,6 +17521,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1853581156
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15970,6 +17620,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1863400028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16062,6 +17719,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1868454754
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16154,6 +17818,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1876363753
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16246,6 +17917,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1881637093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16306,12 +17984,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1902693102 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11487374, guid: 005622a050af0cd4fa5b690b42c92cce,
-    type: 2}
-  m_PrefabInternal: {fileID: 574687191}
-  m_Script: {fileID: 11500000, guid: d52583f3de15f9b428a66fae29c510d7, type: 3}
 --- !u!1 &1917752672 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100242, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -16344,6 +18016,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1917752675
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16436,6 +18115,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1919773316
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16528,6 +18214,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1934610573
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16620,6 +18313,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1945280825
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16806,6 +18506,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1951936722
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16898,6 +18605,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1953343787
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16990,6 +18704,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1976269217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17082,6 +18803,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1977974170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17174,6 +18902,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1992938132
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17266,6 +19001,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1995642083
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17358,6 +19100,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1996205693
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17450,6 +19199,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2002127417
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17542,6 +19298,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2012283221
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17634,6 +19397,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2030554925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17726,6 +19496,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2033195793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17818,6 +19595,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2040954577
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17910,6 +19694,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2050577292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18002,6 +19793,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2081197323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18094,6 +19892,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2085234807
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18186,6 +19991,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2103559239
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18278,6 +20090,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2108936885
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18370,6 +20189,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2110388907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18462,6 +20288,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2112415391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18554,6 +20387,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2124436669
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18646,6 +20486,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2124673512
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18738,6 +20585,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2129011393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18830,6 +20684,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2133333322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18922,6 +20783,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 447750500}
+  coreGO: {fileID: 0}
+  growTime: 0
+  shrinkTime: 0
+  grownScale: {x: 0, y: 0, z: 0}
+  shrunkScale: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2145922316
 MeshCollider:
   m_ObjectHideFlags: 0
