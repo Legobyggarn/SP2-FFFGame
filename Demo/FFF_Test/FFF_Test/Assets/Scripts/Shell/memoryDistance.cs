@@ -20,6 +20,12 @@ public class memoryDistance : MonoBehaviour {
 
 	private float coreDistanceScalar;
 
+	private float sceneChangeTime = 0f;
+	private float maxSceneChangeTime;
+
+	public ScenesTransision st;
+
+	private bool fading = true;
 
 	private GameObject parentGo;
 	private GameObject grandParentGo;
@@ -53,12 +59,14 @@ public class memoryDistance : MonoBehaviour {
 		startPos = transform.localPosition;
 		endPos = transform.localPosition;
 
-
 		// Set the core distance scalar
 		coreDistanceScalar = GameObject.Find("GLOBAL_SCALE").GetComponent<GlobalScaleScript>().shellScale;
 
 		// Scale up core
 		core.transform.localScale *= coreDistanceScalar;
+
+		maxSceneChangeTime = st.getLerpTime();
+
 
 	}
 	
@@ -72,16 +80,14 @@ public class memoryDistance : MonoBehaviour {
 		//Debug.Log ("Child Procest    " + childProcent);
 
 		// makes it stop in the orbit point 
-		if (parentGo.transform.localPosition.z > -distanceCore)
-		{
+		if (parentGo.transform.localPosition.z > -distanceCore) {
 
-		currentLerpTime += Time.deltaTime;
+			currentLerpTime += Time.deltaTime;
 
-		//Position in the lerp
-		float prec = currentLerpTime / lerpTime;
+			//Position in the lerp
+			float prec = currentLerpTime / lerpTime;
 
-			if (numberOfChildren != childCount) 
-			{
+			if (numberOfChildren != childCount) {
 
 				currentLerpTime = 0;
 				prec = currentLerpTime / lerpTime;
@@ -101,9 +107,8 @@ public class memoryDistance : MonoBehaviour {
 		
 
 				//Debug.Log("Prec:   " +prec);
-			}
-			else 
-			{
+			} 
+			else {
 				numberOfChildren = childCount;
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
@@ -118,6 +123,21 @@ public class memoryDistance : MonoBehaviour {
 			}
 
 			//Debug.Log ("Position    " + parentGo.transform.localPosition.z);
+		} 
+		else
+		{	//The core is in the middle of the room 
+			if (fading) 
+			{
+				st.fadeToWhite ();
+				fading = false;
+			}
+
+			sceneChangeTime += Time.deltaTime;
+
+			if (maxSceneChangeTime < sceneChangeTime) 
+			{ 
+				win ();
+			}
 		}
 	}
 
@@ -135,4 +155,8 @@ public class memoryDistance : MonoBehaviour {
 
 	}
 
+	public void win()
+	{
+		Application.LoadLevel ("Victory");
+	}
 }
