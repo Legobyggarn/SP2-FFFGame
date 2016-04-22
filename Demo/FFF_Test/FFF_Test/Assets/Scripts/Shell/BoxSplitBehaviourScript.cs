@@ -146,7 +146,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				//go.transform.localScale *= (1.0f / Mathf.Pow (numShellChunks, 1.0f / 3.0f)); // Scale shell chunk
 				go.transform.localScale *= chunkScale; // Scale shell chunk
 
-				go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f);
+				go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
 
 				// Tracking number of splits
 				int newValue = numOfSplits + 1;

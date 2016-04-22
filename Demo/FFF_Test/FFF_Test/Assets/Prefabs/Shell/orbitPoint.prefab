@@ -4467,7 +4467,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418248}
@@ -16085,7 +16085,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -16103,6 +16103,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11400860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16115,6 +16120,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11401044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16127,6 +16137,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11401114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16142,7 +16157,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16175,7 +16190,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16265,6 +16280,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11402092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16280,7 +16300,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16313,7 +16333,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16331,6 +16351,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11402278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16358,7 +16383,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16388,6 +16413,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11402936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16400,6 +16430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16412,6 +16447,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16424,6 +16464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16436,6 +16481,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16451,7 +16501,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16472,7 +16522,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16490,6 +16540,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16502,6 +16557,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11403916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16594,6 +16654,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11404382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16606,6 +16671,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11404462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16649,7 +16719,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16723,6 +16793,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11405186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16751,6 +16826,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11405954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16763,6 +16843,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11406116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16778,7 +16863,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16824,6 +16909,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11406780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16855,7 +16945,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16873,6 +16963,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11407126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16885,6 +16980,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11407234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16897,6 +16997,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11407244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16921,6 +17026,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11407678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16936,7 +17046,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -16954,6 +17064,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11407766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16978,6 +17093,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11408122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16993,7 +17113,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17014,7 +17134,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -17035,7 +17155,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17081,6 +17201,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11408670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17109,6 +17234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11408870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17121,6 +17251,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11409054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17157,6 +17292,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11409100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17188,7 +17328,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17209,7 +17349,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17254,7 +17394,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17275,7 +17415,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17293,6 +17433,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11410290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17305,6 +17450,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11410360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17336,7 +17486,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17357,7 +17507,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17375,6 +17525,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11410910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17387,6 +17542,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11411180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17402,7 +17562,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17420,6 +17580,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11411466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17463,7 +17628,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17484,7 +17649,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17502,6 +17667,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11413058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17514,6 +17684,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11413098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17538,6 +17713,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11413678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17601,7 +17781,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17646,7 +17826,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17667,7 +17847,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17700,7 +17880,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17718,6 +17898,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11416696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17761,7 +17946,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17822,7 +18007,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17871,7 +18056,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17948,7 +18133,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17969,7 +18154,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -17999,6 +18184,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11420174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18011,6 +18201,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11420180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18035,6 +18230,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11420822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18047,6 +18247,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11421250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18059,6 +18264,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11421384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18071,6 +18281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11421566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18102,7 +18317,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18123,7 +18338,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18144,7 +18359,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18162,6 +18377,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11422204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18174,6 +18394,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11422250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18218,6 +18443,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11422364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18230,6 +18460,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11422404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18245,7 +18480,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18263,6 +18498,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11422566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18343,6 +18583,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11423866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18358,7 +18603,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18379,7 +18624,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18429,6 +18674,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11424588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18444,7 +18694,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18465,7 +18715,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18499,6 +18749,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11425176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18555,6 +18810,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11425598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18598,7 +18858,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18616,6 +18876,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11426168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18723,7 +18988,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18757,6 +19022,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11427264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18800,7 +19070,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -18833,7 +19103,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -18851,6 +19121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11427664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18863,6 +19138,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11427690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18931,6 +19211,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11428450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18974,7 +19259,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19023,7 +19308,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -19056,7 +19341,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19274,6 +19559,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11432022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19289,7 +19579,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19322,7 +19612,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19352,6 +19642,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11432682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19383,7 +19678,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19400,8 +19695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da3e12f93ff11a4fa37e08fd00830df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeedX: 10
-  rotationSpeedY: 0
+  rotationSpeedX: 0
+  rotationSpeedY: 10
   rotationSpeedZ: 0
 --- !u!114 &11433302
 MonoBehaviour:
@@ -19418,7 +19713,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19439,7 +19734,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19469,6 +19764,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11433746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19497,6 +19797,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11434136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19524,7 +19829,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19570,6 +19875,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11434950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19585,7 +19895,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19643,6 +19953,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11435308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19671,6 +19986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11435414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19686,7 +20006,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19704,6 +20024,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11435642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19716,6 +20041,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11435652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19728,6 +20058,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11435850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19743,7 +20078,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19764,7 +20099,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19801,7 +20136,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19835,6 +20170,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11437344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19847,6 +20187,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11437506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19862,7 +20207,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19880,6 +20225,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11437908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19951,7 +20301,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -19984,7 +20334,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20005,7 +20355,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20035,6 +20385,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11439136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20050,7 +20405,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20080,6 +20435,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11439834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20119,7 +20479,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20189,6 +20549,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11440582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20201,6 +20566,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11440726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20240,7 +20610,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20277,7 +20647,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20319,6 +20689,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11441826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20334,7 +20709,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20387,7 +20762,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20424,7 +20799,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20442,6 +20817,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11443860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20473,7 +20853,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20494,7 +20874,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20512,6 +20892,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11444424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20555,7 +20940,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20597,6 +20982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11445768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20612,7 +21002,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20661,7 +21051,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20679,6 +21069,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11446692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20706,7 +21101,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20727,7 +21122,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20745,6 +21140,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11447008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20757,6 +21157,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11447042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20772,7 +21177,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20802,6 +21207,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11447228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20817,7 +21227,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20838,7 +21248,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -20856,6 +21266,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11447532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20880,6 +21295,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11447730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20907,7 +21327,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21000,7 +21420,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21034,6 +21454,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11449274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21121,7 +21546,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21174,7 +21599,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -21192,6 +21617,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11450188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21207,7 +21637,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21241,6 +21671,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11450508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21253,6 +21688,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11450612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21268,7 +21708,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21298,6 +21738,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11450826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21341,7 +21786,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21359,6 +21804,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11451948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21390,7 +21840,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21455,7 +21905,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -21488,7 +21938,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21506,6 +21956,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11453570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21521,7 +21976,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21554,7 +22009,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21587,7 +22042,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21605,6 +22060,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11454358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21645,6 +22105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11454496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21673,6 +22138,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11454756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21728,7 +22198,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21746,6 +22216,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11455514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21770,6 +22245,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11455520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21794,6 +22274,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11455834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21830,6 +22315,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11456348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21842,6 +22332,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11456390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21857,7 +22352,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21878,7 +22373,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21912,6 +22407,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11456802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21927,7 +22427,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -21945,6 +22445,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11457006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21957,6 +22462,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11457008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21972,7 +22482,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -21993,7 +22503,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22014,7 +22524,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22067,7 +22577,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22116,7 +22626,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22146,6 +22656,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11458206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22161,7 +22676,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22179,6 +22694,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11458858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22191,6 +22711,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11458906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22219,6 +22744,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11459238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22234,7 +22764,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22252,6 +22782,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11459404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22264,6 +22799,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11459474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22295,7 +22835,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22329,6 +22869,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11460166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22341,6 +22886,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11460416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22385,6 +22935,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11461272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22400,7 +22955,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -22430,6 +22985,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11461326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22457,7 +23017,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22519,6 +23079,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11461914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22534,7 +23099,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22552,6 +23117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11461942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22564,6 +23134,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11461958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22611,7 +23186,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22632,7 +23207,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22653,7 +23228,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22718,7 +23293,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22755,7 +23330,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22801,6 +23376,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11464434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22825,6 +23405,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11464870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22892,7 +23477,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -22926,6 +23511,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11465892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22938,6 +23528,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11465902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23009,7 +23604,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23043,6 +23638,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11467842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23099,6 +23699,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11468244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23167,6 +23772,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11468466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23194,7 +23804,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23256,6 +23866,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11469062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23287,7 +23902,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23361,6 +23976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11470096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23373,6 +23993,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11470220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23400,7 +24025,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23433,7 +24058,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23452,10 +24077,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSizeThreshold: 0
   maxSizeThreshold: 0
-  maxDistance: 5
+  maxDistance: 10
   useDistance: 1
   distanceOverVolume: 1
-  notifyNumShellChunks: {fileID: 0}
+  notifyNumShellChunks: {fileID: 195700}
 --- !u!114 &11471324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23468,6 +24093,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11471476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23480,6 +24110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11471522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23492,6 +24127,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11471546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23519,7 +24159,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23540,7 +24180,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23561,7 +24201,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23595,6 +24235,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11472646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23607,6 +24252,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11472726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23622,7 +24272,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23675,7 +24325,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23712,7 +24362,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23757,7 +24407,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23775,6 +24425,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11474158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23787,6 +24442,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11474202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23818,7 +24478,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -23872,6 +24532,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11475306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23976,6 +24641,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11476342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24003,7 +24673,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24065,6 +24735,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11477318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24080,7 +24755,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -24173,7 +24848,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24206,7 +24881,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24224,6 +24899,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11479074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24239,7 +24919,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24273,6 +24953,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11479828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24301,6 +24986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11480758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24325,6 +25015,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11480888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24337,6 +25032,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11481012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24349,6 +25049,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11481026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24364,7 +25069,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -24434,6 +25139,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11481956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24489,7 +25199,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24510,7 +25220,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24603,7 +25313,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -24680,7 +25390,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24701,7 +25411,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24719,6 +25429,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11484460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24777,7 +25492,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24811,6 +25526,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11485524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24838,7 +25558,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -24856,6 +25576,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11486168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24880,6 +25605,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11486658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24892,6 +25622,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11486790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24916,6 +25651,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11487670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24931,7 +25671,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25024,7 +25764,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25054,6 +25794,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11489814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25066,6 +25811,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11489880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25081,7 +25831,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25102,7 +25852,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25155,7 +25905,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25176,7 +25926,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25197,7 +25947,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25259,6 +26009,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11492164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25271,6 +26026,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11492210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25286,7 +26046,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25307,7 +26067,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25325,6 +26085,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11492760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25368,7 +26133,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25430,6 +26195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11493776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25461,7 +26231,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25530,7 +26300,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25551,7 +26321,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -25597,6 +26367,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11496226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25633,6 +26408,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11496610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25645,6 +26425,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11496618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25685,6 +26470,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11497022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25716,7 +26506,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25734,6 +26524,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11497678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25746,6 +26541,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11497696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25761,7 +26561,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25782,7 +26582,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 3
   maxShellChunk: 6
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.8
   playerTransform: {fileID: 0}
@@ -25812,6 +26612,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11498008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25824,6 +26629,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11498136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25839,7 +26649,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25885,6 +26695,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11498716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25960,7 +26775,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -25981,7 +26796,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -26002,7 +26817,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -26020,6 +26835,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellHandler: {fileID: 147200}
+  coreFixGO: {fileID: 0}
+  growTime: 5
+  shrinkTime: 5
+  grownScale: {x: 1, y: 1, z: 1}
+  shrunkScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11499722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26035,7 +26855,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -26056,7 +26876,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -26077,7 +26897,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
@@ -26098,7 +26918,7 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 1
   maxShellChunk: 3
-  explosionForce: 100
+  explosionForce: 10
   minShellChunkScale: 0.5
   maxShellChunkScale: 0.95
   playerTransform: {fileID: 0}
