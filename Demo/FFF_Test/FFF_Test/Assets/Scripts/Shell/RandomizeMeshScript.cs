@@ -15,12 +15,10 @@ public class RandomizeMeshScript : MonoBehaviour {
 		if (shellChunkMeshes.Count > 0) {
 			int randomMesh = Random.Range (0, shellChunkMeshes.Count - 1);
 			transform.GetChild(0).GetComponent<MeshFilter>().mesh = shellChunkMeshes[randomMesh];
-			GetComponent<MeshCollider> ().sharedMesh = shellChunkMeshes [randomMesh];
-
-			//transform.GetChild(0).GetComponent<MeshRenderer> ().material.color = new Color (125f/255f, 80f/255f, 0f/255f);
+			GetComponent<MeshCollider>().sharedMesh = shellChunkMeshes[randomMesh];
 
 			// Recalculate size
-			GetComponent<ObjectVolumeScript>().calcVolumeDeactivate(transform.GetComponent<MeshCollider>(), transform.GetChild(0).transform.GetComponent<MeshRenderer>());
+			GetComponent<ObjectVolumeScript>().calcVolumeDeactivate(transform.GetComponent<MeshCollider>());
 
 		}
 

@@ -114,6 +114,7 @@ public class ShellDamageScript : MonoBehaviour {
 					float damage = baseColDamage * diffLength;
 					currHealth -= damage;
 					checkDead (collision.transform.position);
+					Debug.Log("Damage: " + damage);
 					//Debug.Log ("diffVector: " + diffVector + ", Magnitude: " + diffLength + " | Damage: " + damage + " | Health: " + currHealth);
 				}
 			}

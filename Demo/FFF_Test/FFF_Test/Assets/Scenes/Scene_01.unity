@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1638151
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &32620406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -471,6 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &74397810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -570,6 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &75822332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -669,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &82516025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -768,6 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &98779746
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -867,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &100231024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -966,6 +973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &104663538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1065,6 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &106722767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1164,6 +1173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &109953434
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1263,6 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &115422021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1362,6 +1373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &126417255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1461,6 +1473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &153983805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1560,6 +1573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &158534722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1659,6 +1673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &198316631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1758,6 +1773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &202535155
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1857,6 +1873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &212422804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1996,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &253563322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2011,10 +2029,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!4 &254523753 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 440560, guid: fcba5112326a651419ee1626796a1071, type: 2}
-  m_PrefabInternal: {fileID: 1534064385}
 --- !u!1 &278412795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &280139944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2229,6 +2244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &288881497
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2328,6 +2344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &295424032
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2427,6 +2444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &353028126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2526,6 +2544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &377845731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2625,6 +2644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &397466294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2724,6 +2744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &402174694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2823,6 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &405487846
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2922,6 +2944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &407923596
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3021,6 +3044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &409612949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3120,6 +3144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &418540310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3219,6 +3244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &421319412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3318,6 +3344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &428121840
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3417,6 +3444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &435229572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3613,6 +3641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &452587858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3712,6 +3741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &458493757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3811,6 +3841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &469729910
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3826,48 +3857,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1001 &482375278
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 254523753}
-    m_Modifications:
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.787
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.143
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 495212, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 005622a050af0cd4fa5b690b42c92cce, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &485736287 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -3952,6 +3941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &485736294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4051,6 +4041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &489991283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4150,6 +4141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &516159466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4249,6 +4241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &525737125
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4348,6 +4341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &567533683
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4508,6 +4502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &579625718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4607,6 +4602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &614104172
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4767,6 +4763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &625815925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4927,6 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &629853044
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5026,6 +5024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &663938064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5125,6 +5124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &664752310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5224,6 +5224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &673339931
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7457,6 +7458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &683770059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7556,6 +7558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &713714315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7655,6 +7658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &743278703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7754,6 +7758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &761463643
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7853,6 +7858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &765223089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7952,6 +7958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &771504168
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8051,6 +8058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &771798970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8150,6 +8158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &777407682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8249,6 +8258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &783224718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8348,6 +8358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &802891599
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8363,6 +8374,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &808731231
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 434102, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6aee3f7e491511149af5880eed80a27f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &819205016 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100266, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -8447,6 +8500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &819205023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8546,6 +8600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &823528921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8645,6 +8700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &843002549
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8744,6 +8800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &884610485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8843,6 +8900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &894331378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8942,6 +9000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &914103229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9041,6 +9100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &919908200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9140,6 +9200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &925261879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9300,6 +9361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &943070693
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9399,6 +9461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &956300992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9498,6 +9561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &962190528
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9597,6 +9661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &964640647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9725,6 +9790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &986167001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9824,6 +9890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1013850819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9923,6 +9990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1044283559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10022,6 +10090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1069660518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10121,6 +10190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1071270216
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11578,6 +11648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1091775598
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11677,6 +11748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1092226622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11776,6 +11848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1110194300
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11875,6 +11948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1114865755
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11974,6 +12048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1148047592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12073,6 +12148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1152267667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12188,6 +12264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1155731003
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12287,6 +12364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1160279375
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12386,6 +12464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1179143915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12485,6 +12564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1179370228
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12584,6 +12664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1180238586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12683,6 +12764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1187186665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12823,6 +12905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1200022781
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12922,6 +13005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1208725085
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13021,6 +13105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1221600301
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13120,6 +13205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1225548007
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13219,6 +13305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1227796940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13362,6 +13449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1290398611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13477,6 +13565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1333470515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13576,6 +13665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1339289651
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13675,6 +13765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1345023241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13774,6 +13865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1346738188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13873,6 +13965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1359068971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13972,6 +14065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1377540778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13989,9 +14083,9 @@ Rigidbody:
   m_CollisionDetection: 0
 --- !u!114 &1392134016 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11487374, guid: 005622a050af0cd4fa5b690b42c92cce,
+  m_PrefabParentObject: {fileID: 11418644, guid: fcba5112326a651419ee1626796a1071,
     type: 2}
-  m_PrefabInternal: {fileID: 482375278}
+  m_PrefabInternal: {fileID: 1534064385}
   m_Script: {fileID: 11500000, guid: d52583f3de15f9b428a66fae29c510d7, type: 3}
 --- !u!1 &1411307619 stripped
 GameObject:
@@ -14077,6 +14171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1411307626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14176,6 +14271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1435376381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14275,6 +14371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1483728372
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14374,6 +14471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1489723236
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14473,6 +14571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1494223921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14588,6 +14687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1523297181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14645,38 +14745,6 @@ Prefab:
     - target: {fileID: 479890, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 28be838616e24794787f5f6c6d1f894f, type: 2}
-    - target: {fileID: 11428110, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: animSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13577328, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425752, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: StaticStrafeSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425752, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: RotationSpeed
-      value: 51.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: maxSpeed
-      value: 14.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: acceleration
-      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
@@ -14765,6 +14833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1543645284
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14864,6 +14933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1573753026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14963,6 +15033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1575426820
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15062,6 +15133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1580311870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15161,6 +15233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1581272745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15260,6 +15333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1585982834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15359,6 +15433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1586368760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15458,6 +15533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1592474413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15557,6 +15633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1619905008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15656,6 +15733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1620172237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15813,6 +15891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1629962411
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15912,6 +15991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1632470519
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16011,6 +16091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1639373016
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16110,6 +16191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1652980338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16209,6 +16291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1681872397
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16369,6 +16452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1705445321
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16468,6 +16552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1711537617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16567,6 +16652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1753025938
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16682,6 +16768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1777415871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16781,6 +16868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1780035379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16880,6 +16968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1786702824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16979,6 +17068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1788007624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17078,6 +17168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1804613493
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17177,6 +17268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1807925726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17276,6 +17368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1812867421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17375,6 +17468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1815092210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17474,6 +17568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1844915788
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17573,6 +17668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1853581160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17672,6 +17768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1863400032
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17771,6 +17868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1868454758
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17870,6 +17968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1876363757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17969,6 +18068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1881637097
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18068,6 +18168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1917752679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18167,6 +18268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1919773320
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18266,6 +18368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1934610577
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18365,6 +18468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1945280829
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18558,6 +18662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1951936726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18657,6 +18762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1953343791
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18756,6 +18862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1976269221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18855,6 +18962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1977974174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18954,6 +19062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1992938136
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19053,6 +19162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1995642087
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19152,6 +19262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &1996205697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19251,6 +19362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2002127421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19350,6 +19462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2012283225
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19449,6 +19562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2030554929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19548,6 +19662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2033195797
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19647,6 +19762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2040954581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19746,6 +19862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2050577296
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19845,6 +19962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2081197327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19944,6 +20062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2085234811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20043,6 +20162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2103559243
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20142,6 +20262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2108936889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20241,6 +20362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2110388911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20340,6 +20462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2112415395
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20439,6 +20562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2124436673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20538,6 +20662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2124673516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20637,6 +20762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2129011397
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20736,6 +20862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2133333326
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20835,6 +20962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 0
+  scalingAdjustment: 1
 --- !u!54 &2145922320
 Rigidbody:
   m_ObjectHideFlags: 0
