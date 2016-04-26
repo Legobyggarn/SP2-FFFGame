@@ -21,7 +21,7 @@ public class ShellDamageScript : MonoBehaviour {
 	// Private
 	private bool isHit;
 	private float currHealth;
-	private float gracePeriodTimer;
+	private float gracePeriodTimer = 0f;
 	private bool activeGracePeriod = true;
 
 	// The rigidbody, for a test...
@@ -62,8 +62,9 @@ public class ShellDamageScript : MonoBehaviour {
 	void Update () {
 
 		// Update grace period
-		if (activeGracePeriod && gracePeriodTimer >= gracePeriod) {
-			activeGracePeriod = false;
+		if (activeGracePeriod && gracePeriodTimer <= gracePeriod) {
+			gracePeriodTimer += Time.deltaTime;
+			//activeGracePeriod = false;
 			//Debug.Log ("Grace period has ended");
 
 			// Set rigidbody to not be kinematic (i.e react to collision)
@@ -72,7 +73,9 @@ public class ShellDamageScript : MonoBehaviour {
 		} 
 
 		else {
-			gracePeriodTimer += Time.deltaTime;
+			//gracePeriodTimer += Time.deltaTime;
+			gracePeriodTimer = 0f;
+			activeGracePeriod = false;
 		}
 
 
@@ -90,7 +93,7 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (GetComponent<ObjectVolumeScript> ().Active) {
+				if (GetComponent<ObjectVolumeScript>().Active && !activeGracePeriod) {
 					// Take damage
 					currHealth -= bulletDamage;
 					//Debug.Log ("Health: " + currHealth);
@@ -104,17 +107,17 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (!activeGracePeriod && GetComponent<ObjectVolumeScript> ().Active) {
+				if (!activeGracePeriod && GetComponent<ObjectVolumeScript>().Active && !activeGracePeriod) {
 					// Use collision.relativeVelocity instead of calculating it yourself...
-					Vector3 myVector = transform.GetComponent<Rigidbody> ().velocity;
-					Vector3 itsVector = collision.transform.GetComponent<Rigidbody> ().velocity;
+					Vector3 myVector = transform.GetComponent<Rigidbody>().velocity;
+					Vector3 itsVector = collision.transform.GetComponent<Rigidbody>().velocity;
 					Vector3 diffVector = myVector - itsVector;
 					float diffLength = diffVector.magnitude;
 					diffLength *= transform.localScale.x; // Change, should use the volume instead of scale
 					float damage = baseColDamage * diffLength;
 					currHealth -= damage;
 					checkDead (collision.transform.position);
-					Debug.Log("Damage: " + damage);
+					//Debug.Log("Damage: " + damage + " | " + currHealth);
 					//Debug.Log ("diffVector: " + diffVector + ", Magnitude: " + diffLength + " | Damage: " + damage + " | Health: " + currHealth);
 				}
 			}
@@ -142,6 +145,7 @@ public class ShellDamageScript : MonoBehaviour {
 
 	void checkDead(Vector3 collisionPoint) {
 		if (currHealth <= 0f) {
+			Debug.Log("Dead!");
 			// Split cube 
 			GetComponent<BoxSplitBehaviourScript>().Split(collisionPoint);
 			// Destroy objects

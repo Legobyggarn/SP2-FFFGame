@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 2
-  scalingFix: 1.25
+  scalingAdjustment: 1
 --- !u!114 &11422386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,7 +169,7 @@ MonoBehaviour:
   baseColDamage: 0
   bulletDamage: 100
   maxHealth: 100
-  gracePeriod: 0.5
+  gracePeriod: 10
   hitPartSys: {fileID: 0}
 --- !u!114 &11475544
 MonoBehaviour:

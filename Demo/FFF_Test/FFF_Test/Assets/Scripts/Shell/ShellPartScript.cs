@@ -12,7 +12,6 @@ public class ShellPartScript : MonoBehaviour {
 	public GameObject coreGO;
 
 	public float growTime;
-	public float shrinkTime;
 	public Vector3 grownScale;
 	public Vector3 shrunkScale;
 
@@ -22,7 +21,6 @@ public class ShellPartScript : MonoBehaviour {
 	private GameObject globalScaleGO;
 
 	private bool isGrowing = false;
-	private bool isShrinking = false;
 	private float growthTimer;
 	private float percentage;
 
@@ -85,9 +83,9 @@ public class ShellPartScript : MonoBehaviour {
 
 			else {
 				isGrowing = false;
+				transform.position = transform.parent.transform.position;
 				transform.localScale = grownScale;
 				growthTimer = 0f;
-				transform.position = endPosition;
 				// Activate mesh renderer and mesh collider
 				GetComponent<MeshCollider>().enabled = true;
 				// Reset start- och endPosition
@@ -127,12 +125,14 @@ public class ShellPartScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
 
+		/*
 		if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "ShellChunk") {
 			shellHandlerScript.shellCollision(gameObject);
 			// Destroy bullet
 			//Debug.Log("Destroy bullet!");
 			//Destroy (collision.gameObject);
 		}
+		*/
 
 	}
 
@@ -143,15 +143,8 @@ public class ShellPartScript : MonoBehaviour {
 		transform.position = startPosition;
 	}
 
-	// Grow or shrink shell
-	public void ShrinkShell() {
-		isShrinking = true;
-		isGrowing = false;
-	}
-
 	public void GrowShell() {
 		isGrowing = true;
-		isShrinking = false;
 	}
 
 	//...

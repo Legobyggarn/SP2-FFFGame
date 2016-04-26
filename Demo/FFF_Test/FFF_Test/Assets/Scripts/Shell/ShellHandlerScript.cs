@@ -33,15 +33,15 @@ public class ShellHandlerScript : MonoBehaviour {
 
 	// Find collision with core here. (Temp?)
 	void OnCollisionEnter(Collision collision) {
-
 		// Find collision with shell and call 'coreCollision'
 		if (collision.gameObject.tag == "ShellChunk") {
+			Debug.Log("Core collision");
 			if (!collision.gameObject.GetComponent<ShellDamageScript>().GracePeriodActive) {
 				if (useDistance) {
-					coreCollisionDistance (collision.gameObject);
+					coreCollisionDistance(collision.gameObject);
 				} 
 				else {
-					coreCollision (collision.gameObject);
+					coreCollision(collision.gameObject);
 				}
 			}
 
@@ -122,7 +122,7 @@ public class ShellHandlerScript : MonoBehaviour {
 
 					i++;
 				}
-				Debug.Log("Filled: " + filledVolume + " | Volume to fill: " + hitGOVolume);
+				//Debug.Log("Filled: " + filledVolume + " | Volume to fill: " + hitGOVolume);
 			}
 
 			// Remove items
@@ -173,9 +173,8 @@ public class ShellHandlerScript : MonoBehaviour {
 		List<int> toRemove = new List<int>();
 		float filled = 0f;
 		for (int i = 0; i < closeObjects.Count; i++) {
-			Debug.Log ("Current volume: " + closeObjects [i].CloseGameObject.GetComponent<ObjectVolumeScript> ().Volume + " | " + (go.GetComponent<ObjectVolumeScript>().Volume - filled));
+			//Debug.Log ("Current volume: " + closeObjects [i].CloseGameObject.GetComponent<ObjectVolumeScript> ().Volume + " | " + (go.GetComponent<ObjectVolumeScript>().Volume - filled));
 			if (closeObjects[i].CloseGameObject.GetComponent<ObjectVolumeScript>().Volume < (go.GetComponent<ObjectVolumeScript>().Volume - filled)) {
-				Debug.Log("Part added");
 				// Add to 'filled'
 				filled += closeObjects[i].CloseGameObject.GetComponent<ObjectVolumeScript>().Volume;
 				// Reactivate object
@@ -196,6 +195,9 @@ public class ShellHandlerScript : MonoBehaviour {
 
 				// Add to 'toDestroy'
 				toRemove.Add(i);
+
+
+				Debug.Log("Grow back");
 			}
 		}
 
@@ -230,8 +232,8 @@ public class ShellHandlerScript : MonoBehaviour {
 		*/
 
 		// DEBUG OUTPUT
-		float filledPerc = (filled/go.GetComponent<ObjectVolumeScript>().Volume)*100; // Percentage of collided chunk recreated
-		Debug.Log ("Filled: " + filledPerc + "% with " + startAvail + " available");	
+		//float filledPerc = (filled/go.GetComponent<ObjectVolumeScript>().Volume)*100; // Percentage of collided chunk recreated
+		//Debug.Log ("Filled: " + filledPerc + "% with " + startAvail + " available");	
 
 	}
 

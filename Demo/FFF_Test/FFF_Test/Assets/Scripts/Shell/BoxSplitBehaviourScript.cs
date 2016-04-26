@@ -96,12 +96,8 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				}
 				*/
 
-
-				//Debug.Log("Volume: " + thisVolume);
 				aspiringVolume = thisVolume / (float)numShellChunks;
-				//thisHeight /= (float)numShellChunks;
-				//Debug.Log("Aspiring volume: " + aspiringVolume);
-				go.GetComponent<ObjectVolumeScript>().SetPreviousHeight(aspiringVolume);
+				go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
 
 
 
@@ -128,7 +124,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 
 	// Split for shell(?)
 	public void Split(Vector3 collisionPoint) {
-		
+
 		if (!isHit && numOfSplits < maxNumOfSplits) {
 
 			isHit = true;
@@ -140,46 +136,75 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 			float aspiringVolume = 0f;
 
 			// "Available spread"
-			//Vector3 outVec = coreTransform.position - collisionPoint;
-			//Vector3 maxVec = Vector3.Cross(outVec, transform.up);
-			//Debug.Log("'outVec'" + outVec + " | up " + transform.up + " | 'maxVec' " + maxVec);
+			Vector3 outVec = new Vector3();
+			Vector3 maxVec = new Vector3();
+			if (coreTransform != null) {
+				//outVec = coreTransform.position - collisionPoint;
+				outVec = collisionPoint - coreTransform.position;
+				Vector3 startPos = coreTransform.position;
+				Vector3 endPos = (outVec);
+				//Debug.DrawLine(startPos, endPos, Color.yellow, 10f, false);
+				//maxVec = Vector3.Cross (outVec, transform.up);
+				//Debug.Log("'outVec'" + outVec + " | up " + transform.up + " | 'maxVec' " + maxVec);
+			}
 
 			for (int i = 0; i < numShellChunks; i++) {
+				
+				Vector3 randPos = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
+
+				if (coreTransform != null) {
+					int numOfIterations = 0;
+					// Spread out from center (to control "spread speed")
+					bool okPos = false;
+
+					/*
+					while (!okPos) {
+						Debug.Log("Starting...");
+						//randPos = new Vector3 (Random.Range (-1, 1), Random.Range (-1, 1), Random.Range (-1, 1));
+						Vector3 compVec = randPos - collisionPoint;
+
+						Debug.Log("Drawing line...");
+						// Draw debug line for vector for where the shell chunk will perhaps launch
+						Vector3 startPos = coreTransform.position;
+						Vector3 endPos = (compVec) * 25f;
+						Debug.DrawLine(startPos, endPos, Color.magenta, 10f, false);
+
+						startPos = coreTransform.position;
+						endPos = (collisionPoint - coreTransform.position);
+						Debug.DrawLine(startPos, endPos, Color.blue, 10f, false);
 
 
-				Vector3 randPos = randPos = new Vector3 (Random.Range (-1, 1), Random.Range (-1, 1), Random.Range (-1, 1));;
+						Debug.Log("Calculating angle...");
+						float angle = Mathf.Acos (Vector3.Dot (outVec, compVec) / (outVec.magnitude * compVec.magnitude));
+						angle *= Mathf.Rad2Deg;
+						Debug.Log ("Angle: " + angle);
 
-				/*
-				int numOfIterations = 0;
-				// Spread out from center (to control "spread speed")
-				bool okPos = false;
-				while (!okPos) {
-					randPos = new Vector3 (Random.Range (-1, 1), Random.Range (-1, 1), Random.Range (-1, 1));
-					Vector3 compVec = randPos - collisionPoint;
+						// TEMPORARY!
+						//okPos = true;
 
-					// Draw debug line for vector for where the shell chunk will perhaps launch
-					Vector3 startPos = coreTransform.position;
-					Vector3 endPos = (coreTransform.position + randPos) * 25f;
-					Debug.DrawLine(startPos, endPos, Color.white, Time.deltaTime, false);
 
-					float angle = Mathf.Acos (Vector3.Dot (outVec, compVec) / (outVec.magnitude * compVec.magnitude));
-					angle *= Mathf.Rad2Deg;
-					Debug.Log ("Angle: " + angle);
-					if (angle >= 90) { // 90 should instead be a variable for designers
-						okPos = true;
+						Debug.Log("If-statement...");
+						if (angle <= 90) { // 90 should instead be a variable for designers
+							okPos = true;
 
-						// Draw a lasting debug line (showing that it worked)
-						Debug.DrawLine(startPos, endPos, Color.green, 10f, false);
-					} 
+							// Draw a lasting debug line (showing that it worked)
+							Debug.DrawLine(startPos, endPos, Color.green, 10f, false);
+						} 
 
-					else {
-						Debug.Log("Not an ok position");
+						else {
+							Debug.Log("Not an ok position");
+							// Draw a lasting debug line (showing that it didn't work)
+							Debug.DrawLine(startPos, endPos, Color.red, 10f, false);
+						}
+						numOfIterations++;
+
 					}
-					numOfIterations++;
-				}
+					*/
 
-				Debug.Log("Ok position found after " + numOfIterations + " iterations.");
-				*/
+
+					//Debug.Log("Ok position found after " + numOfIterations + " iterations.");
+
+				}
 
 
 				// Instantiate game object
@@ -209,7 +234,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				*/
 
 				aspiringVolume = thisVolume / (float)numShellChunks;
-				go.GetComponent<ObjectVolumeScript>().SetPreviousHeight(aspiringVolume);
+				go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
 
 
 
@@ -220,6 +245,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
 
 				// Tracking number of splits
+				// TODO: Not worry about number of splits, instead just go after volume(?)
 				int newValue = numOfSplits + 1;
 				go.GetComponent<BoxSplitBehaviourScript>().NumberOfSplits(newValue);
 

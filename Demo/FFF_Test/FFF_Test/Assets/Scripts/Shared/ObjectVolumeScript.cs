@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿	using UnityEngine;
 using System.Collections;
 
 public class ObjectVolumeScript : MonoBehaviour {
@@ -121,7 +121,7 @@ public class ObjectVolumeScript : MonoBehaviour {
 	}
 
 	// Set scale
-	public void SetPreviousHeight(float aspVolume) {
+	public void SetAspiringVolume(float aspVolume) {
 		// Set the aspiring volume variable
 		aspiringVolumeSet = true;
 		aspiringVolume = aspVolume;
