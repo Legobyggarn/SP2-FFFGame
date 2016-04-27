@@ -39,6 +39,12 @@ public class ShellHandlerScript : MonoBehaviour {
 			if (!collision.gameObject.GetComponent<ShellDamageScript>().GracePeriodActive) {
 				if (useDistance) {
 					coreCollisionDistance(collision.gameObject);
+
+					// Mark collision object
+					/*
+					collision.gameObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+					collision.gameObject.transform.GetChild(0).gameObject.GetComponent<MeshCollider>().enabled = false;
+					*/
 				} 
 				else {
 					coreCollision(collision.gameObject);
@@ -48,10 +54,26 @@ public class ShellHandlerScript : MonoBehaviour {
 			else {
 				// Add force away from core
 				//collision.gameObject.transform.position;
+				Debug.Log("Bouncing away");
+				collision.gameObject.transform.name = "Bounced"; // Marking object
+				//Debug.Break(); // Pause the game
+				//collision.gameObject.transform.position = Vector3.zero;
+
+				/*
 				Vector3 currVelocity = collision.gameObject.GetComponent<Rigidbody>().velocity;
-				collision.gameObject.GetComponent<Rigidbody>().AddForce(currVelocity);
+				collision.gameObject.GetComponent<Rigidbody>().AddForce(-currVelocity * 100f, ForceMode.Impulse);
+				*/
 			}
-			Destroy(collision.gameObject);
+
+			Destroy (collision.gameObject);
+
+			/*
+			// TEMP. Only remove bullets
+			if (collision.gameObject.tag == "Bullet") {
+				Destroy (collision.gameObject);
+			}
+			*/
+
 		}
 
 	}

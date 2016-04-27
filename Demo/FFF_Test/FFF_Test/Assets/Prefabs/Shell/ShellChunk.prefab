@@ -169,7 +169,7 @@ MonoBehaviour:
   baseColDamage: 0
   bulletDamage: 100
   maxHealth: 100
-  gracePeriod: 10
+  gracePeriod: 0.5
   hitPartSys: {fileID: 0}
 --- !u!114 &11475544
 MonoBehaviour:
@@ -202,8 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellChunkPrefab: {fileID: 128622}
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
-  minShellChunk: 3
-  maxShellChunk: 6
+  minShellChunk: 2
+  maxShellChunk: 3
   explosionForce: 1
   minShellChunkScale: 0.4
   maxShellChunkScale: 0.6

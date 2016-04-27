@@ -10,22 +10,24 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
     public int minShellChunk;
     public int maxShellChunk;
     public float explosionForce;
+
+	// Remove? (not used)
     public float minShellChunkScale;
     public float maxShellChunkScale;
 
-	public Transform playerTransform;
-	public Transform coreTransform;
+	public Transform playerTransform; // Remove?
+	public Transform coreTransform = null;
 
-	public int maxNumOfSplits;
+	public int maxNumOfSplits; // Remove?
 
     // Private
     private bool isHit;
     private int numShellChunks;
     private float explosionRadius;
 
-	private float colTimeout;
+	private float colTimeout; // Remove?
 
-	private int numOfSplits;
+	private int numOfSplits; // Remove?
 
     void Start () {
 
@@ -56,7 +58,66 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 	public void Split() {
 
 		if (!isHit && numOfSplits < maxNumOfSplits) {
+
+			isHit = true;
+			// Randomize number of new chunks to be created
+			numShellChunks = Random.Range(minShellChunk, maxShellChunk);
+
+			// Get the volume of this shell chunk
+			float thisVolume = GetComponent<ObjectVolumeScript>().Volume;
+			float aspiringVolume = 0f; // Will hold the volume that newly created shell chunks will aspire to
+
+			// Calculate a vector from core to position, if a core transform is set
+			Vector3 outVec = new Vector3();
+			if (coreTransform != null) {
+				outVec = transform.position - coreTransform.position;
+			}
+
+			for (int i = 0; i < numShellChunks; i++) {
+
+				if (coreTransform != null) {
+					// Instantiate game object
+					GameObject go = Instantiate(shellChunkPrefab, transform.position + outVec.normalized, transform.rotation) as GameObject; // Create new shell chunk
+
+					// Set aspiring volume
+					aspiringVolume = thisVolume / (float)numShellChunks;
+					go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
+
+					// Add explosion force to the newly created shell chunk
+					//go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius, 0f, ForceMode.Impulse);
+
+					// Add force to the newly created shell chunk
+					go.GetComponent<Rigidbody>().AddForce(outVec * explosionForce, ForceMode.Impulse);
+				} 
+
+				else {
+					Vector3 randPos = new Vector3 (Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
+					// Instantiate game object
+					GameObject go = Instantiate(shellChunkPrefab, transform.position + randPos, transform.rotation) as GameObject; // Create new shell chunk
+
+					// Set aspiring volume
+					aspiringVolume = thisVolume / (float)numShellChunks;
+					go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
+
+					// Add explosion force to the newly created shell chunk
+					go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius, 0f, ForceMode.Impulse);
+				}
+
+			}
+
+			// Instantiates explosion particle effect (that will be destroyed after x seconds)
+			ParticleSystem explosion = Instantiate (explo, transform.position, Quaternion.identity) as ParticleSystem;
+			Destroy (explosion.gameObject, 10f); // Destroy the explosion after 10 seconds.
+
+		}
+
+
+
+
+		/*
+		if (!isHit && numOfSplits < maxNumOfSplits) {
 		
+
 			isHit = true;
 			// Randomize number of new chunks to be created
 			numShellChunks = Random.Range (minShellChunk, maxShellChunk);
@@ -78,7 +139,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				//float chunkScale = Random.Range (minShellChunkScale, maxShellChunkScale);
 
 				// New algorithm for determinig scale (based on size of previous chunk(this chunk))
-				/*
+				///
 				if (i % 2 == 0 || i + 1 <= numShellChunks) {
 					// Slumpa ett tal mellan min och max
 					//randVolumeDiff = Random.Range (0f, 1f);
@@ -94,7 +155,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 					// Sätt volymen av det nya objektet i dess 'ObjectVolumeScript'
 					go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
 				}
-				*/
+				///
 
 				aspiringVolume = thisVolume / (float)numShellChunks;
 				go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
@@ -119,11 +180,14 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 			Instantiate (explo, transform.position, Quaternion.identity);
 
 		}
+		*/
 
 	}
 
 	// Split for shell(?)
 	public void Split(Vector3 collisionPoint) {
+
+		Debug.Log(coreTransform);
 
 		if (!isHit && numOfSplits < maxNumOfSplits) {
 
@@ -131,13 +195,18 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 			// Randomize number of new chunks to be created
 			numShellChunks = Random.Range (minShellChunk, maxShellChunk);
 
+			// Get the volume of this shell chunk
 			float thisVolume = GetComponent<ObjectVolumeScript>().Volume;
-			float randVolumeDiff = 0f;
-			float aspiringVolume = 0f;
+			//float randVolumeDiff = 0f;
+			float aspiringVolume = 0f; // Will hold the volume that newly created shell chunks will aspire to
 
-			// "Available spread"
+			// Calculate a vector from core to collision point, if a core transform is set
 			Vector3 outVec = new Vector3();
-			Vector3 maxVec = new Vector3();
+			if (coreTransform != null) {
+				outVec = collisionPoint - coreTransform.position;
+			}
+
+			/*
 			if (coreTransform != null) {
 				//outVec = coreTransform.position - collisionPoint;
 				outVec = collisionPoint - coreTransform.position;
@@ -147,17 +216,48 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				//maxVec = Vector3.Cross (outVec, transform.up);
 				//Debug.Log("'outVec'" + outVec + " | up " + transform.up + " | 'maxVec' " + maxVec);
 			}
+			*/
 
 			for (int i = 0; i < numShellChunks; i++) {
-				
-				Vector3 randPos = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
 
+				if (coreTransform != null) {
+
+					// Instantiate game object
+					GameObject go = Instantiate(shellChunkPrefab, collisionPoint + outVec.normalized, transform.rotation) as GameObject; // Create new shell chunk
+
+					// Set aspiring volume
+					aspiringVolume = thisVolume / (float)numShellChunks;
+					go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
+
+					// Add explosion force to the newly created shell chunk
+					go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
+				} 
+
+				else {
+
+					Vector3 randPos = new Vector3(Random.Range (-1, 1), Random.Range (-1, 1), Random.Range (-1, 1));
+					// Instantiate game object
+					GameObject go = Instantiate(shellChunkPrefab, collisionPoint + randPos, transform.rotation) as GameObject; // Create new shell chunk
+
+					// Set aspiring volume
+					aspiringVolume = thisVolume / (float)numShellChunks;
+					go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
+
+					// Add explosion force to the newly created shell chunk
+					go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
+				}
+
+
+
+
+
+					/*
 				if (coreTransform != null) {
 					int numOfIterations = 0;
 					// Spread out from center (to control "spread speed")
 					bool okPos = false;
 
-					/*
+					///
 					while (!okPos) {
 						Debug.Log("Starting...");
 						//randPos = new Vector3 (Random.Range (-1, 1), Random.Range (-1, 1), Random.Range (-1, 1));
@@ -199,16 +299,21 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 						numOfIterations++;
 
 					}
-					*/
+					///
 
 
 					//Debug.Log("Ok position found after " + numOfIterations + " iterations.");
 
 				}
+				*/
 
 
+
+				/*
 				// Instantiate game object
 				GameObject go = Instantiate (shellChunkPrefab, collisionPoint + randPos, transform.rotation) as GameObject; // Create new shell chunk
+				*/
+
 
 
 				// Set scale
@@ -233,8 +338,11 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				}
 				*/
 
+
+				/*
 				aspiringVolume = thisVolume / (float)numShellChunks;
 				go.GetComponent<ObjectVolumeScript>().SetAspiringVolume(aspiringVolume);
+				*/
 
 
 
@@ -242,25 +350,32 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 				//go.transform.localScale *= (1.0f / Mathf.Pow (numShellChunks, 1.0f / 3.0f)); // Scale shell chunk
 				//go.transform.localScale *= chunkScale; // Scale shell chunk
 
+				/*
 				go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
+				*/
 
+
+				/*
 				// Tracking number of splits
 				// TODO: Not worry about number of splits, instead just go after volume(?)
 				int newValue = numOfSplits + 1;
 				go.GetComponent<BoxSplitBehaviourScript>().NumberOfSplits(newValue);
+				*/
+
 
 				//go.GetComponent<BoxSplitBehaviourScript>().calcVolume();
 
 			}
 
-			// Instantiates explosion particle effect
-			Instantiate (explo, collisionPoint, Quaternion.identity);
+			// Instantiates explosion particle effect (that will be destroyed after x seconds)
+			ParticleSystem explosion = Instantiate (explo, transform.position, Quaternion.identity) as ParticleSystem;
+			Destroy (explosion.gameObject, 10f); // Destroy the explosion after 10 seconds.
 
 		}
 
 	}
 
-
+	// Not used anymore. (Remove or start using again?)
 	public void NumberOfSplits(int numSplits) {
 		
 		numOfSplits = numSplits;

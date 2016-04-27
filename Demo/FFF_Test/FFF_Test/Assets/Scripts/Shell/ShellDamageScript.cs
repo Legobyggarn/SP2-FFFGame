@@ -97,8 +97,8 @@ public class ShellDamageScript : MonoBehaviour {
 					// Take damage
 					currHealth -= bulletDamage;
 					//Debug.Log ("Health: " + currHealth);
-					checkDead (collision.transform.position);
-					Destroy (collision.gameObject);
+					checkDead(collision.transform.position);
+					Destroy(collision.gameObject);
 				}
 			}			
 		} 
@@ -116,7 +116,7 @@ public class ShellDamageScript : MonoBehaviour {
 					diffLength *= transform.localScale.x; // Change, should use the volume instead of scale
 					float damage = baseColDamage * diffLength;
 					currHealth -= damage;
-					checkDead (collision.transform.position);
+					checkDead(collision.transform.position);
 					//Debug.Log("Damage: " + damage + " | " + currHealth);
 					//Debug.Log ("diffVector: " + diffVector + ", Magnitude: " + diffLength + " | Damage: " + damage + " | Health: " + currHealth);
 				}
@@ -145,7 +145,7 @@ public class ShellDamageScript : MonoBehaviour {
 
 	void checkDead(Vector3 collisionPoint) {
 		if (currHealth <= 0f) {
-			Debug.Log("Dead!");
+			//Debug.Log("Dead!");
 			// Split cube 
 			GetComponent<BoxSplitBehaviourScript>().Split(collisionPoint);
 			// Destroy objects
@@ -154,6 +154,7 @@ public class ShellDamageScript : MonoBehaviour {
 			}
 			else {
 				Destroy(gameObject);
+				//gameObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = Color.magenta;
 			}
 		}
 	}
