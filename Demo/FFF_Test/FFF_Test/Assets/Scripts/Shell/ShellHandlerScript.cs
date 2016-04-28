@@ -36,19 +36,19 @@ public class ShellHandlerScript : MonoBehaviour {
 		// Find collision with shell and call 'coreCollision'
 		if (collision.gameObject.tag == "ShellChunk") {
 			Debug.Log("Core collision");
-			if (!collision.gameObject.GetComponent<ShellDamageScript>().GracePeriodActive) {
+			if (!collision.gameObject.GetComponent<ShellDamageScript>().GracePeriodActive && collision.gameObject.GetComponent<ObjectVolumeScript>().Active) {
 				if (useDistance) {
 					coreCollisionDistance(collision.gameObject);
-
-					// Mark collision object
-					/*
-					collision.gameObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
-					collision.gameObject.transform.GetChild(0).gameObject.GetComponent<MeshCollider>().enabled = false;
-					*/
 				} 
 				else {
 					coreCollision(collision.gameObject);
 				}
+
+				// Tell the shell chunk to merge into the core and destroy itself (instead of destroying the shell chunk here)
+				collision.gameObject.GetComponent<ShellChunkCoreMergeScript>().MergeWithCore(transform.position);
+
+				// Destroy game object that has merged with the core
+				//Destroy(collision.gameObject);
 			}
 
 			else {
@@ -65,7 +65,9 @@ public class ShellHandlerScript : MonoBehaviour {
 				*/
 			}
 
-			Destroy (collision.gameObject);
+			//Debug.Break();
+
+
 
 			/*
 			// TEMP. Only remove bullets
@@ -74,6 +76,11 @@ public class ShellHandlerScript : MonoBehaviour {
 			}
 			*/
 
+		}
+
+		// Debug...
+		if (collision.gameObject.tag == "Bullet") {
+			//Debug.Break();
 		}
 
 	}
@@ -113,8 +120,8 @@ public class ShellHandlerScript : MonoBehaviour {
 				// If the size is roughly the same.
 				if (hitGOVolume - minSizeThreshold <= availGOVolume && availGOVolume <= hitGOVolume + maxSizeThreshold) {
 					//Debug.Log("Reattached");
-					game_object.GetComponent<MeshCollider> ().enabled = true;
-					game_object.GetComponent<MeshRenderer> ().enabled = true;
+					game_object.GetComponent<MeshCollider>().enabled = true;
+					game_object.GetComponent<MeshRenderer>().enabled = true;
 
 					// Tell script controlling orbit to increase number of shell parts left
 					memoryDistanceScript.incrementNumChildren();
@@ -137,8 +144,8 @@ public class ShellHandlerScript : MonoBehaviour {
 					if (availGOVolume < (hitGOVolume - filledVolume)) {
 						filledVolume += availGOVolume;
 						// Reactivate mesh collider and mesh renderer
-						game_object.GetComponent<MeshCollider> ().enabled = true;
-						game_object.GetComponent<MeshRenderer> ().enabled = true;
+						game_object.GetComponent<MeshCollider>().enabled = true;
+						game_object.GetComponent<MeshRenderer>().enabled = true;
 						toDestroy.Add(game_object); // Add object to destroy later
 					}
 
@@ -192,7 +199,7 @@ public class ShellHandlerScript : MonoBehaviour {
 
 
 		// Go through the list filling out the volume as close to the collision position as possible
-		List<int> toRemove = new List<int>();
+		//List<int> toRemove = new List<int>();
 		float filled = 0f;
 		for (int i = 0; i < closeObjects.Count; i++) {
 			//Debug.Log ("Current volume: " + closeObjects [i].CloseGameObject.GetComponent<ObjectVolumeScript> ().Volume + " | " + (go.GetComponent<ObjectVolumeScript>().Volume - filled));
@@ -216,7 +223,7 @@ public class ShellHandlerScript : MonoBehaviour {
 				memoryDistanceScript.incrementNumChildren();
 
 				// Add to 'toDestroy'
-				toRemove.Add(i);
+				//toRemove.Add(i);
 
 
 				Debug.Log("Grow back");

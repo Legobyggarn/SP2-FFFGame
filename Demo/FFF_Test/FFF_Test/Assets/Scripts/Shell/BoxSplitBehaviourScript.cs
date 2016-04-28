@@ -220,7 +220,7 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 
 			for (int i = 0; i < numShellChunks; i++) {
 
-				if (coreTransform != null) {
+				if (coreTransform != null) { // Collision with shell
 
 					// Instantiate game object
 					GameObject go = Instantiate(shellChunkPrefab, collisionPoint + outVec.normalized, transform.rotation) as GameObject; // Create new shell chunk
@@ -231,6 +231,22 @@ public class BoxSplitBehaviourScript : MonoBehaviour {
 
 					// Add explosion force to the newly created shell chunk
 					go.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, collisionPoint, explosionRadius, 0f, ForceMode.Impulse);
+
+
+					// Draw debug line
+					Vector3 centerOut = coreTransform.position - GetComponent<Collider>().bounds.center; // Center
+					Vector3 colOut = coreTransform.position - collisionPoint; // Out
+
+					Vector3 startPos = coreTransform.position;
+
+					// Center
+					Vector3 dirCenter = -(centerOut * 25f); // Using 'centerOut' (from center of this mesh collider)
+					Debug.DrawRay(startPos, dirCenter, Color.yellow, 10f, false);
+
+					// Out
+					Vector3 dirOut = -(colOut * 25f); // Using 'colOut' (from the collision point)
+					Debug.DrawRay(startPos, dirOut, Color.blue, 10f, false);
+
 				} 
 
 				else {

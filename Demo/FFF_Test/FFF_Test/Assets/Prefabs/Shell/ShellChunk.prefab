@@ -32,6 +32,7 @@ GameObject:
   - 64: {fileID: 6464594}
   - 114: {fileID: 11402058}
   - 114: {fileID: 11475544}
+  - 114: {fileID: 11447400}
   m_Layer: 0
   m_Name: ShellChunk
   m_TagString: ShellChunk
@@ -155,6 +156,18 @@ MonoBehaviour:
   - {fileID: 4300000, guid: a9b8a17b33386e54c961a5378540ec4f, type: 3}
   - {fileID: 4300000, guid: b6934a164ed61e9468b6580d9c4480ec, type: 3}
   - {fileID: 4300000, guid: df1fb817ba120394e8de0064a5f88bf7, type: 3}
+--- !u!114 &11447400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a4d2f4932d3614e9b0f1f5e7c244f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mergeTime: 5
 --- !u!114 &11454364
 MonoBehaviour:
   m_ObjectHideFlags: 1
