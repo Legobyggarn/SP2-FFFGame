@@ -35,9 +35,11 @@ public class MouseFPS : MonoBehaviour {
         // Rotate camera (Player)
         rotX += -Input.GetAxis("Mouse Y") * rotSpeedX;
         rotY += Input.GetAxis("Mouse X") * rotSpeedY;
-
+		//Vector3 currentAngles = transform.eulerAngles;
+		//currentAngles.x += rotX;
+		//currentAngles.y += rotY;
         transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
-
+		//transform.localRotation = Quaternion.Euler(currentAngles);
       
 
     }
