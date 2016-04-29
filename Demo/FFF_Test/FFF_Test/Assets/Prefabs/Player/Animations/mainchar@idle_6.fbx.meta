@@ -309,7 +309,7 @@ ModelImporter:
     400298: root_ctrl
     400300: root_ctrl_grp
     400302: root_joint
-    7400000: Take 001
+    7400000: idle_6
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -331,7 +331,339 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle_6
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 161
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp/L_index_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp/L_index_01_ctrl/L_index_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp/L_index_01_ctrl/L_index_02_ctrl_grp/L_index_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp/L_index_01_ctrl/L_index_02_ctrl_grp/L_index_02_ctrl/L_index_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_index_ctrl_grp/L_hand_index_ctrl/L_index_01_ctrl_grp/L_index_01_ctrl/L_index_02_ctrl_grp/L_index_02_ctrl/L_index_03_ctrl_grp/L_index_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp/L_middle_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp/L_middle_01_ctrl/L_middle_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp/L_middle_01_ctrl/L_middle_02_ctrl_grp/L_middle_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp/L_middle_01_ctrl/L_middle_02_ctrl_grp/L_middle_02_ctrl/L_middle_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_middle_ctrl_grp/L_hand_middle_ctrl/L_middle_01_ctrl_grp/L_middle_01_ctrl/L_middle_02_ctrl_grp/L_middle_02_ctrl/L_middle_03_ctrl_grp/L_middle_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp/L_pinky_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp/L_pinky_01_ctrl/L_pinky_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp/L_pinky_01_ctrl/L_pinky_02_ctrl_grp/L_pinky_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp/L_pinky_01_ctrl/L_pinky_02_ctrl_grp/L_pinky_02_ctrl/L_pinky_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_pinky_ctrl_grp/L_hand_pinky_ctrl/L_pinky_01_ctrl_grp/L_pinky_01_ctrl/L_pinky_02_ctrl_grp/L_pinky_02_ctrl/L_pinky_03_ctrl_grp/L_pinky_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp/L_ring_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp/L_ring_01_ctrl/L_ring_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp/L_ring_01_ctrl/L_ring_02_ctrl_grp/L_ring_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp/L_ring_01_ctrl/L_ring_02_ctrl_grp/L_ring_02_ctrl/L_ring_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_ring_ctrl_grp/L_hand_ring_ctrl/L_ring_01_ctrl_grp/L_ring_01_ctrl/L_ring_02_ctrl_grp/L_ring_02_ctrl/L_ring_03_ctrl_grp/L_ring_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp/L_hand_thumb_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp/L_hand_thumb_ctrl/L_thumb_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp/L_hand_thumb_ctrl/L_thumb_01_ctrl_grp/L_thumb_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp/L_hand_thumb_ctrl/L_thumb_01_ctrl_grp/L_thumb_01_ctrl/L_thumb_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/L_shoulder_ctrl_grp/L_shoulder_ctrl/L_elbow_ctrl_grp/L_elbow_ctrl/L_twist_ctrl_grp/L_twist_ctrl/L_wrist_ctrl_grp/L_wrist_ctrl/L_hand_thumb_ctrl_grp/L_hand_thumb_ctrl/L_thumb_01_ctrl_grp/L_thumb_01_ctrl/L_thumb_02_ctrl_grp/L_thumb_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp/R_index_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp/R_index_01_ctrl/R_index_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp/R_index_01_ctrl/R_index_02_ctrl_grp/R_index_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp/R_index_01_ctrl/R_index_02_ctrl_grp/R_index_02_ctrl/R_index_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_index_ctrl_grp/R_hand_index_ctrl/R_index_01_ctrl_grp/R_index_01_ctrl/R_index_02_ctrl_grp/R_index_02_ctrl/R_index_03_ctrl_grp/R_index_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp/R_middle_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp/R_middle_01_ctrl/R_middle_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp/R_middle_01_ctrl/R_middle_02_ctrl_grp/R_middle_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp/R_middle_01_ctrl/R_middle_02_ctrl_grp/R_middle_02_ctrl/R_middle_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_middle_ctrl_grp/R_hand_middle_ctrl/R_middle_01_ctrl_grp/R_middle_01_ctrl/R_middle_02_ctrl_grp/R_middle_02_ctrl/R_middle_03_ctrl_grp/R_middle_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp/R_pinky_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp/R_pinky_01_ctrl/R_pinky_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp/R_pinky_01_ctrl/R_pinky_02_ctrl_grp/R_pinky_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp/R_pinky_01_ctrl/R_pinky_02_ctrl_grp/R_pinky_02_ctrl/R_pinky_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_pinky_ctrl_grp/R_hand_pinky_ctrl/R_pinky_01_ctrl_grp/R_pinky_01_ctrl/R_pinky_02_ctrl_grp/R_pinky_02_ctrl/R_pinky_03_ctrl_grp/R_pinky_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp/R_ring_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp/R_ring_01_ctrl/R_ring_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp/R_ring_01_ctrl/R_ring_02_ctrl_grp/R_ring_02_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp/R_ring_01_ctrl/R_ring_02_ctrl_grp/R_ring_02_ctrl/R_ring_03_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_ring_ctrl_grp/R_hand_ring_ctrl/R_ring_01_ctrl_grp/R_ring_01_ctrl/R_ring_02_ctrl_grp/R_ring_02_ctrl/R_ring_03_ctrl_grp/R_ring_03_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp/R_hand_thumb_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp/R_hand_thumb_ctrl/R_thumb_01_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp/R_hand_thumb_ctrl/R_thumb_01_ctrl_grp/R_thumb_01_ctrl
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp/R_hand_thumb_ctrl/R_thumb_01_ctrl_grp/R_thumb_01_ctrl/R_thumb_02_ctrl_grp
+        weight: 1
+      - path: root_ctrl_grp/root_ctrl/R_shoulder_ctrl_grp/R_shoulder_ctrl/R_elbow_ctrl_grp/R_elbow_ctrl/R_twist_ctrl_grp/R_twist_ctrl/R_wrist_ctrl_grp/R_wrist_ctrl/R_hand_thumb_ctrl_grp/R_hand_thumb_ctrl/R_thumb_01_ctrl_grp/R_thumb_01_ctrl/R_thumb_02_ctrl_grp/R_thumb_02_ctrl
+        weight: 1
+      - path: root_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_index_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_index_joint/L_index_01_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_index_joint/L_index_01_joint/L_index_02_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_index_joint/L_index_01_joint/L_index_02_joint/L_index_03_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_index_joint/L_index_01_joint/L_index_02_joint/L_index_03_joint/L_index_04_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_middle_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_middle_joint/L_middle_01_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_middle_joint/L_middle_01_joint/L_middle_02_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_middle_joint/L_middle_01_joint/L_middle_02_joint/L_middle_03_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_middle_joint/L_middle_01_joint/L_middle_02_joint/L_middle_03_joint/L_middle_04_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_pinky_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_pinky_joint/L_pinky_01_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_pinky_joint/L_pinky_01_joint/L_pinky_02_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_pinky_joint/L_pinky_01_joint/L_pinky_02_joint/L_pinky_03_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_pinky_joint/L_pinky_01_joint/L_pinky_02_joint/L_pinky_03_joint/L_pinky_04_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_ring_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_ring_joint/L_ring_01_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_ring_joint/L_ring_01_joint/L_ring_02_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_ring_joint/L_ring_01_joint/L_ring_02_joint/L_ring_03_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_ring_joint/L_ring_01_joint/L_ring_02_joint/L_ring_03_joint/L_ring_04_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_thumb_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_thumb_joint/L_thumb_01_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_thumb_joint/L_thumb_01_joint/L_thumb_02_joint
+        weight: 1
+      - path: root_joint/L_shoulder_joint/L_elbow_joint/L_twist_joint/L_wrist_joint/L_hand_thumb_joint/L_thumb_01_joint/L_thumb_02_joint/L_thumb_03_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_index_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_index_joint/R_index_01_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_index_joint/R_index_01_joint/R_index_02_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_index_joint/R_index_01_joint/R_index_02_joint/R_index_03_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_index_joint/R_index_01_joint/R_index_02_joint/R_index_03_joint/R_index_04_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_middle_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_middle_joint/R_middle_01_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_middle_joint/R_middle_01_joint/R_middle_02_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_middle_joint/R_middle_01_joint/R_middle_02_joint/R_middle_03_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_middle_joint/R_middle_01_joint/R_middle_02_joint/R_middle_03_joint/R_middle_04_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_pinky_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_pinky_joint/R_pinky_01_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_pinky_joint/R_pinky_01_joint/R_pinky_02_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_pinky_joint/R_pinky_01_joint/R_pinky_02_joint/R_pinky_03_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_pinky_joint/R_pinky_01_joint/R_pinky_02_joint/R_pinky_03_joint/R_pinky_04_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_ring_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_ring_joint/R_ring_01_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_ring_joint/R_ring_01_joint/R_ring_02_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_ring_joint/R_ring_01_joint/R_ring_02_joint/R_ring_03_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_ring_joint/R_ring_01_joint/R_ring_02_joint/R_ring_03_joint/R_ring_04_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_thumb_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_thumb_joint/R_thumb_01_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_thumb_joint/R_thumb_01_joint/R_thumb_02_joint
+        weight: 1
+      - path: root_joint/R_shoulder_joint/R_elbow_joint/R_twist_joint/R_wrist_joint/R_hand_thumb_joint/R_thumb_01_joint/R_thumb_02_joint/R_thumb_03_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
