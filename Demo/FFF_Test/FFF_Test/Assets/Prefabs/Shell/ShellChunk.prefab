@@ -196,12 +196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 2
-  debugLineLength: 25
-  centerPoint: {x: 0, y: 50, z: 0}
-  towardsCenter: 0
-  towardsCenterAsNormal: 0
-  reflectNormal: 1
-  invertDirection: 0
 --- !u!114 &11499524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,12 +211,9 @@ MonoBehaviour:
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
   minShellChunk: 2
   maxShellChunk: 3
-  explosionForce: 1
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionForce: 10
+  explosionRadius: 10
   coreTransform: {fileID: 0}
-  maxNumOfSplits: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

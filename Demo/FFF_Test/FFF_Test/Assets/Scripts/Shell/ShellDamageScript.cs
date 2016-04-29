@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class ShellDamageScript : MonoBehaviour {
-
-	//[SerializeField] private float bulletDamage;
-
-	// Public-ish
+	
+	// Public variables
 	// Damage
 	// Base
 	public float baseColDamage;
@@ -18,7 +16,7 @@ public class ShellDamageScript : MonoBehaviour {
 
 	public ParticleSystem hitPartSys;
 
-	// Private
+	// Private variables
 	private bool isHit;
 	private float currHealth;
 	private float gracePeriodTimer = 0f;
@@ -48,13 +46,6 @@ public class ShellDamageScript : MonoBehaviour {
 		currHealth = maxHealth;
 
 		activeGracePeriod = true;
-		//Debug.Log ("Grace period has begun");
-
-		// Test, set rigidbody to kinematic while under grace period (no collisions?)
-		// Instead disable collision detection
-		rigidBody = GetComponent<Rigidbody>();
-		//rigidBody.isKinematic = false;
-		//rigidBody.detectCollisions = false;
 
 	}
 	
@@ -64,16 +55,9 @@ public class ShellDamageScript : MonoBehaviour {
 		// Update grace period
 		if (activeGracePeriod && gracePeriodTimer <= gracePeriod) {
 			gracePeriodTimer += Time.deltaTime;
-			//activeGracePeriod = false;
-			//Debug.Log ("Grace period has ended");
-
-			// Set rigidbody to not be kinematic (i.e react to collision)
-			// Instead enable collision detection
-			//rigidBody.detectCollisions = true;
 		} 
 
 		else {
-			//gracePeriodTimer += Time.deltaTime;
 			gracePeriodTimer = 0f;
 			activeGracePeriod = false;
 		}
@@ -129,32 +113,16 @@ public class ShellDamageScript : MonoBehaviour {
 
 	}
 
-	void checkDead() {
-		if (currHealth <= 0f) {
-			// Split cube 
-			GetComponent<BoxSplitBehaviourScript>().Split();
-			// Destroy objects
-			if (gameObject.tag == "Shell") {
-				GetComponent<ShellPartScript>().HideShell();
-			}
-			else {
-				Destroy(gameObject);
-			}
-		}
-	}
-
 	void checkDead(Vector3 collisionPoint) {
 		if (currHealth <= 0f) {
-			//Debug.Log("Dead!");
-			// Split cube 
+			// Split shell chunk 
 			GetComponent<BoxSplitBehaviourScript>().Split(collisionPoint);
-			// Destroy objects
+			// Destroy object, if tag not "Shell"
 			if (gameObject.tag == "Shell") {
 				GetComponent<ShellPartScript>().HideShell();
 			}
 			else {
 				Destroy(gameObject);
-				//gameObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = Color.magenta;
 			}
 		}
 	}

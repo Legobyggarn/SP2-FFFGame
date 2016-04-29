@@ -100,8 +100,6 @@ public class ObjectVolumeScript : MonoBehaviour {
 		// Recalculate volume to ensure that 'volume' has the right value
 		recalculateVolume(mesh_collider);
 
-		//Debug.Log("Volume: " + volume + " | Aspiring volume: " + aspiringVolume);
-
 	}
 
 	private void recalculateVolume(MeshCollider mesh_collider) {

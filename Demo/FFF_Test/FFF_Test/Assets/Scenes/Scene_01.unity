@@ -116,13 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1638147
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -151,11 +146,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1638150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,13 +268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &32620402
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -311,11 +298,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &32620405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,13 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &74397806
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -453,11 +432,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &74397809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,13 +493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &75822328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -552,11 +523,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &75822331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,13 +584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &82516021
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -651,11 +614,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &82516024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,13 +675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &98779742
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -750,11 +705,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &98779745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,13 +766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &100231020
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -849,11 +796,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &100231023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,13 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &104663534
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -948,11 +887,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &104663537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,13 +948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &106722763
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1047,11 +978,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &106722766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,13 +1039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &109953430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1146,11 +1069,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &109953433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,13 +1130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &115422017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1245,11 +1160,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &115422020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1309,13 +1221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &126417251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1344,11 +1251,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &126417254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,13 +1312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &153983801
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1443,11 +1342,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &153983804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,13 +1403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &158534718
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1542,11 +1433,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &158534721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,13 +1494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &198316627
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1641,11 +1524,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &198316630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,13 +1585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &202535151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1740,11 +1615,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &202535154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,13 +1676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &212422800
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1839,11 +1706,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &212422803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1943,13 +1807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &253563318
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1978,11 +1837,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &253563321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,13 +1929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &280139940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2108,11 +1959,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &280139943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,13 +2020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &288881493
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2207,11 +2050,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &288881496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,13 +2111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &295424028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2306,11 +2141,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &295424031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2370,13 +2202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &353028122
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2405,11 +2232,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &353028125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,13 +2293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &377845727
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2504,11 +2323,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &377845730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2568,13 +2384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &397466290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2603,11 +2414,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &397466293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,13 +2475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &402174690
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2702,11 +2505,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &402174693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,13 +2566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &405487842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2801,11 +2596,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &405487845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2865,13 +2657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &407923592
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2900,11 +2687,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &407923595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,13 +2748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &409612945
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2999,11 +2778,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &409612948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,13 +2839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &418540306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3098,11 +2869,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &418540309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3162,13 +2930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &421319408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3197,11 +2960,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &421319411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3261,13 +3021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &428121836
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3296,11 +3051,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &428121839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3360,13 +3112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &435229568
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3395,11 +3142,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &435229571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,13 +3300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &452587854
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3591,11 +3330,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &452587857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3655,13 +3391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &458493753
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3690,11 +3421,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &458493756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3754,13 +3482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &469729906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3789,11 +3512,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &469729909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3853,13 +3573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &485736290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3888,11 +3603,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &485736293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3952,13 +3664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &489991279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3987,11 +3694,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &489991282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4051,13 +3755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &516159462
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4086,11 +3785,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &516159465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4150,13 +3846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &525737121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4185,11 +3876,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &525737124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4249,13 +3937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &567533679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4284,11 +3967,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &567533682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4409,13 +4089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &579625714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4444,11 +4119,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &579625717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4508,13 +4180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &614104168
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4543,11 +4210,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &614104171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4668,13 +4332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &625815921
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4703,11 +4362,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &625815924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4828,13 +4484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &629853040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4863,11 +4514,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &629853043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4927,13 +4575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &663938060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4962,11 +4605,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &663938063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5026,13 +4666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &664752306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5061,11 +4696,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &664752309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5125,13 +4757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &673339927
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5160,11 +4787,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &673339930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7358,13 +6982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &683770055
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7393,11 +7012,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &683770058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7457,13 +7073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &713714311
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7492,11 +7103,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &713714314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7556,13 +7164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &743278699
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7591,11 +7194,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &743278702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7655,13 +7255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &761463639
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7690,11 +7285,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &761463642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7754,13 +7346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &765223085
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7789,11 +7376,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &765223088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7853,13 +7437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &771504164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7888,11 +7467,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &771504167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7952,13 +7528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &771798966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7987,11 +7558,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &771798969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8051,13 +7619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &777407678
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8086,11 +7649,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &777407681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8150,13 +7710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &783224714
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8185,11 +7740,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &783224717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8249,13 +7801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &802891595
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8284,11 +7831,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &802891598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8390,13 +7934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &819205019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8425,11 +7964,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &819205022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8489,13 +8025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &823528917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8524,11 +8055,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &823528920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8588,13 +8116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &843002545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8623,11 +8146,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &843002548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8687,13 +8207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &884610481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8722,11 +8237,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &884610484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8786,13 +8298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &894331374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8821,11 +8328,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &894331377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8885,13 +8389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &914103225
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8920,11 +8419,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &914103228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8984,13 +8480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &919908196
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9019,11 +8510,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &919908199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9083,13 +8571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &925261875
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9118,11 +8601,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &925261878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9243,13 +8723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &943070689
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9278,11 +8753,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &943070692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9342,13 +8814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &956300988
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9377,11 +8844,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &956300991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9441,13 +8905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &962190524
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9476,11 +8935,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &962190527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9540,13 +8996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &964640643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9575,11 +9026,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &964640646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9668,13 +9116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &986166997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9703,11 +9146,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &986167000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9767,13 +9207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1013850815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9802,11 +9237,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1013850818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9866,13 +9298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1044283555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9901,11 +9328,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1044283558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9965,13 +9389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1069660514
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10000,11 +9419,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1069660517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10064,13 +9480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1071270212
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10099,11 +9510,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1071270215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14119,6 +13527,1318 @@ Prefab:
       propertyPath: growTime
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11438884, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416550, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471610, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456390, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476400, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462228, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421896, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454240, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470348, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421762, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490418, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429326, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456802, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497552, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416440, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11404758, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444068, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403492, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439870, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419442, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458206, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409154, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484688, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444390, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446856, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487670, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437506, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407678, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435850, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451428, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471032, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11461914, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499762, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406116, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482576, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11436744, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434950, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435414, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425720, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408242, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499638, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441826, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412274, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491040, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424588, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488804, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483780, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11461336, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454068, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424012, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466886, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450188, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406876, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456712, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419490, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432128, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447228, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410070, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417128, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11418880, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455216, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441396, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401114, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438656, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403560, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412526, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453570, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432022, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423866, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402510, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432902, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452152, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410716, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417784, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402092, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422404, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489924, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433302, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492210, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472726, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408122, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485562, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435884, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457096, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450612, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457776, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462450, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493906, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426864, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434188, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459238, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402118, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433366, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459608, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446702, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492226, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442914, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447042, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471744, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447326, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499722, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449802, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495336, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415468, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439136, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457612, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498136, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469202, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411180, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463304, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490636, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468482, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478574, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409438, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438182, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401272, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443258, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463802, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424674, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473700, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410168, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453278, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474264, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483988, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462268, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448882, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465296, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473512, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457058, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448380, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497696, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11479074, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472046, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421592, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428956, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499724, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446230, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489880, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440768, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445768, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472852, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499860, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499188, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482612, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416044, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492988, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427296, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478460, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410718, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444712, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499478, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477318, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400284, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408208, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497914, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429274, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450040, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483048, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11461272, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427472, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481026, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457008, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400538, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11400860, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11401044, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402082, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402138, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402908, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11402936, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403196, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403378, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403456, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403608, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11403662, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11404308, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11404382, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405000, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405866, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11405954, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11406466, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407050, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407126, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407234, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407484, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407684, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11407794, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408508, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408786, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11408870, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11409092, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410276, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410290, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410864, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11410910, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11411458, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11412668, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11413058, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11413204, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11416568, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11419760, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420174, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420218, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11420822, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421250, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421384, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11421972, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422204, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422322, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422364, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11422512, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11423770, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11424262, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11424726, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11425428, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11426128, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427162, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427492, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11427664, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11428210, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11431998, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11432564, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11433710, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11433814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11434590, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435242, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435350, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435452, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435642, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11435652, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437230, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437344, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11437858, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11439098, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11439750, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11440520, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11440582, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11441824, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11443378, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11444412, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11444956, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11446276, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11446902, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447008, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447154, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447484, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11447666, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11449154, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450152, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450406, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450508, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11450802, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11451486, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11453370, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454350, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454452, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11454636, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455310, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455518, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11455782, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456016, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456348, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456790, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11456820, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11457006, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11457974, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458772, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458858, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11458926, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11459332, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11459404, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11460022, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11460166, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461268, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461324, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461692, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461916, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11461942, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11463964, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11464436, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11465732, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11465892, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11467284, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468170, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468390, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11468716, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11469792, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11470096, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471324, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471476, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11471522, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11472610, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11472646, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11474040, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11474158, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11475220, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11476132, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11477236, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11478960, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11479702, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480722, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480820, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11480888, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11481012, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11481614, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11484370, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11485446, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11485740, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11486356, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11486658, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11487254, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11489740, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11489814, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492028, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492164, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11492750, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11493628, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496202, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496602, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11496610, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497016, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497586, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497678, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11497984, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11498008, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11498514, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
+    - target: {fileID: 11499710, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
+      propertyPath: core
+      value: 
+      objectReference: {fileID: 435230268}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
   m_IsPrefabParent: 0
@@ -14153,13 +14873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1091775594
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14188,11 +14903,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1091775597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14252,13 +14964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1092226618
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14287,11 +14994,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1092226621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14351,13 +15055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1110194296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14386,11 +15085,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1110194299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14450,13 +15146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1114865751
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14485,11 +15176,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1114865754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14549,13 +15237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1148047588
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14584,11 +15267,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1148047591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14648,13 +15328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1152267663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14683,11 +15358,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1152267666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14763,13 +15435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1155730999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14798,11 +15465,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1155731002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14862,13 +15526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1160279371
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14897,11 +15556,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1160279374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14961,13 +15617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1179143911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14996,11 +15647,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1179143914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15060,13 +15708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1179370224
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15095,11 +15738,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1179370227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15159,13 +15799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1180238582
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15194,11 +15829,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1180238585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15258,13 +15890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1187186661
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15293,11 +15920,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1187186664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15398,13 +16022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1200022777
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15433,11 +16052,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1200022780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15497,13 +16113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1208725081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15532,11 +16143,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1208725084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15596,13 +16204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1221600297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15631,11 +16234,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1221600300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15695,13 +16295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1225548003
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15730,11 +16325,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1225548006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15794,13 +16386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1227796936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15829,11 +16416,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1227796939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15937,13 +16521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1290398607
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15972,11 +16551,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1290398610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16005,93 +16581,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1301004556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1301004561}
-  - 33: {fileID: 1301004560}
-  - 65: {fileID: 1301004559}
-  - 23: {fileID: 1301004558}
-  - 114: {fileID: 1301004557}
-  m_Layer: 0
-  m_Name: AddAngleToVectorTestGO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1301004557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301004556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff8051c175f786499f430c04a0e75fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!23 &1301004558
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301004556}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &1301004559
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301004556}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1301004560
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301004556}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1301004561
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301004556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
 --- !u!1 &1321541939 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 9517e7ef526eadb4cb91d3de12cb9589, type: 3}
@@ -16139,13 +16628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1333470511
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16174,11 +16658,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1333470514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16238,13 +16719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1339289647
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16273,11 +16749,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1339289650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16337,13 +16810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1345023237
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16372,11 +16840,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1345023240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16436,13 +16901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1346738184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16471,11 +16931,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1346738187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16535,13 +16992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1359068967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16570,11 +17022,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1359068970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16634,13 +17083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1377540774
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16669,11 +17113,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1377540777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16739,13 +17180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1411307622
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16774,11 +17210,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1411307625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16838,13 +17271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1435376377
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16873,11 +17301,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1435376380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16937,13 +17362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1483728368
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16972,11 +17392,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1483728371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17036,13 +17453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1489723232
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17071,11 +17483,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1489723235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17135,13 +17544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1494223917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17170,11 +17574,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1494223920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17250,13 +17651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1523297177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17285,11 +17681,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1523297180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17399,13 +17792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1543645280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17434,11 +17822,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1543645283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17498,13 +17883,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1573753022
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17533,11 +17913,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1573753025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17597,13 +17974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1575426816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17632,11 +18004,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1575426819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17696,13 +18065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1580311866
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17731,11 +18095,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1580311869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17795,13 +18156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1581272741
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17830,11 +18186,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1581272744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17894,13 +18247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1585982830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17929,11 +18277,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1585982833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17993,13 +18338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1586368756
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18028,11 +18368,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1586368759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18092,13 +18429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1592474409
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18127,11 +18459,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1592474412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18191,13 +18520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1619905004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18226,11 +18550,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1619905007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18290,13 +18611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1620172233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18325,11 +18641,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1620172236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18447,13 +18760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1629962407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18482,11 +18790,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1629962410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18546,13 +18851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1632470515
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18581,11 +18881,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1632470518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18645,13 +18942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1639373012
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18680,11 +18972,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1639373015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18744,13 +19033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1652980334
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18779,11 +19063,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1652980337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18843,13 +19124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1681872393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18878,11 +19154,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1681872396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19003,13 +19276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1705445317
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19038,11 +19306,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1705445320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19102,13 +19367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1711537613
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19137,11 +19397,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1711537616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19201,13 +19458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1753025934
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19236,11 +19488,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1753025937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19316,13 +19565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1777415867
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19351,11 +19595,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1777415870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19415,13 +19656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1780035375
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19450,11 +19686,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1780035378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19514,13 +19747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1786702820
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19549,11 +19777,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1786702823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19613,13 +19838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1788007620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19648,11 +19868,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1788007623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19712,13 +19929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1804613489
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19747,11 +19959,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1804613492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19811,13 +20020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1807925722
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19846,11 +20050,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1807925725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19910,13 +20111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1812867417
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19945,11 +20141,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1812867420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20009,13 +20202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1815092206
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20044,11 +20232,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1815092209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20108,13 +20293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1844915784
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20143,11 +20323,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1844915787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20207,13 +20384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1853581156
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20242,11 +20414,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1853581159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20306,13 +20475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1863400028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20341,11 +20505,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1863400031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20405,13 +20566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1868454754
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20440,11 +20596,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1868454757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20504,13 +20657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1876363753
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20539,11 +20687,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1876363756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20603,13 +20748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1881637093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20638,11 +20778,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1881637096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20702,13 +20839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1917752675
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20737,11 +20869,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1917752678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20801,13 +20930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1919773316
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20836,11 +20960,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1919773319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20900,13 +21021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1934610573
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20935,11 +21051,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1934610576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20999,13 +21112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1945280825
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21034,11 +21142,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1945280828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21192,13 +21297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1951936722
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21227,11 +21327,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1951936725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21291,13 +21388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1953343787
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21326,11 +21418,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1953343790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21390,13 +21479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1976269217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21425,11 +21509,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1976269220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21489,13 +21570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1977974170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21524,11 +21600,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1977974173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21588,13 +21661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1992938132
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21623,11 +21691,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1992938135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21687,13 +21752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1995642083
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21722,11 +21782,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1995642086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21786,13 +21843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &1996205693
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21821,11 +21873,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &1996205696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21885,13 +21934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2002127417
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21920,11 +21964,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2002127420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21984,13 +22025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2012283221
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22019,11 +22055,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2012283224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22083,13 +22116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2030554925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22118,11 +22146,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2030554928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22182,13 +22207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2033195793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22217,11 +22237,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2033195796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22281,13 +22298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2040954577
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22316,11 +22328,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2040954580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22380,13 +22389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2050577292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22415,11 +22419,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2050577295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22479,13 +22480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2081197323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22514,11 +22510,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2081197326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22578,13 +22571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2085234807
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22613,11 +22601,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2085234810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22677,13 +22662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2103559239
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22712,11 +22692,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2103559242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22776,13 +22753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2108936885
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22811,11 +22783,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2108936888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22875,13 +22844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2110388907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22910,11 +22874,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2110388910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22974,13 +22935,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2112415391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23009,11 +22965,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2112415394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23073,13 +23026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2124436669
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23108,11 +23056,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2124436672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23172,13 +23117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2124673512
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23207,11 +23147,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2124673515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23271,13 +23208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2129011393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23306,11 +23238,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2129011396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23370,13 +23299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2133333322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23405,11 +23329,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2133333325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23469,13 +23390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8e7072e4062fb48a046ade5875bd56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellHandler: {fileID: 447750500}
-  coreGO: {fileID: 0}
+  core: {fileID: 0}
   growTime: 0
-  grownScale: {x: 0, y: 0, z: 0}
-  shrunkScale: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
 --- !u!64 &2145922316
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23504,11 +23420,8 @@ MonoBehaviour:
   minShellChunk: 3
   maxShellChunk: 6
   explosionForce: 100
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  explosionRadius: 0
   coreTransform: {fileID: 447750504}
-  maxNumOfSplits: 100
 --- !u!114 &2145922319
 MonoBehaviour:
   m_ObjectHideFlags: 0
