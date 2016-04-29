@@ -14660,7 +14660,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11425752, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: StaticStrafeSpeed
@@ -14677,6 +14677,22 @@ Prefab:
     - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: acceleration
       value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412194, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
