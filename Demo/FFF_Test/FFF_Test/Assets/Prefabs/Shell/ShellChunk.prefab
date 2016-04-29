@@ -32,6 +32,7 @@ GameObject:
   - 64: {fileID: 6464594}
   - 114: {fileID: 11402058}
   - 114: {fileID: 11475544}
+  - 114: {fileID: 11447400}
   m_Layer: 0
   m_Name: ShellChunk
   m_TagString: ShellChunk
@@ -46,7 +47,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 10.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458624}
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minVolume: 2
+  scalingAdjustment: 1
 --- !u!114 &11422386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,6 +156,18 @@ MonoBehaviour:
   - {fileID: 4300000, guid: a9b8a17b33386e54c961a5378540ec4f, type: 3}
   - {fileID: 4300000, guid: b6934a164ed61e9468b6580d9c4480ec, type: 3}
   - {fileID: 4300000, guid: df1fb817ba120394e8de0064a5f88bf7, type: 3}
+--- !u!114 &11447400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a4d2f4932d3614e9b0f1f5e7c244f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mergeTime: 5
 --- !u!114 &11454364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,12 +196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 2
-  debugLineLength: 25
-  centerPoint: {x: 0, y: 50, z: 0}
-  towardsCenter: 0
-  towardsCenterAsNormal: 0
-  reflectNormal: 1
-  invertDirection: 0
 --- !u!114 &11499524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,14 +209,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellChunkPrefab: {fileID: 128622}
   explo: {fileID: 19852230, guid: b945a9ef1a2d7ee448e0dbf1025dcd4a, type: 2}
-  minShellChunk: 3
-  maxShellChunk: 6
-  explosionForce: 1
-  minShellChunkScale: 0.4
-  maxShellChunkScale: 0.6
-  playerTransform: {fileID: 0}
+  minShellChunk: 2
+  maxShellChunk: 3
+  explosionForce: 10
+  explosionRadius: 10
   coreTransform: {fileID: 0}
-  maxNumOfSplits: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

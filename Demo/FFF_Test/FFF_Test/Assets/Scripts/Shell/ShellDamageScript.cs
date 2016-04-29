@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class ShellDamageScript : MonoBehaviour {
-
-	//[SerializeField] private float bulletDamage;
-
-	// Public-ish
+	
+	// Public variables
 	// Damage
 	// Base
 	public float baseColDamage;
@@ -18,10 +16,10 @@ public class ShellDamageScript : MonoBehaviour {
 
 	public ParticleSystem hitPartSys;
 
-	// Private
+	// Private variables
 	private bool isHit;
 	private float currHealth;
-	private float gracePeriodTimer;
+	private float gracePeriodTimer = 0f;
 	private bool activeGracePeriod = true;
 
 	// The rigidbody, for a test...
@@ -48,13 +46,6 @@ public class ShellDamageScript : MonoBehaviour {
 		currHealth = maxHealth;
 
 		activeGracePeriod = true;
-		//Debug.Log ("Grace period has begun");
-
-		// Test, set rigidbody to kinematic while under grace period (no collisions?)
-		// Instead disable collision detection
-		rigidBody = GetComponent<Rigidbody>();
-		//rigidBody.isKinematic = false;
-		//rigidBody.detectCollisions = false;
 
 	}
 	
@@ -62,17 +53,13 @@ public class ShellDamageScript : MonoBehaviour {
 	void Update () {
 
 		// Update grace period
-		if (activeGracePeriod && gracePeriodTimer >= gracePeriod) {
-			activeGracePeriod = false;
-			//Debug.Log ("Grace period has ended");
-
-			// Set rigidbody to not be kinematic (i.e react to collision)
-			// Instead enable collision detection
-			//rigidBody.detectCollisions = true;
+		if (activeGracePeriod && gracePeriodTimer <= gracePeriod) {
+			gracePeriodTimer += Time.deltaTime;
 		} 
 
 		else {
-			gracePeriodTimer += Time.deltaTime;
+			gracePeriodTimer = 0f;
+			activeGracePeriod = false;
 		}
 
 
@@ -90,12 +77,12 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (GetComponent<ObjectVolumeScript> ().Active) {
+				if (GetComponent<ObjectVolumeScript>().Active && !activeGracePeriod) {
 					// Take damage
 					currHealth -= bulletDamage;
 					//Debug.Log ("Health: " + currHealth);
-					checkDead (collision.transform.position);
-					Destroy (collision.gameObject);
+					checkDead(collision.transform.position);
+					Destroy(collision.gameObject);
 				}
 			}			
 		} 
@@ -104,16 +91,17 @@ public class ShellDamageScript : MonoBehaviour {
 			//...
 			if (!isHit) {
 				isHit = true;
-				if (!activeGracePeriod && GetComponent<ObjectVolumeScript> ().Active) {
+				if (!activeGracePeriod && GetComponent<ObjectVolumeScript>().Active && !activeGracePeriod) {
 					// Use collision.relativeVelocity instead of calculating it yourself...
-					Vector3 myVector = transform.GetComponent<Rigidbody> ().velocity;
-					Vector3 itsVector = collision.transform.GetComponent<Rigidbody> ().velocity;
+					Vector3 myVector = transform.GetComponent<Rigidbody>().velocity;
+					Vector3 itsVector = collision.transform.GetComponent<Rigidbody>().velocity;
 					Vector3 diffVector = myVector - itsVector;
 					float diffLength = diffVector.magnitude;
 					diffLength *= transform.localScale.x; // Change, should use the volume instead of scale
 					float damage = baseColDamage * diffLength;
 					currHealth -= damage;
-					checkDead (collision.transform.position);
+					checkDead(collision.transform.position);
+					//Debug.Log("Damage: " + damage + " | " + currHealth);
 					//Debug.Log ("diffVector: " + diffVector + ", Magnitude: " + diffLength + " | Damage: " + damage + " | Health: " + currHealth);
 				}
 			}
@@ -125,25 +113,11 @@ public class ShellDamageScript : MonoBehaviour {
 
 	}
 
-	void checkDead() {
-		if (currHealth <= 0f) {
-			// Split cube 
-			GetComponent<BoxSplitBehaviourScript>().Split();
-			// Destroy objects
-			if (gameObject.tag == "Shell") {
-				GetComponent<ShellPartScript>().HideShell();
-			}
-			else {
-				Destroy(gameObject);
-			}
-		}
-	}
-
 	void checkDead(Vector3 collisionPoint) {
 		if (currHealth <= 0f) {
-			// Split cube 
+			// Split shell chunk 
 			GetComponent<BoxSplitBehaviourScript>().Split(collisionPoint);
-			// Destroy objects
+			// Destroy object, if tag not "Shell"
 			if (gameObject.tag == "Shell") {
 				GetComponent<ShellPartScript>().HideShell();
 			}
