@@ -3815,6 +3815,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &522492193 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 115996, guid: fcba5112326a651419ee1626796a1071, type: 2}
+  m_PrefabInternal: {fileID: 1534064385}
+--- !u!114 &522492196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522492193}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c2f6550794b7542961992fca5ffeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 2100000, guid: f9ed3c374062ffe4b9efa07ba1b097f3, type: 2}
+  material2: {fileID: 2100000, guid: 403b034b5f1660f4987e7983b73e9b2a, type: 2}
+  lerp: 0
+  rend: {fileID: 0}
 --- !u!1 &525737118 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100304, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -17764,8 +17783,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11412194, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403b034b5f1660f4987e7983b73e9b2a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
   m_IsPrefabParent: 0
