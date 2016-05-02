@@ -10238,7 +10238,7 @@ Prefab:
     - target: {fileID: 11484460, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
       propertyPath: st
       value: 
-      objectReference: {fileID: 1392134016}
+      objectReference: {fileID: 0}
     - target: {fileID: 11499710, guid: b285ba7519103d444a92b5bb35fd713b, type: 2}
       propertyPath: coreGO
       value: 
@@ -17143,12 +17143,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1392134016 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11418644, guid: fcba5112326a651419ee1626796a1071,
-    type: 2}
-  m_PrefabInternal: {fileID: 1534064385}
-  m_Script: {fileID: 11500000, guid: d52583f3de15f9b428a66fae29c510d7, type: 3}
 --- !u!1 &1411307619 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100160, guid: 647eea2128862e74282e2d7123591798, type: 3}
@@ -17756,7 +17750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 1.076
       objectReference: {fileID: 0}
     - target: {fileID: 11470902, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Enabled
@@ -17765,6 +17759,18 @@ Prefab:
     - target: {fileID: 11412194, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418938, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 418938, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.076
+      objectReference: {fileID: 0}
+    - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.762
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
