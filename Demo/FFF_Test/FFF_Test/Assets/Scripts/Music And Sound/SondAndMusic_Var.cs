@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 
-/*
+
 public class SondAndMusic_Var : MonoBehaviour {
 
+	// TODO: Have two seperate lists, one for cores and one for shells
+	// TODO: Add protection against invalid indexes in methods using an index for looking up a core
+
 	public GameObject player;
-	//public GameObject capsule;
 	public List <GameObject> coreList;
+	public Transform orbitsCenterTransform;
+	private Vector3 orbitsCenter;
 
 	// Use this for initialization
 	void Start () 
 	{
-
+		orbitsCenter = orbitsCenterTransform.position;
 	}
 	
 	// Update is called once per frame
@@ -24,79 +28,160 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 	//Get Functions for sound and music  
 
+	// Get the speed of the player
 	public float getPlayerSpeed()
 	{
+		float playerSpeed = player.GetComponent<CharacterController>().velocity.magnitude;
+		//float temp = 0;
+		return playerSpeed;
+	}
+
+	// Get the distance from ...(somewhere)... to the core, specified by index. [Used to return a Vector3]
+	public float getDistancePlayerCapsule(int index) // From where? Going with from player
+	{
+		// Getting the distance between the player and a core specified by index
+		Vector3 playerPosition = player.transform.position;
+		Vector3 corePosition = coreList [index].transform.position;
+		Vector3 distVec = corePosition - playerPosition;
+		float distance = distVec.magnitude;
+		return distance;
+	}
+
+	// Returns the reload time (may not be available)
+	public float getReloadTime() // [May not be possible if reload time is not set but determined by animations]
+	{
 		float temp = 0;
 		return temp;
 	}
 
-	public Vector3 getDistanceToCapsule(int index)
-	{
-		Vector3 temp = new Vector3 (0f,0f,0f);
-		return temp;
-	}
-
-	public float getReloadTime()
-	{
-		float temp = 0;
-		return temp;
-	}
-
-	public float getNumberOfShellChunks(int index) // returnes the number off chunks still on the memory with index i
+	// Returnes the number off shell parts still on the memory with index i. (Changed "ShellChunks" into "ShellParts")
+	public float getNumberOfShellParts(int index) 
 	{
 		for(int i = 0; i < coreList.Count; i++)
 		{
 			if (i == index) 
 			{
-				return coreList[i].GetComponent<memoryDistance> ().getChildCount ();
+				return coreList[i].GetComponent<memoryDistance>().getChildCount();
 			}
 		}
 		return 0;
 	}
 
-	public float getTotalNumberOfShellChunks() // returnes the number off chunks still on all memorys 
+	// Returns the number off chunks still on all memories. (Changed "ShellChunks" into "ShellParts")
+	public float getTotalNumberOfShellParts() 
 	{
-		float numberOfShellChunks = 0f;
+		float numberOfShellParts = 0f;
 
 		for(int i = 0; i < coreList.Count; i++)
 		{
-			numberOfShellChunks += coreList[i].GetComponent<memoryDistance> ().getChildCount ();
+			numberOfShellParts += coreList[i].GetComponent<memoryDistance>().getChildCount();
 		}
 
-		return numberOfShellChunks;
+		return numberOfShellParts;
 	}
 
-	public float getDistanceToCenter() // returnes the value of the palyers distance to the orbit point 
+	// Returns the value of the players distance to the orbit point 
+	public float getDistanceToCenter() 
 	{
-		
-
-		float temp = 0;
-		return temp;
+		Vector3 distanceVector = orbitsCenter - player.transform.position;
+		float distanceToCenter = distanceVector.magnitude;
+		//float temp = 0;
+		return distanceToCenter;
 	}
 
-	public Vector3 getDistanceToCenter_core() // returnes the value of the core with index i distance to the orbit point 
+	// Returns the value of the core with index i distance to the orbit point.
+	// return float?
+	public float getDistanceToCenterCore(int index)
 	{
-		Vector3 playerPoss = player.transform.localPosition;
-		Vector3 orbitPoss = coreList[0].GetComponent<memoryDistance> ().getOrbitPoint ();
 
+		Vector3 capsulePos = coreList[index].transform.position;
+		Vector3 orbitPos = coreList[index].GetComponent<memoryDistance>().getOrbitPoint();
+		Vector3 distVec = orbitPos - capsulePos;
+		float distance = distVec.magnitude;
+		return distance;
+
+	}
+
+	// Get the amount of capsules which shell has been destroyed. [Should return an int]
+	public float getDoneCapsules() 
+	{
+		int numDoneCapsules = 0;
+		foreach (GameObject core in coreList) {
+			if (core.GetComponent<memoryDistance>().isDone()) {
+				numDoneCapsules++;
+			}
+		}
+
+		return numDoneCapsules;
+
+	}
+
+	// (Get the size of the orbit of the capsule(core) of index i?)
+	// return float? Same thing as 'getDistanceToCenterCore'?
+	public Vector3 getCapsulOrbitDistance(int index) 
+
+	{
 		Vector3 temp = new Vector3 (0f,0f,0f);
 		return temp;
 	}
 
-	public float getDoneCapsules()
-	{
 
 
-		float temp = 0;
-		return temp;
+	// Functions called when an event occured
+	// TODO: Run tests on these functions aswell, using 'TestSoundMusicVarScript' and Debug.Log()
+
+	// Shell chunk gets destroyed (not anywhere called yet)
+	// [Called from a shellChunk script before destroying self]
+	public void shellChunkDestroyed() {
+		// Play music/sound or call another funtion...
+
+		// Debug
+		Debug.Log("Shell chunk was destroyed");
 	}
 
-	public Vector3 getCapsulOrbitDistance(int index)
+	// Shell chunk "merges" with core again (not anywhere called yet)
+	// [Called from shell handler when a shell part is "re-added"]
+	public void shellChunkMergeWithCore() {
+		// Play music/sound or call another funtion...
 
-	{
-		Vector3 temp = new Vector3 (0f,0f,0f);
-		return temp;
+		// Debug
+		Debug.Log("Shell chunk merged with core");
+	}
+
+	// Orbit increases (not anywhere called yet)
+	// [Called from memoryDistance when number of children are incremented]
+	public void orbitIncrease() {
+		// Play music/sound or call another funtion...
+
+		// Debug
+		Debug.Log("Orbit increased");
+	}
+
+	// Orbit decreases (not anywhere called yet)
+	// [Called from memoryDistance when number of children are decremented]
+	public void orbitDecrease() {
+		// Play music/sound or call another funtion...
+
+		// Debug
+		Debug.Log("Orbit decreased");
+	}
+
+	// Core arrives at center (not anywhere called yet)
+	// [Called from memoryDistance when core reaches the center]
+	public void coreAtCenter() {
+		// Play music/sound or call another funtion...
+
+		// Debug
+		Debug.Log("Core is at center");
+	}
+
+	// Bullet object gets destroyed (not anywhere called yet)
+	// [Called from a bullet script just before the bullet is destroyed]
+	public void bulletDestroyed() {
+		// Play music/sound or call another funtion...
+
+		// Debug
+		Debug.Log("A bullet was destroyed");
 	}
 
 }
-*/

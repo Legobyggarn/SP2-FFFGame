@@ -159,4 +159,19 @@ public class memoryDistance : MonoBehaviour {
 	{
 		Application.LoadLevel ("Victory");
 	}
+
+	//...
+	// Rename getNumShellParts?
+	public float getChildCount() {
+		return childCount;
+	}
+
+	public bool isDone() {
+		return childCount <= 0;
+	}
+
+	public Vector3 getOrbitPoint() {
+		return transform.root.transform.position;
+	}
+
 }
