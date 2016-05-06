@@ -2,14 +2,18 @@
 using System.Collections;
 
 public class IdleRandomizer : StateMachineBehaviour {
-
+	public int max;
+	public bool randomize;
+	public int setNumber;
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		int min = 1;
-		int max = 3;
+		int min = 0;
+
 
 		int newValue = Random.Range (min, max);
-		
+		if (!randomize) {
+			newValue = setNumber;
+		}
 		animator.SetInteger ("IdleAnimationCounter", newValue);
 	}
 
