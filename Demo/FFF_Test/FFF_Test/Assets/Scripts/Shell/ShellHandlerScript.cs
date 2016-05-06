@@ -188,6 +188,9 @@ public class ShellHandlerScript : MonoBehaviour {
 				// Tell script controlling orbit to increase number of shell parts left
 				memoryDistanceScript.incrementNumChildren();
 
+				// Notify sound and music script that a shell chunk will start to merge
+				GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().shellChunkMergeWithCore();
+
 			}
 		}
 

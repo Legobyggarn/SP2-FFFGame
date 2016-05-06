@@ -369,4 +369,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   st: {fileID: 66183494}
-  levelName: Scene_01
+  levelName: new_assets_scene

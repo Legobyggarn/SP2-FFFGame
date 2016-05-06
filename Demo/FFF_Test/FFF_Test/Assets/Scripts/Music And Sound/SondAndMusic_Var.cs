@@ -128,9 +128,8 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 
 	// Functions called when an event occured
-	// TODO: Run tests on these functions aswell, using 'TestSoundMusicVarScript' and Debug.Log()
 
-	// Shell chunk gets destroyed (not anywhere called yet)
+	// Shell chunk gets destroyed
 	// [Called from a shellChunk script before destroying self]
 	public void shellChunkDestroyed() {
 		// Play music/sound or call another funtion...
@@ -139,7 +138,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		Debug.Log("Shell chunk was destroyed");
 	}
 
-	// Shell chunk "merges" with core again (not anywhere called yet)
+	// Shell chunk "merges" with core again, called when merging starts
 	// [Called from shell handler when a shell part is "re-added"]
 	public void shellChunkMergeWithCore() {
 		// Play music/sound or call another funtion...
@@ -148,7 +147,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		Debug.Log("Shell chunk merged with core");
 	}
 
-	// Orbit increases (not anywhere called yet)
+	// Orbit increases
 	// [Called from memoryDistance when number of children are incremented]
 	public void orbitIncrease() {
 		// Play music/sound or call another funtion...
@@ -157,7 +156,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		Debug.Log("Orbit increased");
 	}
 
-	// Orbit decreases (not anywhere called yet)
+	// Orbit decreases
 	// [Called from memoryDistance when number of children are decremented]
 	public void orbitDecrease() {
 		// Play music/sound or call another funtion...
@@ -166,7 +165,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		Debug.Log("Orbit decreased");
 	}
 
-	// Core arrives at center (not anywhere called yet)
+	// Core arrives at center
 	// [Called from memoryDistance when core reaches the center]
 	public void coreAtCenter() {
 		// Play music/sound or call another funtion...
@@ -175,7 +174,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		Debug.Log("Core is at center");
 	}
 
-	// Bullet object gets destroyed (not anywhere called yet)
+	// Bullet object gets destroyed (not called anywhere yet)
 	// [Called from a bullet script just before the bullet is destroyed]
 	public void bulletDestroyed() {
 		// Play music/sound or call another funtion...

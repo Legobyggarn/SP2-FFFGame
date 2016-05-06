@@ -146,6 +146,9 @@ public class memoryDistance : MonoBehaviour {
 
 		childCount++;
 
+		// Notify sound and music script that a shell chunk will start to merge
+		GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().orbitIncrease();
+
 	}
 
 	public void decrementNumChildren() 
@@ -153,10 +156,16 @@ public class memoryDistance : MonoBehaviour {
 
 		childCount--;
 
+		// Notify sound and music script that a shell chunk will start to merge
+		GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().orbitDecrease();
+
 	}
 
 	public void win()
 	{
+		// Notify sound and music script that a shell chunk will start to merge. [May have to be moved when more than one capsule is present in the level]
+		GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().coreAtCenter();
+
 		Application.LoadLevel ("Victory");
 	}
 
