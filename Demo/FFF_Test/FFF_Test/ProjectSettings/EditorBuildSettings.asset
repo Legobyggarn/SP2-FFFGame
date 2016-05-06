@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading_screen.unity
   - enabled: 1
     path: Assets/Scenes/Victory.unity
+  - enabled: 1
+    path: Assets/Scenes/new_assets_scene.unity

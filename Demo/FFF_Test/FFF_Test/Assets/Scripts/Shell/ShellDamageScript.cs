@@ -121,9 +121,11 @@ public class ShellDamageScript : MonoBehaviour {
 			if (gameObject.tag == "Shell") {
 				GetComponent<ShellPartScript>().HideShell();
 			}
-			else {
+			else { // If not shell destroy self
 				Destroy(gameObject);
 			}
+			// Notify sound and music script that this shell chunk is destroyed
+			GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().shellChunkDestroyed();
 		}
 	}
 

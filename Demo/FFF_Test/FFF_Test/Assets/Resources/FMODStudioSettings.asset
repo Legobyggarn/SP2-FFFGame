@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  SourceProjectPath: \\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\FFF_Master_Project.fspro
-  SourceBankPath: \\hsnas6\StudentHome\2014\a14matbe\Desktop\Build 2 Prefabs\Ljud\FFF_Master_Project\Build
+  SourceProjectPath: 
+  SourceBankPath: 
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   SpeakerModeSettings:
