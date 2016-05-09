@@ -21,8 +21,9 @@ public class ChangeTattooAlpha : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         if (TestingModeSet) { 
-        setAlpha();
+        setAlpha(testalpha);
         }
         if (fadeOut)
         {
@@ -32,6 +33,7 @@ public class ChangeTattooAlpha : MonoBehaviour {
         {
             fadeInTattoo();
         }
+        
     }   
     public void setFadeOutTattoo()
     {
@@ -54,9 +56,10 @@ public class ChangeTattooAlpha : MonoBehaviour {
             alphaValue = 0;
             fadeOut = false;
         }
-        
-        mat[1].color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, alphaValue);
-       
+
+        updateAlpha();
+
+
     }
     private void fadeInTattoo()
     {
@@ -69,15 +72,20 @@ public class ChangeTattooAlpha : MonoBehaviour {
             alphaValue = 1;
             fadeIn = false;
         }
-      
-        mat[1].color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, alphaValue);
-        
-    }
 
-    public void setAlpha()
+        updateAlpha();
+
+
+    }
+    public void updateAlpha()
     {
-        Material[] mat = rend.materials;
-        mat[1].color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, testalpha);
-      //  rend.materials = mat;
+       
+        mat[1].color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, alphaValue);
+        //  rend.materials = mat;
+    }
+    public void setAlpha(float alpha)
+    {
+        alphaValue = alpha;
+        updateAlpha();
     }
 }
