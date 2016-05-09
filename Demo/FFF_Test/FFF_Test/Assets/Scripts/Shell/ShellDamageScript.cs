@@ -18,9 +18,11 @@ public class ShellDamageScript : MonoBehaviour {
 
 	// Private variables
 	private bool isHit;
+	private bool firstHit = false; 
 	private float currHealth;
 	private float gracePeriodTimer = 0f;
 	private bool activeGracePeriod = true;
+	private GameObject parentGo;
 
 	// The rigidbody, for a test...
 	private Rigidbody rigidBody;
@@ -46,6 +48,8 @@ public class ShellDamageScript : MonoBehaviour {
 		currHealth = maxHealth;
 
 		activeGracePeriod = true;
+
+		parentGo = transform.parent.gameObject;
 
 	}
 	
@@ -75,6 +79,13 @@ public class ShellDamageScript : MonoBehaviour {
 		
 		if (collision.gameObject.tag == "Bullet") {
 			//...
+			if (!firstHit) {
+				firstHit = true; 
+
+				Debug.Log ("lookPosistion set 1");
+				parentGo.GetComponent<memoryDistance> ().setLookPosition (collision.transform.position);
+			}
+
 			if (!isHit) {
 				isHit = true;
 				if (GetComponent<ObjectVolumeScript>().Active && !activeGracePeriod) {
