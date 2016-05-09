@@ -5,6 +5,9 @@ public class Music : MonoBehaviour
 {
 	//public
 
+	// Number of tracks
+	public int numOfTracks;
+
 	// button to start music
 	public KeyCode play;
 	// button to change music track
@@ -60,7 +63,7 @@ public class Music : MonoBehaviour
 	void ChangeParam()
 	{
 		paramValue = paramValue + 1f;
-		if (paramValue >= 8f) 
+		if (paramValue >= numOfTracks) 
 		{
 			paramValue = 0f;
 		}
