@@ -8,7 +8,7 @@ public class MiniCapsuleScript : MonoBehaviour {
 	public int hitsToDestroy = 1;
 	public int explosionForce = 0;
 	public int explosionRadius = 0;
-	public GameObject coreGameObjectPrefab;
+	public GameObject coreGameObjectPrefab; // The object that will be inside the capsule. Is spawned when the capsule is destroyed.
 	// Shake [combined attribute]
 	[Header("Shake")]
 	public float baseShakeTime = 1f;
@@ -31,7 +31,7 @@ public class MiniCapsuleScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-		// Get all shell parts
+		// Get all shell parts (use a public GameObject variable to identify the child/model?)
 		for (int i = 0; i < transform.GetChild(0).childCount; i++) {
 
 			// Add new rigidbody to 'shellParts'
