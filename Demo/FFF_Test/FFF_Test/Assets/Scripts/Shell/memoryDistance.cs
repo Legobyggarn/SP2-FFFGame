@@ -84,7 +84,7 @@ public class memoryDistance : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 		//Debug.Log ("maximumNumberOfChildern    " + numberOfChildren);
 		//Debug.Log ("numberOfChildren    " + maximumNumberOfChildern);
@@ -108,7 +108,7 @@ public class memoryDistance : MonoBehaviour {
 
 				numberOfChildren = childCount;
 
-			//	Debug.Log ("Number Of Children:  " + numberOfChildren);
+				//	Debug.Log ("Number Of Children:  " + numberOfChildren);
 
 
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
@@ -126,8 +126,7 @@ public class memoryDistance : MonoBehaviour {
 		
 
 				//Debug.Log("Prec:   " +prec);
-			} 
-			else {
+			} else {
 				numberOfChildren = childCount;
 				//Debug.Log ("Number Of Children:  " + numberOfChildren);
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
@@ -145,18 +144,15 @@ public class memoryDistance : MonoBehaviour {
 			//Debug.Log ("Position    " + parentGo.transform.localPosition.z);
 		} 
 
-		if(childCount == 0)
-		{	//The core is in the middle of the room 
-			if (fading) 
-			{
+		if (childCount == 0) {	//The core is in the middle of the room 
+			if (fading) {
 				st.fadeToWhite ();
 				fading = false;
 			}
 
 			sceneChangeTime += Time.deltaTime;
 
-			if (maxSceneChangeTime < sceneChangeTime) 
-			{ 
+			if (maxSceneChangeTime < sceneChangeTime) { 
 				win ();
 			}
 		}
@@ -164,8 +160,11 @@ public class memoryDistance : MonoBehaviour {
 		// Looking at the player
 
 		//Only call if the shell has bean shot at 
-
-		followPlayerTest ();
+		if (firstShot == true) 
+		{
+			followPlayerTest ();
+	
+		}
 	}
 
 	public void incrementNumChildren() 
@@ -238,6 +237,7 @@ public class memoryDistance : MonoBehaviour {
 
 	public void setLookPosition(Vector3 poss)
 	{
+		firstShot = true;
 		Debug.Log ("lookPosistion set 2");
 		lookPosition = poss;
 	}
