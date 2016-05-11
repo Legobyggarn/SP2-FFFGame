@@ -50,27 +50,27 @@ public class BirthdayBoy : MonoBehaviour {
             }
             else if (Input.GetAxis("FlyTowards") < -axisThreshold)
             {
-               // Debug.Log("Update speed, lower it!");
+                Debug.Log("Update speed, lower it!");
                 currentSpeed -= deacceleration * Time.deltaTime * Input.GetAxis("FlyTowards");
             }
         }
         else
         {
             float dif = currentSpeed - normalSpeed;
-           // Debug.Log("CurrentSpeed is now " + currentSpeed);
+            Debug.Log("CurrentSpeed is now " + currentSpeed);
             if (currentSpeed > normalSpeed + autoSpeedChange * Time.deltaTime)
             {
                 currentSpeed -= autoSpeedChange * Time.deltaTime;
-              //  Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
+                Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
             }
             else if (currentSpeed < (normalSpeed - autoSpeedChange * Time.deltaTime))
             {
                 currentSpeed += autoSpeedChange * Time.deltaTime;
-               // Debug.Log("CurrentSpeed is now " + currentSpeed + " and was increased by " + autoSpeedChange * Time.deltaTime);
+                Debug.Log("CurrentSpeed is now " + currentSpeed + " and was increased by " + autoSpeedChange * Time.deltaTime);
             }
             else
             {
-               // Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
+               Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
                 currentSpeed = normalSpeed;
             }
         }

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 public class PangPang : MonoBehaviour {
     public bool TestingMode;
+    public bool Oculus;
+    public bool stackBullets;
     public float timeUntilDecrease;
     public float overHeatMax;
     public float overHeatTick;
@@ -22,13 +24,23 @@ public class PangPang : MonoBehaviour {
     public GameObject bulletPrefab; // Object to spawn as bullet/projectile
     private List<GameObject> BulletList;
     public ChangeTattooAlpha TattoScript;
+    private string ScriptPath;
+   
     Animator anim;
     // Use this for initialization
     void Start () {
+        if(!Oculus)
+        {
+            ScriptPath = "/PlayerStandard1/mainchar/arms";
+        }
+        else
+        {
+            ScriptPath = "/PlayerOculus_Sprint6/CenterEyeAnchor/mainchar/arms";
+        }
         BulletList = new List<GameObject>();
         anim = GetComponent<Animator>();
         currentHeatMult = 0;
-        TattoScript = GameObject.Find("/PlayerStandard1/mainchar/arms").GetComponent<ChangeTattooAlpha>();
+        TattoScript = GameObject.Find(ScriptPath).GetComponent<ChangeTattooAlpha>();
     }
 	
 	// Update is called once per frame
@@ -53,8 +65,10 @@ public class PangPang : MonoBehaviour {
             {
                 // Spawn and fire bullet
                 spawnBullet();
+                if(!stackBullets)
+                { 
                 fireBullet();
-
+                }
                 fireTimer = 0;
                 timeSinceLastFire = 0;
                 // Add heat to the weapon
@@ -120,7 +134,7 @@ public class PangPang : MonoBehaviour {
     }
     public void spawnBullet()
     {
-        GameObject ThaBullet = Instantiate(bulletPrefab, spawnPoint.transform.position, transform.rotation) as GameObject;
+        GameObject ThaBullet = Instantiate(bulletPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
         ThaBullet.transform.parent = this.gameObject.transform;
         BulletList.Add(ThaBullet);
     }
@@ -148,9 +162,11 @@ public class PangPang : MonoBehaviour {
             Destroy(ThaBullet, bulletLifespan);
             ThaBullet.transform.parent = null;
             // Add force as impulse instead of continous force!
-            ThaBullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+            Vector3 bulletDirectipon = spawnPoint.transform.forward;
+            ThaBullet.GetComponent<Rigidbody>().AddForce(bulletDirectipon * bulletSpeed);
         }
     }
+
     private void UpdateTargetTattooAlpha()
     {
         float heatPerc = currentHeatLevel / overHeatMax;
