@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fffa0680e4ee6d4449ca43304c03b0c8
-timeCreated: 1461311825
+guid: 677a0437c35ffd44cb5fbec050769552
+timeCreated: 1462966305
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -309,7 +309,7 @@ ModelImporter:
     400298: root_ctrl
     400300: root_ctrl_grp
     400302: root_joint
-    7400000: shoot_6
+    7400000: shoot_2_new
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -333,17 +333,17 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: shoot_6
+      name: shoot_2_new
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 15
+      firstFrame: 0
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -355,15 +355,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.7756098
-        functionName: FIRETHATSHIT
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: bbdc12f82704c9449a3a68b87d857de1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1
@@ -671,7 +663,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 public class PangPang : MonoBehaviour {
+    public bool TestingMode;
     public float timeUntilDecrease;
     public float overHeatMax;
     public float overHeatTick;
@@ -16,6 +17,8 @@ public class PangPang : MonoBehaviour {
     private float fireTimer;
     private bool overHeated;
     public GameObject spawnPoint; // Spawn position of bullet
+    public GameObject spawnPoint2;
+    public GameObject spawnPoint3;
     public GameObject bulletPrefab; // Object to spawn as bullet/projectile
     private List<GameObject> BulletList;
     public ChangeTattooAlpha TattoScript;
@@ -30,9 +33,14 @@ public class PangPang : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //  ShootAnimation();
-        
+        if(!TestingMode)
+        {
+            ShootAnimation();
+        }
+            if (TestingMode)
+        { 
         ShootTesting();
+        }
     }
     void ShootTesting()
     {
@@ -54,10 +62,10 @@ public class PangPang : MonoBehaviour {
                 float cHeat = overHeatTick + currentHeatMult;
                 currentHeatLevel += cHeat;
 
-               
+                UpdateTargetTattooAlpha();
                 if (currentHeatLevel >= overHeatMax)
                 {
-                    UpdateTattooAlpha();
+                    
                     overHeated = true;
                 }
             }
@@ -73,7 +81,13 @@ public class PangPang : MonoBehaviour {
                 // Reset heat multiplier and decrease the heat on the hands because they are on FIRAY
                 currentHeatMult = 0;
                 currentHeatLevel -= coolingTick * Time.deltaTime;
-                if(currentHeatLevel < 0)
+                if (!overHeated)
+                {
+
+                    UpdateTargetTattooAlpha();
+                }
+                
+                if (currentHeatLevel < 0)
                 {
                     currentHeatLevel = 0;
                 }
@@ -93,10 +107,12 @@ public class PangPang : MonoBehaviour {
         if (Input.GetAxis("Fire1") >= 0.2f)
         {
             anim.SetBool("FireStart", true);
+            anim.SetBool("FireIsPressed", true);
         }
         else {
+                   
+            anim.SetBool("FireIsPressed", false);
             anim.SetBool("FireStart", false);
-            anim.ResetTrigger("FireStart");
         }
 
 
@@ -108,6 +124,18 @@ public class PangPang : MonoBehaviour {
         ThaBullet.transform.parent = this.gameObject.transform;
         BulletList.Add(ThaBullet);
     }
+    public void spawnBullet2()
+    {
+        GameObject ThaBullet = Instantiate(bulletPrefab, spawnPoint2.transform.position, transform.rotation) as GameObject;
+        ThaBullet.transform.parent = this.gameObject.transform;
+        BulletList.Add(ThaBullet);
+    }
+    public void spawnBullet3()
+    {
+        GameObject ThaBullet = Instantiate(bulletPrefab, spawnPoint3.transform.position, transform.rotation) as GameObject;
+        ThaBullet.transform.parent = this.gameObject.transform;
+        BulletList.Add(ThaBullet);
+    }
     public void fireBullet()
     {
         // Instantiate projectile...
@@ -116,12 +144,22 @@ public class PangPang : MonoBehaviour {
         {
             GameObject ThaBullet = BulletList[0];
             BulletList.RemoveAt(0);
-            //  Debug.Log("FUCKING SHOOTIN NOW");
+           
             Destroy(ThaBullet, bulletLifespan);
             ThaBullet.transform.parent = null;
             // Add force as impulse instead of continous force!
             ThaBullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
         }
+    }
+    private void UpdateTargetTattooAlpha()
+    {
+        float heatPerc = currentHeatLevel / overHeatMax;
+        if (heatPerc > 1f)
+        {
+            heatPerc = 1f;
+        }
+        heatPerc = 1f - heatPerc;
+        TattoScript.setTargetAlpha(heatPerc);
     }
 
     private void UpdateTattooAlpha()

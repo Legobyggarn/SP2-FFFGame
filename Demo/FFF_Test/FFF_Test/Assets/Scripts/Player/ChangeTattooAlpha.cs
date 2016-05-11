@@ -10,6 +10,8 @@ public class ChangeTattooAlpha : MonoBehaviour {
     public bool fadeOut;
     public bool fadeIn;
     public bool TestingModeSet;
+    public float targetAlpha;
+    public bool fadeTowardTarget;
     Material[] mat;
     // Use this for initialization
     void Start () {
@@ -29,20 +31,28 @@ public class ChangeTattooAlpha : MonoBehaviour {
         {
             fadeOutTattoo();
         }
-        else if(fadeIn)
+        else if (fadeIn)
         {
             fadeInTattoo();
         }
+        else if (fadeTowardTarget)
+        {
+            fadeTowardTargetAlpha();
+        }
+       
+        
         
     }   
     public void setFadeOutTattoo()
     {
         fadeOut = true;
-        fadeIn = false; 
+        fadeIn = false;
+        fadeTowardTarget = false;
     }
     public void setFadeInTattoo()
     {
         fadeOut = false;
+        fadeTowardTarget = false;
         fadeIn = true;
     }
     private void fadeOutTattoo()
@@ -67,14 +77,19 @@ public class ChangeTattooAlpha : MonoBehaviour {
         {
             alphaValue += Time.deltaTime * fadeInSpeed;
         }
+        
         else
         {
             alphaValue = 1;
             fadeIn = false;
         }
-
+        
         updateAlpha();
+        if(fadeTowardTarget && alphaValue > targetAlpha)
+        {
+            fadeIn = false;
 
+        }            
 
     }
     public void updateAlpha()
@@ -87,5 +102,26 @@ public class ChangeTattooAlpha : MonoBehaviour {
     {
         alphaValue = alpha;
         updateAlpha();
+    }
+
+    private void fadeTowardTargetAlpha()
+    {
+        if (alphaValue > targetAlpha)
+        {
+            alphaValue -= Time.deltaTime * fadeOutSpeed;
+        }
+        else
+        {
+            alphaValue = targetAlpha;
+            fadeTowardTarget = false;
+        }
+
+        updateAlpha();
+    }
+    
+    public void setTargetAlpha(float alpha)
+    {
+        targetAlpha = alpha;
+        fadeTowardTarget = true;
     }
 }
