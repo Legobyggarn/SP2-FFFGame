@@ -3,22 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CapsuleWallScript : MonoBehaviour {
-
-	// TODO: Instead of number of hits, have a health/hit variable for each wall part. Then if a object is part of a collision and has no health/hit left then it will be destroyed?
-	//       Or just have it to need one hit to kill the wall.
-
+	
 	// Public variables
-	public int hitsToDestroy = 1;
 	public float hitPushAmount = 0f;
-	public int explosionForce = 0;
-	public int explosionRadius = 0;
+	public float explosionForce = 0f;
+	public float explosionRadius = 0f;
 
 	// Private variables
-	private int hits = 0;
 	private List<GameObject> wallParts = new List<GameObject>();
-
-	// TODO:
-	// Idea for damaging of wall. Move hit parts a small amount in the direction of the bullets direction.
+	private SondAndMusic_Var soundAndMusicScript;
 
 	// Use this for initialization
 	void Start () {
@@ -38,67 +31,76 @@ public class CapsuleWallScript : MonoBehaviour {
 
 		}
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		// Get the sound and music game object
+		soundAndMusicScript = GameObject.Find("Sound_And_Music_Var").GetComponent<SondAndMusic_Var>();
+
 	}
 
 	// Handles collision when they first happen
 	void OnCollisionEnter(Collision collision) {
 
 		if (collision.gameObject.tag == "Bullet") {
-			hits++;
-			checkWallBreak(collision.gameObject.transform.position);
+			breakWall(collision.gameObject.transform.position);
+
 			// Temporary? Destroy the bullet object
-			Destroy(collision.gameObject);
+			Destroy (collision.gameObject);
+		} 
+
+	}
+
+	/*
+	// Handles objects entering the trigger
+	void OnTriggerEnter(Collider collider) {
+		if (collider.gameObject.tag == "Bullet") {
+			breakWall(collider.gameObject.transform.position);
+
+			// Temporary? Destroy the bullet object
+			Destroy(collider.gameObject);
+		}
+	}
+	*/
+
+	private void breakWall(Vector3 collisionPos) {
+		
+		// Get a list of all wall parts in within 'explosionRadius'
+		List<GameObject> wallPartsInRadius = findWallPartsInRadius(collisionPos, explosionRadius);
+
+		foreach (GameObject go in wallPartsInRadius) {
+			float distance = Vector3.Distance(collisionPos, go.transform.position); // Distance between collision position and current wall part
+			float distPerc = 1f - (distance / explosionRadius); // [Clamp '(distance / explosionRadius)' between 0 and 1 first?]
+			distPerc = Mathf.Clamp(distPerc, 0f, 1f); // Clamp between 0 and 1(?)
+			// BUG: Root node move aswell? (doesn't occur anymore?)
+			go.transform.localPosition += new Vector3(0f, 0f, hitPushAmount * distPerc); // Move the game object 
+
+			// Destroy wall
+			Rigidbody rb = go.GetComponent<Rigidbody>();
+			if (rb != null) {
+				rb.isKinematic = false;
+				//rb.detectCollisions = true;
+				rb.AddExplosionForce(explosionForce, collisionPos, explosionRadius, 0f, ForceMode.Impulse); // Add force mode?
+				//rb.AddForce(dir * 100f, ForceMode.Impulse);
+			}
+
+			go.transform.parent = null; // Set parent to null
+			wallParts.Remove(go); // Remove from 'wallParts'
+
+			// Message music and sound script that a part of the wall has been destroyed
+			//...
+
 		}
 
 	}
 
-	private void checkWallBreak(Vector3 collisionPos) {
-
-		// Destroy wall
-		if (hits >= hitsToDestroy) {
-			// Find all colliders in a sphere radius around collision position
-			Collider[] colliders = Physics.OverlapSphere (collisionPos, explosionRadius);
-			foreach (Collider col in colliders) {
-				Rigidbody rb = col.gameObject.GetComponent<Rigidbody> ();
-				if (rb != null) {
-					rb.isKinematic = false;
-					rb.detectCollisions = true;
-					rb.AddExplosionForce (explosionForce, collisionPos, explosionRadius, 0f); // Add force mode?
-				}
+	// Find all objects in 'wallParts' (all wall parts of this wall) withing a given radius
+	private List<GameObject> findWallPartsInRadius(Vector3 center, float radius) {
+		List<GameObject> objectsInRadius = new List<GameObject>();
+		foreach (GameObject go in wallParts) {
+			float distance = Vector3.Distance(center, go.transform.position);
+			if (distance <= radius) {
+				objectsInRadius.Add(go);
 			}
 		}
-
-		// Push back wall parts
-		else {
-			Debug.Log("Push back");
-			Collider[] colliders = Physics.OverlapSphere (collisionPos, explosionRadius);
-
-			// Loop through all child wall parts and pick out the once with a distance shorter than 'explosionRadius'
-			List<GameObject> objectsInRadius = new List<GameObject>();
-			foreach (GameObject go in wallParts) {
-				float distance = Vector3.Distance(collisionPos, go.transform.position);
-				if (distance <= explosionRadius) {
-					objectsInRadius.Add(go);
-				}
-			}
-
-			foreach (GameObject go in objectsInRadius) {
-				// Measure distance between collision point and collider...
-				// Calculate (1f - (measuredDist / explosionRadius)) and get the percentage of the way from the collision point...
-				// Move the wall part (moveAmount * previousResult)...
-				float distance = Vector3.Distance(collisionPos, go.transform.position);
-				float distPerc = 1f - (distance / explosionRadius); // Clamp '(distance / explosionRadius)' between 0 and 1 first?
-				distPerc = Mathf.Clamp(distPerc, 0f, 1f); // Clamp between 0 and 1(?)
-				// BUG: Root node move aswell
-				go.transform.localPosition += new Vector3(0f, 0f, hitPushAmount * distPerc); // Move the game object 
-			}
-		}
-
+		return objectsInRadius;
 	}
 
 }
