@@ -54,6 +54,33 @@ public class PangPang : MonoBehaviour {
         ShootTesting();
         }
     }
+    public void shotFired()
+    {
+        timeSinceLastFire = 0;
+    }
+    public void calculateHeat()
+    {
+        currentHeatMult += overHeatMult;
+        float cHeat = overHeatTick + currentHeatMult;
+        currentHeatLevel += cHeat;
+    }
+    public void stuff()
+    {
+        spawnBullet();
+        fireBullet();
+        shotFired();
+        calculateHeat();
+        UpdateTargetTattooAlpha();
+        overHeatControl();
+    }
+    public void overHeatControl()
+    {
+        if (currentHeatLevel >= overHeatMax)
+        {
+            anim.SetBool("OverHeated", true);
+            overHeated = true;
+        }
+    }
     void ShootTesting()
     {
         fireTimer += Time.deltaTime;
@@ -79,7 +106,7 @@ public class PangPang : MonoBehaviour {
                 UpdateTargetTattooAlpha();
                 if (currentHeatLevel >= overHeatMax)
                 {
-                    
+                   
                     overHeated = true;
                 }
             }
@@ -118,7 +145,7 @@ public class PangPang : MonoBehaviour {
     {
 
         // Shoot
-        if (Input.GetAxis("Fire1") >= 0.2f)
+        if (!overHeated && Input.GetAxis("Fire1") >= 0.2f)
         {
             anim.SetBool("FireStart", true);
             anim.SetBool("FireIsPressed", true);
@@ -127,10 +154,38 @@ public class PangPang : MonoBehaviour {
                    
             anim.SetBool("FireIsPressed", false);
             anim.SetBool("FireStart", false);
+            
         }
 
+        coolingSystem();
 
-        
+    }
+    private void coolingSystem()
+    {
+        timeSinceLastFire += Time.deltaTime;
+        // Enought Time has passed for the weapon to start cooling down
+        if (timeSinceLastFire > timeUntilDecrease)
+        {
+            // Reset heat multiplier and decrease the heat on the hands because they are on FIRAY
+            currentHeatMult = 0;
+            currentHeatLevel -= coolingTick * Time.deltaTime;
+            if (!overHeated)
+            {
+
+                UpdateTargetTattooAlpha();
+            }
+
+            if (currentHeatLevel < 0)
+            {
+                currentHeatLevel = 0;
+            }
+        }
+        if (overHeated && currentHeatLevel <= 0)
+        {
+            overHeated = false;
+            anim.SetBool("OverHeated", false);
+            TattoScript.setFadeInTattoo();
+        }
     }
     public void spawnBullet()
     {
