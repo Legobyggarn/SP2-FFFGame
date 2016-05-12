@@ -4,6 +4,29 @@ using System.Collections;
 public class CapsuleWallPartScript : MonoBehaviour {
 
 	// Public variables
+	public float colliderScaling = 1f; // Used to fix problem where colliders get jammed by eachother
+
+	// Private variables
+	private CapsuleWallScript wallScript;
+
+	// Use this for initialization
+	void Start () {
+		wallScript = transform.parent.parent.gameObject.GetComponent<CapsuleWallScript>();
+
+		// Scale collider (avoid jamming)
+		GetComponent<BoxCollider>().size *= colliderScaling;
+
+	} 
+
+	void OnCollisionEnter(Collision collision) {
+
+		// Notify root that a collision has occured
+		wallScript.OnCollisionEnterChild(collision);
+
+	}
+
+	/*
+	// Public variables
 	public int hitsToDestroy = 1;
 	public float minHitPushAmount = 0f;
 	public float maxHitPushAmount = 0f;
@@ -51,31 +74,28 @@ public class CapsuleWallPartScript : MonoBehaviour {
 			rb.isKinematic = false;
 			rb.AddForce(bulletVelocity * hitDetachForce);
 
-			/*
+			///
 			Rigidbody rb = GetComponent<Rigidbody>();
 			rb.isKinematic = false;
 			rb.AddForce(bulletVelocity * hitDetachForce);
-			*/
+			///
 		}
 
 		else { // Wall part is pushed back a small bit
 			float randPushBack = Random.Range(minHitPushAmount, maxHitPushAmount);
 			transform.localPosition += new Vector3(randPushBack, 0f, 0f);
 
-			/*
+			///
 			// Try to set to not kinematic, if next hit means that it will detach
 			if (hits + 1 >= hitsToDestroy) {
 				GetComponent<Rigidbody>().isKinematic = false;
 				transform.localScale *= detachScalar;
 			}
-			*/
+			///
 
 		}
 
 	}
 
-	/*
-	 *  After "dead"
-	 *  - Set 'isKinematic' to false
 	*/
 }

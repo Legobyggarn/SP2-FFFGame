@@ -12,6 +12,7 @@ public class CapsuleWallScript : MonoBehaviour {
 	// Private variables
 	private List<GameObject> wallParts = new List<GameObject>();
 	private SondAndMusic_Var soundAndMusicScript;
+	private bool hitThisFrame = false;
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +30,14 @@ public class CapsuleWallScript : MonoBehaviour {
 			// Add new rigidbody to 'wallParts'
 			wallParts.Add(transform.GetChild(0).GetChild(i).gameObject);
 
+			// Ignore collisions with all objects with the "Player" tag (should only be player, unless there is multiplayer)
+			/*
+			GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+			foreach (GameObject player in players) {
+				Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());
+			}
+			*/
+
 		}
 
 		// Get the sound and music game object
@@ -36,56 +45,79 @@ public class CapsuleWallScript : MonoBehaviour {
 
 	}
 
-	// Handles collision when they first happen
-	void OnCollisionEnter(Collision collision) {
-
-		if (collision.gameObject.tag == "Bullet") {
-			breakWall(collision.gameObject.transform.position);
-
-			// Temporary? Destroy the bullet object
-			Destroy (collision.gameObject);
-		} 
-
-	}
-
-	/*
-	// Handles objects entering the trigger
-	void OnTriggerEnter(Collider collider) {
-		if (collider.gameObject.tag == "Bullet") {
-			breakWall(collider.gameObject.transform.position);
-
-			// Temporary? Destroy the bullet object
-			Destroy(collider.gameObject);
+	// Update is called once per frame
+	void Update () {
+		if (hitThisFrame) {
+			hitThisFrame = false;
 		}
 	}
-	*/
 
-	private void breakWall(Vector3 collisionPos) {
+	// Handles collision of children (child send info here)
+	public void OnCollisionEnterChild(Collision collision) {
+
+		if (!hitThisFrame) {
+			hitThisFrame = true;
+
+			if (collision.gameObject.tag == "Bullet") {
+				breakWall (collision);
+
+				// Temporary? Destroy the bullet object
+				Destroy (collision.gameObject);
+			}
+		}
+
+	}
+
+	private void breakWall(Collision collision) {
 		
 		// Get a list of all wall parts in within 'explosionRadius'
-		List<GameObject> wallPartsInRadius = findWallPartsInRadius(collisionPos, explosionRadius);
+		List<GameObject> wallPartsInRadius = findWallPartsInRadius(collision.transform.position, explosionRadius);
+
+		Vector3 localPoint = transform.InverseTransformPoint(collision.transform.position);
+		Vector3 localDir = localPoint.normalized;
+
+		Vector3 point = collision.transform.position;
+		float fwdDot = Vector3.Dot(localDir, Vector3.forward);
+		Debug.Log ("fwdDot: " + fwdDot);
 
 		foreach (GameObject go in wallPartsInRadius) {
-			float distance = Vector3.Distance(collisionPos, go.transform.position); // Distance between collision position and current wall part
+
+			/*
+			float distance = Vector3.Distance(collision.transform.position, go.transform.position); // Distance between collision position and current wall part
 			float distPerc = 1f - (distance / explosionRadius); // [Clamp '(distance / explosionRadius)' between 0 and 1 first?]
 			distPerc = Mathf.Clamp(distPerc, 0f, 1f); // Clamp between 0 and 1(?)
-			// BUG: Root node move aswell? (doesn't occur anymore?)
-			go.transform.localPosition += new Vector3(0f, 0f, hitPushAmount * distPerc); // Move the game object 
+			//go.transform.localPosition -= new Vector3(0f, 0f, hitPushAmount * distPerc); // Move the game object
+			*/
+
+			Vector3 explosionPos = collision.transform.position;
+
+			if (fwdDot >= 0f) { // Infront
+				go.transform.position -= transform.forward * (hitPushAmount); // Move the game object
+				explosionPos += transform.forward * 1f;
+			} 
+
+			else { // Behind
+				go.transform.position += transform.forward * (hitPushAmount); // Move the game object
+				explosionPos -= transform.forward * 1f;
+			}
 
 			// Destroy wall
 			Rigidbody rb = go.GetComponent<Rigidbody>();
 			if (rb != null) {
 				rb.isKinematic = false;
 				//rb.detectCollisions = true;
-				rb.AddExplosionForce(explosionForce, collisionPos, explosionRadius, 0f, ForceMode.Impulse); // Add force mode?
-				//rb.AddForce(dir * 100f, ForceMode.Impulse);
+				rb.AddExplosionForce(explosionForce, explosionPos, explosionRadius, 0f, ForceMode.Impulse);
 			}
 
+			// "Free" the wall part
 			go.transform.parent = null; // Set parent to null
 			wallParts.Remove(go); // Remove from 'wallParts'
 
-			// Message music and sound script that a part of the wall has been destroyed
-			//...
+
+			// Notify the music and sound script that a part of the wall has been destroyed
+			if (soundAndMusicScript != null) {
+				soundAndMusicScript.partOfWallDestroyed ();
+			}
 
 		}
 
