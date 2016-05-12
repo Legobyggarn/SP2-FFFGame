@@ -356,16 +356,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.38618538
-        functionName: spawnBullet
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: e8d120be803ed2b498e09ae56fa0feb5,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0.44055256
-        functionName: fireBullet
+        functionName: stuff
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: e8d120be803ed2b498e09ae56fa0feb5,
           type: 3}

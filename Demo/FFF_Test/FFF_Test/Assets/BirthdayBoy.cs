@@ -33,13 +33,18 @@ public class BirthdayBoy : MonoBehaviour {
        // Debug.Log("Inpute Axis Check " + Input.GetAxis("FlyTowards"));
         if (Input.GetAxis("FlyTowards") != 0)
         {
-            // Update the direction the player is flying towards.
+          /*  // Update the direction the player is flying towards.
             lookDirection = oculusTransform.forward;
-            currentDirection = Vector3.RotateTowards(currentDirection, lookDirection, rotSpeed * Time.deltaTime, 0.0f);
+            //TESTING, some code was bracketet out
+            currentDirection = lookDirection;*/
 
             // Check if the player is accelerating or deaccelerating
             if (Input.GetAxis("FlyTowards") > axisThreshold)
             {
+                // Update the direction the player is flying towards.
+                lookDirection = oculusTransform.forward;
+                //TESTING, some code was bracketet out
+                currentDirection = lookDirection;
                 //Debug.Log("Update speed, increase it!");
                 currentSpeed += acceleration * Time.deltaTime * Input.GetAxis("FlyTowards");
                 if(currentSpeed > maxSpeed)
@@ -50,8 +55,13 @@ public class BirthdayBoy : MonoBehaviour {
             }
             else if (Input.GetAxis("FlyTowards") < -axisThreshold)
             {
-                //Debug.Log("Update speed, lower it!");
-                currentSpeed -= deacceleration * Time.deltaTime * Input.GetAxis("FlyTowards");
+                Debug.Log("Update speed, lower it!");
+                currentSpeed -= deacceleration * Time.deltaTime * Mathf.Abs(Input.GetAxis("FlyTowards"));
+                if (currentSpeed < 0)
+                {
+                    currentSpeed = 0;
+
+                }
             }
         }
         else
@@ -74,6 +84,7 @@ public class BirthdayBoy : MonoBehaviour {
                 currentSpeed = normalSpeed;
             }
         }
+        //currentDirection = Vector3.RotateTowards(currentDirection, lookDirection, rotSpeed * Time.deltaTime, 0.0f);
     }
     public void move()
     {

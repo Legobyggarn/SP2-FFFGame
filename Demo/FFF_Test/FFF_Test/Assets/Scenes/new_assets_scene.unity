@@ -10287,12 +10287,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed78faf0a188e6458742f0a92f74eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 0
-  autoSpeedChange: 0.6
-  maxSpeed: 20
-  deacceleration: 0.68
-  acceleration: 2.53
-  rotSpeed: 0.34
+  normalSpeed: 30
+  autoSpeedChange: 10
+  maxSpeed: 30
+  deacceleration: 50
+  acceleration: 14.76
+  rotSpeed: 0.8
   oculusTransform: {fileID: 573874027}
 --- !u!114 &2053594279
 MonoBehaviour:
@@ -10316,7 +10316,7 @@ Animator:
   m_GameObject: {fileID: 2053594276}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8bd0254978a83334289587b976634cc5, type: 3}
-  m_Controller: {fileID: 9100000, guid: 294b6095d0aa5894e9a4f137eff089a3, type: 2}
+  m_Controller: {fileID: 9100000, guid: e40751f6018afa7459753dfe6a7a4909, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
