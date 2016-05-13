@@ -15,7 +15,8 @@ public class BulletCollision : MonoBehaviour {
     public float shrinkMult;
     public ParticleSystem cloud;
     public float particleSize;
-
+    private bool collidedWithShell;
+    private bool collidedWithBullet;
     public GameObject BulletExplosion;
     public float explosionTime;
     // Use this for initialization
@@ -66,22 +67,38 @@ public class BulletCollision : MonoBehaviour {
     }
     void checkSize()
     {
-        
-        if(gameObject.transform.localScale.x > implodeSize)
+        if (collidedWithBullet)
+        {
+            GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
+            Destroy(explosion, explosionTime);
+        }
+
+        if (gameObject.transform.localScale.x > implodeSize)
         {
             Implode = true;
         }
         if(Implode && gameObject.transform.localScale.x < popSize)
         {
             Destroy(gameObject);
+            if (collidedWithShell) { 
             GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
             Destroy(explosion, explosionTime);
+            }
         }
     }
 
    
     void OnCollisionEnter(Collision collisionInfo)
     {
+        
+             if (!collided && collisionInfo.gameObject.tag == gameObject.tag) 
+        {
+            collidedWithBullet = true;
+        }
+        if (!collided && collisionInfo.gameObject.tag == gameObject.tag) // CHANGE TO SE IF IT WAS A SHELL!
+        {
+            collidedWithShell = true;
+        }
         if (!collided && collisionInfo.gameObject.tag != gameObject.tag)
         {
             collided = true;
