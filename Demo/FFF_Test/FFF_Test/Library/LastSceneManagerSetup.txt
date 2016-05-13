@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/LevelDesignMarkus.unity
+=======
+- path: Assets/Scenes/Leveldesign.unity
+>>>>>>> 44f81a882874188825143ff46a0417c364121cd9
   isLoaded: 1
   isActive: 1
