@@ -19,6 +19,8 @@ public class BulletCollision : MonoBehaviour {
     private bool collidedWithBullet;
     public GameObject BulletExplosion;
     public float explosionTime;
+    public bool CoolBullet;
+    private Transform colliderparent;
     // Use this for initialization
     void Start () {
         collided = false;
@@ -71,6 +73,7 @@ public class BulletCollision : MonoBehaviour {
         {
             GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
             Destroy(explosion, explosionTime);
+            //.Log("Colided with bullet and is now destroyed!!");
         }
 
         if (gameObject.transform.localScale.x > implodeSize)
@@ -80,30 +83,53 @@ public class BulletCollision : MonoBehaviour {
         if(Implode && gameObject.transform.localScale.x < popSize)
         {
             Destroy(gameObject);
-            if (collidedWithShell) { 
-            GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
-            Destroy(explosion, explosionTime);
-            }
+            //Bullet baloon explosion effect
+            /*if (collidedWithShell) {
+                // Debug.Log("Collided with shell and is now destroyed with particles");
+                GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
+                if (colliderparent != null)
+                {
+                    explosion.transform.parent = colliderparent;
+                }
+                Destroy(explosion, explosionTime);
+            }*/
         }
     }
-
+   
    
     void OnCollisionEnter(Collision collisionInfo)
     {
-        
-             if (!collided && collisionInfo.gameObject.tag == gameObject.tag) 
-        {
-            collidedWithBullet = true;
-        }
-        if (!collided && collisionInfo.gameObject.tag == gameObject.tag) // CHANGE TO SE IF IT WAS A SHELL!
-        {
-            collidedWithShell = true;
-        }
-        if (!collided && collisionInfo.gameObject.tag != gameObject.tag)
-        {
-            collided = true;
-            Destroy(gameObject, explosionTimer);
-            rb.isKinematic = true;
+        if(collisionInfo.gameObject.tag != "Player") { 
+            if (!collided && CoolBullet && collisionInfo.gameObject.tag == gameObject.tag) 
+            {
+                collidedWithBullet = true;
+              //  Debug.Log("DONT DO IT!!");
+                rb.isKinematic = true;
+            }
+            if (!collided && (collisionInfo.gameObject.tag == "Shell" || collisionInfo.gameObject.tag == "ShellChunk")) // CHANGE TO SE IF IT WAS A SHELL!
+            {
+                collidedWithShell = true;
+                collided = true;
+                if (collisionInfo.transform.parent != null)
+                { 
+                    colliderparent = collisionInfo.gameObject.transform.parent;
+                    transform.parent = colliderparent;
+                }
+                rb.isKinematic = true;
+                GameObject explosion = Instantiate(BulletExplosion, transform.position, transform.rotation) as GameObject;
+                if (colliderparent != null)
+                {
+                    explosion.transform.parent = colliderparent;
+                }
+                Destroy(explosion, explosionTime);
+            }
+            if (!collided && collisionInfo.gameObject.tag != gameObject.tag)
+            {
+               // Debug.Log("Colided with " + collisionInfo.gameObject.tag);
+                collided = true;
+                Destroy(gameObject, explosionTimer);
+                rb.isKinematic = true;
+            }
         }
     }
 
