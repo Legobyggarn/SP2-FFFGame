@@ -13,6 +13,8 @@ public class SondAndMusic_Var : MonoBehaviour {
 	public Transform orbitsCenterTransform;
 	private Vector3 orbitsCenter;
 
+	public GameObject POIManager;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -131,56 +133,78 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 	// Shell chunk gets destroyed
 	// [Called from a shellChunk script before destroying self]
-	public void shellChunkDestroyed() {
+	public void shellChunkDestroyed(Vector3 pos) {
 		// Play music/sound or call another funtion...
-
-		// Debug
-		Debug.Log("Shell chunk was destroyed");
 	}
 
 	// Shell chunk "merges" with core again, called when merging starts
 	// [Called from shell handler when a shell part is "re-added"]
 	public void shellChunkMergeWithCore() {
 		// Play music/sound or call another funtion...
-
-		// Debug
-		Debug.Log("Shell chunk merged with core");
 	}
 
 	// Orbit increases
 	// [Called from memoryDistance when number of children are incremented]
 	public void orbitIncrease() {
 		// Play music/sound or call another funtion...
-
-		// Debug
-		Debug.Log("Orbit increased");
 	}
 
 	// Orbit decreases
 	// [Called from memoryDistance when number of children are decremented]
 	public void orbitDecrease() {
 		// Play music/sound or call another funtion...
-
-		// Debug
-		Debug.Log("Orbit decreased");
 	}
 
 	// Core arrives at center
 	// [Called from memoryDistance when core reaches the center]
 	public void coreAtCenter() {
 		// Play music/sound or call another funtion...
-
-		// Debug
-		Debug.Log("Core is at center");
 	}
 
 	// Bullet object gets destroyed (not called anywhere yet)
 	// [Called from a bullet script just before the bullet is destroyed]
 	public void bulletDestroyed() {
 		// Play music/sound or call another funtion...
+	}
 
-		// Debug
-		Debug.Log("A bullet was destroyed");
+	// Part of wall destroyed
+	// [Called from a wall object when part are destroyed]
+	public void partOfWallDestroyed() {
+		// Play music/sound or call another function...
+	}
+
+
+	// TODO: Change name to POIDestroyed?
+	// TODO: Add function that is called when a POI is hit.
+	// Points of interest
+	// A new point of interest was discovered
+	public void POIDiscovered(string name) {
+		// Play music/sound or call another function...
+	}
+
+	// A new important point of interest was discovered
+	public void importantPOIDiscovered(string name) {
+		// Play music/sound or call another function...
+	}
+
+	// When a POI is hit. 
+	public void POIHit(Vector3 hitPosition) {
+		// Play music/sound or call another function...
+	}
+
+	// Get amount of destroyed points of interest
+	public int getNumOfDiscoveredPOI() {
+		return POIManager.GetComponent<POIManagerScript>().numOfDiscoveredPOI();
+	}
+
+	// Get amount of discovered important points of interest
+	public float getNumOfDiscoveredImportantPOI() {
+		return POIManager.GetComponent<POIManagerScript>().numOfDiscoveredImportantPOI();
+	}
+
+	// Get the distance to the closest POI form 'position'
+	public float getDistanceToClosestPOI(Vector3 position) {
+		return POIManager.GetComponent<POIManagerScript>().distanceClosestPOI(position);
 	}
 
 }
