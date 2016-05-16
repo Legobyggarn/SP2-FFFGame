@@ -62,7 +62,9 @@ public class ShellHandlerScript : MonoBehaviour {
 
 	// Notify that a collision with the shell has occured (parameter should contain the collided shell piece)
 	public void shellCollision(GameObject go) {
-		
+
+		Debug.Log("In ShellCollision");
+
 		go.GetComponent<MeshCollider>().enabled = false;
 		go.GetComponent<MeshRenderer>().enabled = false;
 

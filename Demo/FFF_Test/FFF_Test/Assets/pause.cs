@@ -21,8 +21,6 @@ public class pause : MonoBehaviour {
 	{
 		if (Input.GetKeyDown ("space")) 
 		{
-			Debug.Log ("Pess");
-
 			if (isPaused) 
 			{
 				isPaused = false;
@@ -50,13 +48,10 @@ public class pause : MonoBehaviour {
 		if (showGUI) 
 		{
 			childGO.SetActive (true);
-			Debug.Log ("Set Active");
 		}
 		else
 		{
-
 			childGO.SetActive(false);
-			Debug.Log ("Set inActive");
 		}
 	}
 }

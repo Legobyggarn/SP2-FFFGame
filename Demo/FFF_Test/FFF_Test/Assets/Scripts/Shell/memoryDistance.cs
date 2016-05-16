@@ -101,6 +101,8 @@ public class memoryDistance : MonoBehaviour {
 			//Position in the lerp
 			float prec = currentLerpTime / lerpTime;
 
+			//Debug.Log ("[memoryDistance, 104]  "  + "< numberOfChildren: " +  numberOfChildren +  "  childCount:  "  + childCount  );
+
 			if (numberOfChildren != childCount) {
 
 				currentLerpTime = 0;
@@ -113,16 +115,20 @@ public class memoryDistance : MonoBehaviour {
 
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
-				startPos = parentGo.transform.localPosition;
+				startPos = grandParentGo.transform.localPosition;
 				endPos = new Vector3 (0, 0, (distanceCore * childProcent) - distanceCore);
 				//endPos = new Vector3 (0, 0, -(distanceCore * childProcent));
+
+				Debug.Log ("Changing orbit new");
 
 				// Change the position of the shell
 				parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 
+				parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
+
 				// Change the position of the core
 				core.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 		
 
 				//Debug.Log("Prec:   " +prec);
@@ -134,9 +140,11 @@ public class memoryDistance : MonoBehaviour {
 				// Change the position of the shell
 				parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 
+				parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
+
 				// Change the position of the core
 				core.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 
 				//Debug.Log("Prec:   " +prec);
 			}
@@ -162,7 +170,7 @@ public class memoryDistance : MonoBehaviour {
 		//Only call if the shell has bean shot at 
 		if (firstShot == true) 
 		{
-			followPlayerTest ();
+			//followPlayerTest ();
 	
 		}
 	}
@@ -179,7 +187,7 @@ public class memoryDistance : MonoBehaviour {
 
 	public void decrementNumChildren() 
 	{
-
+		Debug.Log ("decrementNumChildren");
 		childCount--;
 
 		// Notify sound and music script that a shell chunk will start to merge
