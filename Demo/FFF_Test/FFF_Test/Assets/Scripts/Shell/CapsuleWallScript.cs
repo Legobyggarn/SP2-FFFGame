@@ -8,6 +8,7 @@ public class CapsuleWallScript : MonoBehaviour {
 	public float hitPushAmount = 0f;
 	public float explosionForce = 0f;
 	public float explosionRadius = 0f;
+	public GameObject soundAndMusic;
 
 	// Private variables
 	private List<GameObject> wallParts = new List<GameObject>();
@@ -23,25 +24,18 @@ public class CapsuleWallScript : MonoBehaviour {
 			// Settings for the rigidbody of child
 			// Get the rigidbody of the child of index i
 			Rigidbody rb = transform.GetChild(0).GetChild(i).gameObject.GetComponent<Rigidbody>();
-			// "Disable" rigidbody by setting 'isKinematic' to true and 'detectCollision' to false
+			// "Disable" rigidbody by setting 'isKinematic' to true
 			rb.isKinematic = true;
-			//rb.detectCollisions = false;
 
 			// Add new rigidbody to 'wallParts'
 			wallParts.Add(transform.GetChild(0).GetChild(i).gameObject);
 
-			// Ignore collisions with all objects with the "Player" tag (should only be player, unless there is multiplayer)
-			/*
-			GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-			foreach (GameObject player in players) {
-				Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());
-			}
-			*/
-
 		}
 
 		// Get the sound and music game object
-		soundAndMusicScript = GameObject.Find("Sound_And_Music_Var").GetComponent<SondAndMusic_Var>();
+		if (soundAndMusic != null) {
+			soundAndMusicScript = soundAndMusic.GetComponent<SondAndMusic_Var>();
+		}
 
 	}
 
@@ -78,17 +72,9 @@ public class CapsuleWallScript : MonoBehaviour {
 
 		Vector3 point = collision.transform.position;
 		float fwdDot = Vector3.Dot(localDir, Vector3.forward);
-		Debug.Log ("fwdDot: " + fwdDot);
 
 		foreach (GameObject go in wallPartsInRadius) {
-
-			/*
-			float distance = Vector3.Distance(collision.transform.position, go.transform.position); // Distance between collision position and current wall part
-			float distPerc = 1f - (distance / explosionRadius); // [Clamp '(distance / explosionRadius)' between 0 and 1 first?]
-			distPerc = Mathf.Clamp(distPerc, 0f, 1f); // Clamp between 0 and 1(?)
-			//go.transform.localPosition -= new Vector3(0f, 0f, hitPushAmount * distPerc); // Move the game object
-			*/
-
+			
 			Vector3 explosionPos = collision.transform.position;
 
 			if (fwdDot >= 0f) { // Infront

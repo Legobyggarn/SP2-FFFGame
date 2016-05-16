@@ -125,7 +125,7 @@ public class ShellDamageScript : MonoBehaviour {
 				Destroy(gameObject);
 			}
 			// Notify sound and music script that this shell chunk is destroyed
-			GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().shellChunkDestroyed();
+			GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().shellChunkDestroyed(collisionPoint);
 		}
 	}
 

@@ -9,6 +9,8 @@ public class MiniCapsuleScript : MonoBehaviour {
 	public int explosionForce = 0;
 	public int explosionRadius = 0;
 	public GameObject coreGameObjectPrefab; // The object that will be inside the capsule. Is spawned when the capsule is destroyed.
+	// Sound and music game object
+	public GameObject soundAndMusic;
 	// Shake [combined attribute]
 	[Header("Shake")]
 	public float baseShakeTime = 1f;
@@ -16,6 +18,7 @@ public class MiniCapsuleScript : MonoBehaviour {
 	public float baseShakeAmount = 1f; // XYZ (add a seperate for x,y,z)? [combined attribute]
 	public float shakeAmountMultiplier = 1f; // How much the shake amount should increase each time the capsule is hit but not destroyed
 	public float shellShakeChange = 0f;
+
 
 	// Private variables
 	private int hits = 0;
@@ -26,6 +29,8 @@ public class MiniCapsuleScript : MonoBehaviour {
 	private float currShakeAmount;
 	private Vector3 startShakePos;
 	private float currShellShakeChange;
+	// Sound and music variable script?
+	private SondAndMusic_Var soundAndMusicScript;
 
 
 	// Use this for initialization
@@ -44,6 +49,10 @@ public class MiniCapsuleScript : MonoBehaviour {
 			rb.isKinematic = true;
 			rb.detectCollisions = false;
 
+			if (soundAndMusic != null) {
+				soundAndMusicScript = soundAndMusic.GetComponent<SondAndMusic_Var>();
+			}
+
 		}
 
 	}
@@ -57,6 +66,7 @@ public class MiniCapsuleScript : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag == "Bullet") {
 			hits++;
+
 			checkDestroySelf();
 			// Temporary? (Destroys the bullet)
 			Destroy(collision.gameObject);
@@ -65,7 +75,7 @@ public class MiniCapsuleScript : MonoBehaviour {
 
 	// Check if shell should be destroyed
 	private void checkDestroySelf() {
-		if (hits >= hitsToDestroy) {
+		if (hits >= hitsToDestroy) { // POI was destroyed
 			// /Disable/destroy self...
 			// (Add explosion force to the shell parts, disable/destroy self)
 
@@ -101,8 +111,12 @@ public class MiniCapsuleScript : MonoBehaviour {
 
 		} 
 
-		// Shake the shell
-		else {
+		else { // POI was hit
+			// Play sound when hit (if music & sound not null)
+			if (soundAndMusic != null) {
+				soundAndMusicScript.POIHit(transform.position);	
+			}
+
 			// Shake shell
 			if (!isShaking) {
 				isShaking = true;

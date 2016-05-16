@@ -133,7 +133,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 	// Shell chunk gets destroyed
 	// [Called from a shellChunk script before destroying self]
-	public void shellChunkDestroyed() {
+	public void shellChunkDestroyed(Vector3 pos) {
 		// Play music/sound or call another funtion...
 	}
 
@@ -174,14 +174,21 @@ public class SondAndMusic_Var : MonoBehaviour {
 	}
 
 
+	// TODO: Change name to POIDestroyed?
+	// TODO: Add function that is called when a POI is hit.
 	// Points of interest
 	// A new point of interest was discovered
-	public void POIDiscovered() {
+	public void POIDiscovered(string name) {
 		// Play music/sound or call another function...
 	}
 
 	// A new important point of interest was discovered
-	public void importantPOIDiscovered() {
+	public void importantPOIDiscovered(string name) {
+		// Play music/sound or call another function...
+	}
+
+	// When a POI is hit. 
+	public void POIHit(Vector3 hitPosition) {
 		// Play music/sound or call another function...
 	}
 

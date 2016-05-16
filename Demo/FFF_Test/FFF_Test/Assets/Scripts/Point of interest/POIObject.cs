@@ -20,11 +20,9 @@ public class POIObject : MonoBehaviour {
 		}
 	}
 
-
-	// Test. When entered (trigger) be discovered.
-	void OnTriggerEnter(Collider col) {
-		if (col.gameObject.tag == "Player") {
-			POIDiscovered();
-		}
+	// When POI is destroyed
+	void OnDestroy() {
+		POIDiscovered();
 	}
+
 }

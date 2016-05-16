@@ -8,8 +8,14 @@ public class POIManagerScript : MonoBehaviour {
 
 	// Public variables
 	public GameObject soundAndMusic;
+	// "Regular" points of interest and names
+	[Header("Regular POI")]
 	public List<GameObject> pointsOfInterest;
+	public List<string> pointsOfInterestNames;
+	// Important points of interest and names
+	[Header("Important POI")]
 	public List<GameObject> importantPointsOfInterest;
+	public List<string> importantPointsOfInterestNames;
 
 	// Private variables
 	private int numPOIAtStart;
@@ -26,6 +32,22 @@ public class POIManagerScript : MonoBehaviour {
 		if (soundAndMusic != null) {
 			soundAndMusicScript = soundAndMusic.GetComponent<SondAndMusic_Var>();
 		}
+
+
+		// Error if # POIs and # POI names don't match
+		// Remove because it is a Debug. ?
+		/*
+		if (pointsOfInterest.Count != pointsOfInterestNames.Count) {
+			Debug.LogError("[POIManager] Error: Number of POIs and names don't match.");
+		}
+
+		if (importantPointsOfInterest.Count != importantPointsOfInterestNames.Count) {
+			Debug.LogError("[POIManager] Error: Number of important POI and names don't match.");
+		}
+		*/
+		// Debug.LogError
+
+
 	}
 	
 	// Update is called once per frame
@@ -37,11 +59,15 @@ public class POIManagerScript : MonoBehaviour {
 	// [CHANGE TO GAMEOBJECT PARAMETER?]
 	public void POIDiscovered(GameObject go) {
 		if (pointsOfInterest.Contains(go)) {
-			// Remove POI from the list
+			// Find the correct name
+			int nameIndex = pointsOfInterest.IndexOf(go);
+			string name = pointsOfInterestNames[nameIndex];
+			// Remove POI, and name from their respective lists
 			pointsOfInterest.Remove(go);
+			pointsOfInterestNames.RemoveAt(nameIndex);
 			// Notify the sound and music script (if musicAndSound is set)
 			if (soundAndMusic != null) {
-				soundAndMusicScript.POIDiscovered();
+				soundAndMusicScript.POIDiscovered(name);
 			}
 		}
 	}
@@ -49,14 +75,19 @@ public class POIManagerScript : MonoBehaviour {
 	// Notify that important POI (name) has been discovered
 	public void importantPOIDiscovered(GameObject go) {
 		if (importantPointsOfInterest.Contains(go)) {
+			// Find the correct name
+			int nameIndex = importantPointsOfInterest.IndexOf(go);
+			string name = importantPointsOfInterestNames[nameIndex];
 			// Remove POI from the list...
 			importantPointsOfInterest.Remove(go);
+			importantPointsOfInterestNames.RemoveAt(nameIndex);
 			// Notify the sound and music script (if musicAndSound is set)
 			if (soundAndMusic != null) {
-				soundAndMusicScript.importantPOIDiscovered();
+				soundAndMusicScript.importantPOIDiscovered(name);
 			}
 		}
 	}
+
 
 	// Get the closest POI from 'position' (both regular and important POI)
 	public float distanceClosestPOI(Vector3 position) {

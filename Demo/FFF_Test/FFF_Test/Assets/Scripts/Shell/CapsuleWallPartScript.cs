@@ -14,7 +14,8 @@ public class CapsuleWallPartScript : MonoBehaviour {
 		wallScript = transform.parent.parent.gameObject.GetComponent<CapsuleWallScript>();
 
 		// Scale collider (avoid jamming)
-		GetComponent<BoxCollider>().size *= colliderScaling;
+		Bounds bounds = GetComponent<Collider>().bounds;
+		bounds.size *= colliderScaling;
 
 	} 
 

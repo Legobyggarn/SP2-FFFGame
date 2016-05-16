@@ -77,10 +77,10 @@ public class TestSoundMusicVarScript : MonoBehaviour {
 		// Test functions
 
 		// Destroyed shell chunk
-		soundMusicScript.shellChunkDestroyed();
+		//soundMusicScript.shellChunkDestroyed();
 
 		// Shell chunk merging
-		soundMusicScript.shellChunkDestroyed();
+		//soundMusicScript.shellChunkDestroyed();
 
 		// Increase orbit
 		soundMusicScript.orbitIncrease();
