@@ -82,9 +82,10 @@ public class ShellDamageScript : MonoBehaviour {
 					currHealth -= bulletDamage;
 					//Debug.Log ("Health: " + currHealth);
 					checkDead(collision.transform.position);
-					Destroy(collision.gameObject);
+					//Destroy(collision.gameObject);
 				}
-			}			
+			}
+			
 		} 
 
 		else if (collision.gameObject.tag == "ShellChunk" || collision.gameObject.tag == "Shell") {

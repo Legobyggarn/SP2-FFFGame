@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 427178}
   - 54: {fileID: 5445802}
   - 135: {fileID: 13533964}
+  - 114: {fileID: 11422034}
   m_Layer: 0
   m_Name: Bullet2
   m_TagString: Bullet
@@ -50,10 +51,10 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &176190
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -75,11 +76,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 200}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -28.480934, y: -1307.7758, z: -122.91778}
+  m_LocalScale: {x: 1.5052146, y: 1.5052141, z: 1.5052141}
   m_Children:
   - {fileID: 483346}
   - {fileID: 487192}
+  - {fileID: 433768}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &433768
@@ -88,12 +90,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.19400235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 487192}
-  m_RootOrder: 0
+  m_Father: {fileID: 427178}
+  m_RootOrder: 2
 --- !u!4 &483346
 Transform:
   m_ObjectHideFlags: 1
@@ -115,8 +117,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
   m_LocalPosition: {x: 0, y: 0, z: 0.194}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 433768}
+  m_Children: []
   m_Father: {fileID: 427178}
   m_RootOrder: 1
 --- !u!23 &2332188
@@ -166,7 +167,32 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &11422034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce71922c2eb3aa408090b9f8d4b2bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growMult: 10
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
+  explosionTimer: 58
+  collided: 0
+  popSize: 3
+  implodeSize: 4
+  rb: {fileID: 0}
+  Implode: 0
+  shrinkMult: 3
+  cloud: {fileID: 0}
+  particleSize: 0
+  BulletExplosion: {fileID: 146654, guid: 2d37b33dcb8ec654898d201291aa7966, type: 2}
+  explosionTime: 20
+  CoolBullet: 1
 --- !u!135 &13533964
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -397,7 +423,7 @@ ParticleSystem:
         rgba: 4284464867
       minMaxState: 0
     startSize:
-      scalar: 2
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1727,7 +1753,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1
-  scalingMode: 1
+  scalingMode: 2
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -3245,7 +3271,55 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: growMult
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: explosionTimer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: popSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Implode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: shrinkMult
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: implodeSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: particleSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: BulletExplosion
+      value: 
+      objectReference: {fileID: 146654, guid: 2d37b33dcb8ec654898d201291aa7966, type: 2}
+    - target: {fileID: 0}
+      propertyPath: explosionTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: CoolBullet
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 156704}
