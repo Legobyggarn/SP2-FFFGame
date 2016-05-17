@@ -79,6 +79,13 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -137,3 +144,7 @@ Material:
         first:
           name: _Color
         second: {r: 0.42352942, g: 0.4627451, b: 0.5137255, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.48452914, g: 0.48452914, b: 0.48452914, a: 1}

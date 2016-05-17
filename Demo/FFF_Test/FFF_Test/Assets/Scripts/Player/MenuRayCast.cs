@@ -17,7 +17,7 @@ public class MenuRayCast : MonoBehaviour {
 
 	// Private
 	private float timeSinceLastShot;
-	private float maxSceneChangeTime = 3;
+	private float maxSceneChangeTime = 3f;
 	private float sceneChangeTime;
 	private float maxSceneFadeTime;
 	private float sceneFadeTime;
@@ -27,12 +27,14 @@ public class MenuRayCast : MonoBehaviour {
 	private bool onExit = false;
 	private bool fading = true; 
 	private bool noNeedToPress = false;
-
+    public Material PlayMat;
+    public Material ExitMat;
+    public Material OptionMat;
 	// Use this for initialization
 	void Start () 
 	{
-
-		maxSceneFadeTime = st.getLerpTime();
+        maxSceneChangeTime = 3f;
+        maxSceneFadeTime = st.getLerpTime();
 	}
 
 	// Update is called once per frame
@@ -59,8 +61,14 @@ public class MenuRayCast : MonoBehaviour {
 					go.GetComponent<Renderer>().material.color = Color.Lerp (colorStart, colorEnd, lerp);
 
 					Debug.Log ("sceneChangeTime    " + sceneChangeTime);
-
-					if (maxSceneChangeTime < sceneChangeTime) 
+                    float greenColorValue = (255f * sceneChangeTime) / (maxSceneChangeTime*255f);
+                    if(greenColorValue > 255f) greenColorValue = 255f;
+                    Debug.Log("GreenColorvalue " + greenColorValue);
+                    Color finalColor = new Color(0f,greenColorValue, 0f);
+                 //   finalColor = new Color(0f, 10f, 0f);
+                    PlayMat.SetColor("_EmissionColor", finalColor);
+                    Debug.Log("Color value  " + PlayMat.GetColor("_EmissionColor"));
+                    if (maxSceneChangeTime < sceneChangeTime) 
 					{
 						//Debug.Log ("Fading");
 						if (fading) 
@@ -89,14 +97,20 @@ public class MenuRayCast : MonoBehaviour {
 				} 
 				else 
 				{
-					sceneChangeTime = 0;
-				}	
+                    //Color finalColor = new Color(0f, 0f, 0f);
+                   // PlayMat.SetColor("_EmissionColor", finalColor);
+                    sceneChangeTime = 0;
+                    Debug.Log("sceneChangeTime    " + sceneChangeTime);
+                }	
 			}
 		} 
 		else 
 		{
-			sceneChangeTime = 0;
-		}
+            Color finalColor = new Color(0f, 0f, 0f);
+            PlayMat.SetColor("_EmissionColor", finalColor);
+            sceneChangeTime = 0;
+            Debug.Log("sceneChangeTime    " + sceneChangeTime);
+        }
 
 		if(noNeedToPress)
 		{
