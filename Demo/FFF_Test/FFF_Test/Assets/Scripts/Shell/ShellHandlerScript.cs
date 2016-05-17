@@ -16,7 +16,11 @@ public class ShellHandlerScript : MonoBehaviour {
 	public bool distanceOverVolume;
 
 	public GameObject notifyNumShellChunks;
+	public GameObject pivoPoint;
+
 	private memoryDistance memoryDistanceScript;
+	private pivoPointRotation pivoPointRotationScript;
+
 	//public bool fillUpVolume;
 
 	// Private
@@ -28,6 +32,7 @@ public class ShellHandlerScript : MonoBehaviour {
 		availSpots = new List<GameObject>();
 
 		memoryDistanceScript = notifyNumShellChunks.gameObject.GetComponent<memoryDistance>();
+		pivoPointRotationScript = pivoPoint.gameObject.GetComponent<pivoPointRotation>();
 
 	}
 
@@ -35,7 +40,7 @@ public class ShellHandlerScript : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		// Find collision with shell and call 'coreCollision'
 		if (collision.gameObject.tag == "ShellChunk") {
-			Debug.Log("Core collision");
+			//Debug.Log("Core collision");
 			if (!collision.gameObject.GetComponent<ShellDamageScript>().GracePeriodActive && collision.gameObject.GetComponent<ObjectVolumeScript>().Active) {
 				if (useDistance) {
 					coreCollisionDistance(collision.gameObject);
@@ -63,7 +68,7 @@ public class ShellHandlerScript : MonoBehaviour {
 	// Notify that a collision with the shell has occured (parameter should contain the collided shell piece)
 	public void shellCollision(GameObject go) {
 
-		Debug.Log("In ShellCollision");
+		//Debug.Log("In ShellCollision");
 
 		go.GetComponent<MeshCollider>().enabled = false;
 		go.GetComponent<MeshRenderer>().enabled = false;
@@ -72,7 +77,7 @@ public class ShellHandlerScript : MonoBehaviour {
 
 		// Tell script controlling orbit to decrease number of shell parts left
 		memoryDistanceScript.decrementNumChildren();
-
+		pivoPointRotationScript.decrementNumChildren();
 	}
 
 	// Notify that the core has been hit (parameter should contain the object that collided with the core)
@@ -96,6 +101,7 @@ public class ShellHandlerScript : MonoBehaviour {
 
 					// Tell script controlling orbit to increase number of shell parts left
 					memoryDistanceScript.incrementNumChildren();
+					pivoPointRotationScript.incrementNumChildren ();
 
 					toDestroy.Add(game_object); // Add object to destroy later
 					found = true;
@@ -189,6 +195,7 @@ public class ShellHandlerScript : MonoBehaviour {
 
 				// Tell script controlling orbit to increase number of shell parts left
 				memoryDistanceScript.incrementNumChildren();
+				pivoPointRotationScript.incrementNumChildren ();
 
 				// Notify sound and music script that a shell chunk will start to merge
 				GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().shellChunkMergeWithCore();

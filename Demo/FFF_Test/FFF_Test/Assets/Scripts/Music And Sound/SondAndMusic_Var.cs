@@ -135,7 +135,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("Shell chunk was destroyed");
+		//Debug.Log("Shell chunk was destroyed");
 	}
 
 	// Shell chunk "merges" with core again, called when merging starts
@@ -144,7 +144,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("Shell chunk merged with core");
+		//Debug.Log("Shell chunk merged with core");
 	}
 
 	// Orbit increases
@@ -153,7 +153,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("Orbit increased");
+		//Debug.Log("Orbit increased");
 	}
 
 	// Orbit decreases
@@ -162,7 +162,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("Orbit decreased");
+		//Debug.Log("Orbit decreased");
 	}
 
 	// Core arrives at center
@@ -171,7 +171,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("Core is at center");
+		//Debug.Log("Core is at center");
 	}
 
 	// Bullet object gets destroyed (not called anywhere yet)
@@ -180,7 +180,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		// Play music/sound or call another funtion...
 
 		// Debug
-		Debug.Log("A bullet was destroyed");
+		//Debug.Log("A bullet was destroyed");
 	}
 
 }

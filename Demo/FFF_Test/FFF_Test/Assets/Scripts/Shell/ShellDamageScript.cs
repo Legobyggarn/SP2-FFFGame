@@ -82,7 +82,7 @@ public class ShellDamageScript : MonoBehaviour {
 			if (!firstHit) {
 				firstHit = true; 
 
-				Debug.Log ("lookPosistion set 1");
+				//Debug.Log ("lookPosistion set 1");
 				parentGo.GetComponent<memoryDistance> ().setLookPosition (collision.transform.position);
 			}
 
@@ -119,7 +119,7 @@ public class ShellDamageScript : MonoBehaviour {
 		} 
 
 		else if (collision.gameObject.tag == "Player") {
-			Debug.Log ("Player hit by shell chunk");
+			//Debug.Log ("Player hit by shell chunk");
 		}	
 
 	}

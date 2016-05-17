@@ -11,6 +11,7 @@ public class memoryDistance : MonoBehaviour {
 	public bool firstShot = false; 
 
 	public GameObject core;
+	public GameObject pivoPoint;
 
 	//following varr
 
@@ -21,6 +22,7 @@ public class memoryDistance : MonoBehaviour {
 	private Vector3 lookDirection;
 
 	//Private
+
 	private float numberOfChildren;
 	private float childCount;
 	private float maximumNumberOfChildern;
@@ -41,6 +43,8 @@ public class memoryDistance : MonoBehaviour {
 
 	private GameObject parentGo;
 	private GameObject grandParentGo;
+	private GameObject granderParentGo;
+
 	private GameObject rootGo;
 
 	//Lerp variabler
@@ -58,13 +62,16 @@ public class memoryDistance : MonoBehaviour {
 	{
 		parentGo = transform.parent.gameObject;
 		grandParentGo = parentGo.transform.parent.gameObject;
+		granderParentGo = grandParentGo.transform.parent.gameObject;
+
 		rootGo = transform.root.gameObject;
 
 		maximumNumberOfChildern = transform.childCount;
 		numberOfChildren = transform.childCount;
 		childCount = transform.childCount;
 
-		distanceCore = Vector3.Distance (rootGo.transform.position, transform.position);
+		//distanceCore = Vector3.Distance (rootGo.transform.position, transform.position);
+
 		distanceShell = Vector3.Distance (rootGo.transform.position, core.transform.position);
 
 
@@ -115,20 +122,22 @@ public class memoryDistance : MonoBehaviour {
 
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
-				startPos = grandParentGo.transform.localPosition;
+				startPos = pivoPoint.transform.localPosition;
 				endPos = new Vector3 (0, 0, (distanceCore * childProcent) - distanceCore);
 				//endPos = new Vector3 (0, 0, -(distanceCore * childProcent));
 
-				Debug.Log ("Changing orbit new");
+				//Debug.Log ("Changing orbit new");
 
 				// Change the position of the shell
-				parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 
-				parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
+				//parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				//parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
+				//core.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
 				// Change the position of the core
-				core.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 		
 
 				//Debug.Log("Prec:   " +prec);
@@ -138,13 +147,15 @@ public class memoryDistance : MonoBehaviour {
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
 				// Change the position of the shell
-				parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				//parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				//parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
-				parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
+				//core.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
 				// Change the position of the core
-				core.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 
 				//Debug.Log("Prec:   " +prec);
 			}
@@ -170,7 +181,7 @@ public class memoryDistance : MonoBehaviour {
 		//Only call if the shell has bean shot at 
 		if (firstShot == true) 
 		{
-			//followPlayerTest ();
+			followPlayerTest ();
 	
 		}
 	}
@@ -187,7 +198,7 @@ public class memoryDistance : MonoBehaviour {
 
 	public void decrementNumChildren() 
 	{
-		Debug.Log ("decrementNumChildren");
+		//Debug.Log ("decrementNumChildren");
 		childCount--;
 
 		// Notify sound and music script that a shell chunk will start to merge
@@ -246,7 +257,7 @@ public class memoryDistance : MonoBehaviour {
 	public void setLookPosition(Vector3 poss)
 	{
 		firstShot = true;
-		Debug.Log ("lookPosistion set 2");
+		//Debug.Log ("lookPosistion set 2");
 		lookPosition = poss;
 	}
 }
