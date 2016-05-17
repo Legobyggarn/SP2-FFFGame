@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 public class MenuRayCast : MonoBehaviour {
 
 	//Public 
@@ -40,7 +40,7 @@ public class MenuRayCast : MonoBehaviour {
 	{
 
 		// Shoot            
-		if (Input.GetKey(KeyCode.Space)) 
+		if (0.2f < Mathf.Abs(Input.GetAxis("Fire1"))) 
 		{ // Keyboard input (Use button instead?)
 			// Shot
 
@@ -49,7 +49,7 @@ public class MenuRayCast : MonoBehaviour {
 			if (Physics.Raycast (transform.position, transform.forward, out hit)) 
 			{
 				//Debug
-				//Debug.Log ("Debug: Object: [" + hit.transform.name + "] was hit");
+				Debug.Log ("Debug: Object: [" + hit.transform.name + "] was hit");
 
 				if (hit.transform.tag == "Play") 
 				{
@@ -103,6 +103,7 @@ public class MenuRayCast : MonoBehaviour {
 			sceneFadeTime += Time.deltaTime;
 			if (maxSceneFadeTime < sceneFadeTime) 
 			{
+                Debug.Log("GO TO LOADING SCREEN!");
 				Application.LoadLevel ("Loading_screen");
 			}
 		}

@@ -6,13 +6,13 @@ public class loadingScreen : MonoBehaviour {
 
 	public ScenesTransision st;
 
-	private float sceneChangeTime;
-	private float maxSceneChangeTime = 10f;
+	public float sceneChangeTime;
+    public float maxSceneChangeTime = 10f;
 
-	private float sceneFadeTime;
-	private float maxSceneFadeTime;
+	public float sceneFadeTime;
+    public float maxSceneFadeTime;
 
-	private bool fading = true;
+    public bool fading = true;
 
 	// Scene loading
 	private bool loaded = false;
@@ -24,10 +24,11 @@ public class loadingScreen : MonoBehaviour {
 	{
 		st.fadeFromWhite ();
 		maxSceneFadeTime = st.getLerpTime();
-
-		// Start loading
-		StartCoroutine("load");
-	}
+        //
+        // Start loading
+        StartCoroutine("load");
+       
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -49,7 +50,8 @@ public class loadingScreen : MonoBehaviour {
 				// Start the loaded level...
 				asyncLoad.allowSceneActivation = true;
 
-				//Application.LoadLevel ("Scene_01");
+                
+                Application.LoadLevel ("new_assets_scene");
 			}
 		}
 
@@ -66,13 +68,15 @@ public class loadingScreen : MonoBehaviour {
 		asyncLoad.allowSceneActivation = false;
 		while (!loaded) {
 			Debug.Log("Loading: " + asyncLoad.progress + "%");
-			yield return asyncLoad;
+            Debug.Log("Go to shitTown!");
+			yield return null;
 			// Work around for bug stopping loading at 0.9
 			if (asyncLoad.progress >= 0.9f) {
 				Debug.Log("Loading complete");
 				loaded = true;
 			}
 		}
+
 	}
 
 }
