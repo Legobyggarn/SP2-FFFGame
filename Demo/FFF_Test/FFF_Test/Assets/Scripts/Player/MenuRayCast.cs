@@ -53,9 +53,9 @@ public class MenuRayCast : MonoBehaviour {
         float mult = (f / maxSceneChangeTime);
         float difadd = mult * dif;
         float y = difadd + minhight;
-        Debug.Log("f is " +f  +" || mult " + mult + " || dif " + dif + " || difadd " + difadd + " || y is " + y);
+     //   Debug.Log("f is " +f  +" || mult " + mult + " || dif " + dif + " || difadd " + difadd + " || y is " + y);
         t.position = new Vector3(t.position.x, y, t.position.z);
-        Debug.Log("greenbar vector is " + GreenBarTransformPlay.position);
+      //  Debug.Log("greenbar vector is " + GreenBarTransformPlay.position);
         }
     }
 	// Update is called once per frame
@@ -72,7 +72,7 @@ public class MenuRayCast : MonoBehaviour {
 			if (Physics.Raycast (transform.position, transform.forward, out hit)) 
 			{
 				//Debug
-				Debug.Log ("Debug: Object: [" + hit.transform.name + "] was hit");
+			//	Debug.Log ("Debug: Object: [" + hit.transform.name + "] was hit");
 
 				if (hit.transform.tag == "Play") 
 				{
@@ -154,7 +154,7 @@ public class MenuRayCast : MonoBehaviour {
 			sceneFadeTime += Time.deltaTime;
 			if (maxSceneFadeTime < sceneFadeTime) 
 			{
-                Debug.Log("GO TO LOADING SCREEN!");
+             //   Debug.Log("GO TO LOADING SCREEN!");
 				Application.LoadLevel ("Loading_screen");
 			}
 		}
