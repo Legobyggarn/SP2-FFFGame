@@ -49,7 +49,7 @@ public class ShellDamageScript : MonoBehaviour {
 
 		activeGracePeriod = true;
 
-		parentGo = transform.parent.gameObject;
+	//	parentGo = transform.parent.gameObject;
 
 	}
 	
@@ -83,7 +83,7 @@ public class ShellDamageScript : MonoBehaviour {
 				firstHit = true; 
 
 				//Debug.Log ("lookPosistion set 1");
-				parentGo.GetComponent<memoryDistance> ().setLookPosition (collision.transform.position);
+				//parentGo.GetComponent<memoryDistance> ().setLookPosition (collision.transform.position);
 			}
 
 			if (!isHit) {

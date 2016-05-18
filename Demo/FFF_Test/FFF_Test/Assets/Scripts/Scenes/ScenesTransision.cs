@@ -5,7 +5,7 @@ public class ScenesTransision : MonoBehaviour {
 
 	//Public
 	public Material mat;
-	public float lerpTime = 3.0f;
+	public float lerpTime = 5.0f;
 	public bool white;
 
 	//Private

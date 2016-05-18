@@ -4,19 +4,29 @@ using System.Collections;
 public class pivoPointRotation : MonoBehaviour {
 
 	//public 
+	public Material lotucMat;
+	private Color coloTransparent = new Color (0, 0, 0, 0);
+	private Color lotucColor;
+
 	public float coreFix; 
 	public float speed = 5.0f;
 	public float lerpTime = 5.0f;
-	public float lerpTimeBall = 2.0f;
+	public float lerpTimeBall = 4.0f;
 	public float shakeFix = 50.0f;
+
+	public GameObject lotucGo;
 
 	public Vector3 maximumScaleBall;
 
 	public ScenesTransision st;
 
 	public bool firstShot = false; 
+	public bool followPlayerB = true; 
 
 	public ParticleSystem particelEffect;
+
+	public float timeToFade = 15.0f;
+	public float currTimeToFade = 0.0f;
 
 	//Lerp variabler
 	private float currentLerpTime;
@@ -24,14 +34,16 @@ public class pivoPointRotation : MonoBehaviour {
 	private float moveDistance;
 	private Vector3 ballStartScale;
 
-
 	private Vector3 startPos;
 	private Vector3 endPos;
+	private Vector3 LocusEndSize; 
 
 	public float rotSpeed = 1;
 
 	//Private
 	private GameObject rootGo;
+
+
 	private float precBall;
 
 	private Vector3 PlayerCordinates;
@@ -40,7 +52,7 @@ public class pivoPointRotation : MonoBehaviour {
 
 	//Screenchange var
 	private float sceneChangeTime = 0.0f;
-	public float maxSceneChangeTime = 3.0f;
+	public float maxSceneChangeTime = 5.0f;
 
 	//child var
 	private float maximumNumberOfChildern;
@@ -62,6 +74,7 @@ public class pivoPointRotation : MonoBehaviour {
 		endPos = transform.localPosition;
 
 		rootGo = transform.root.gameObject;
+		lotucGo.SetActive (false);
 
 		distanceToMid = Vector3.Distance (Vector3.zero, transform.localPosition);
 
@@ -69,6 +82,9 @@ public class pivoPointRotation : MonoBehaviour {
 		transform.localScale *= coreDistanceScalar;
 
 		ballStartScale = particelEffect.transform.localScale;
+		LocusEndSize = lotucGo.transform.localScale; 
+
+		lotucColor = lotucMat.color;
 	}
 	
 	// Update is called once per frame
@@ -96,13 +112,13 @@ public class pivoPointRotation : MonoBehaviour {
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
 
-				Debug.Log (childProcent + "       childProcent");
+			//	Debug.Log (childProcent + "       childProcent");
 
 
 				startPos = transform.localPosition;
 				endPos = new Vector3 (0, 0, (distanceToMid * childProcent));
 
-				Debug.Log ("distanceToMid   "  + distanceToMid);
+				//Debug.Log ("distanceToMid   "  + distanceToMid);
 
 				transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 				//transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
@@ -116,23 +132,34 @@ public class pivoPointRotation : MonoBehaviour {
 		}
 
 		else {
-			Debug.Log ("fading");
-			if (fading) {
-				st.fadeToWhite ();
-				fading = false;
-			}
 
-			sceneChangeTime += Time.deltaTime;
+			//Expanding the partical system and spawning in the lotus s
+			expandingBall ();
 
-			if (maxSceneChangeTime < sceneChangeTime) { 
-				win ();
+			currTimeToFade += Time.deltaTime;
+
+			if(timeToFade < currTimeToFade ){
+				
+				if (fading) {
+					st.fadeToWhite ();
+					fading = false;
+				}
+
+				sceneChangeTime += Time.deltaTime;
+
+				if (st.getLerpTime() < sceneChangeTime) { 
+					win ();
+				}
 			}
 		}
 
-		followPlayer ();
+		if (followPlayerB) {
+			followPlayer ();
+		}
 
 		if (Input.GetKey (KeyCode.P)) {
 			expandingBall ();
+			win ();
 		}
 	}
 
@@ -182,13 +209,23 @@ public class pivoPointRotation : MonoBehaviour {
 		precBall = currentLerpTimeBall / lerpTimeBall;
 
 		if (currentLerpTimeBall > lerpTimeBall) {
-			
-			//Ta bort bollen alternativt fada ut från vitt och byt ut till lotucen 
+
+			followPlayerB = false;
+
+
 		} else {
+
+			lotucGo.SetActive (true);
+
+			transform.rotation = Quaternion.identity; // Set rotation to 0,0,0
+
 
 			particelEffect.GetComponent<SphereCollider>().enabled = false;  
 			particelEffect.emissionRate -= 1.0f;
-			particelEffect.transform.localScale = Vector3.Lerp (ballStartScale, maximumScaleBall, precBall);	
+
+			particelEffect.transform.localScale = Vector3.Lerp (ballStartScale, maximumScaleBall, precBall);
+			lotucGo.transform.localScale = Vector3.Lerp (Vector3.zero, LocusEndSize, precBall);
+			lotucMat.color = Color.Lerp (coloTransparent, lotucColor, precBall);
 		}
 	}
 }

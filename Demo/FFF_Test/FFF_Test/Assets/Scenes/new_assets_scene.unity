@@ -5141,7 +5141,6 @@ Transform:
   m_LocalScale: {x: 1.4807149, y: 1.4807117, z: 1.4807117}
   m_Children:
   - {fileID: 2048204966}
-  - {fileID: 1799036470}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &432211181
@@ -8767,51 +8766,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719583568}
   m_Mesh: {fileID: 4300072, guid: 647eea2128862e74282e2d7123591798, type: 3}
---- !u!1 &725659040 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 184328, guid: fcba5112326a651419ee1626796a1071, type: 2}
-  m_PrefabInternal: {fileID: 1853331894}
---- !u!114 &725659046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 725659040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02536f33053638549ab5c50ff3ecc0de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweakMode: 1
-  screenBlendMode: 1
-  hdr: 0
-  sepBlurSpread: 1.5
-  useSrcAlphaAsMask: 0
-  bloomIntensity: 0.2
-  bloomThreshold: 0.5
-  bloomBlurIterations: 2
-  lensflares: 1
-  hollywoodFlareBlurIterations: 2
-  lensflareMode: 1
-  hollyStretchWidth: 3.5
-  lensflareIntensity: 1
-  lensflareThreshold: 0.3
-  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
-  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
-  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
-  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
-  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
-    type: 3}
-  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
-  separableBlurShader: {fileID: 4800000, guid: a9df009a214e24a5ebbf271595f8d5b6, type: 3}
-  addBrightStuffOneOneShader: {fileID: 4800000, guid: f7898d203e9b94c0dbe2bf9dd5cb32c0,
-    type: 3}
-  screenBlendShader: {fileID: 4800000, guid: 53b3960ee3d3d4a5caa8d5473d120187, type: 3}
-  hollywoodFlaresShader: {fileID: 4800000, guid: e2baf3cae8edc4daf94c9adc2154be00,
-    type: 3}
-  brightPassFilterShader: {fileID: 4800000, guid: 186c4c0d31e314f049595dcbaf4ca129,
-    type: 3}
 --- !u!1 &739958424
 GameObject:
   m_ObjectHideFlags: 0
@@ -10698,7 +10652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da3e12f93ff11a4fa37e08fd00830df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeedX: 0
+  rotationSpeedX: 5
   rotationSpeedY: 5
   rotationSpeedZ: 0
 --- !u!23 &864944860
@@ -15245,29 +15199,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1034965829}
   m_Mesh: {fileID: 4300242, guid: 647eea2128862e74282e2d7123591798, type: 3}
---- !u!1 &1036305544 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 115996, guid: fcba5112326a651419ee1626796a1071, type: 2}
-  m_PrefabInternal: {fileID: 1853331894}
---- !u!114 &1036305546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1036305544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6248ba4606415e843b6738bdfb7a7c33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testalpha: 0
-  rend: {fileID: 0}
-  fadeInSpeed: 0.7
-  fadeOutSpeed: 0.7
-  alphaValue: 0
-  fadeOut: 0
-  fadeIn: 0
-  TestingModeSet: 0
 --- !u!1 &1043549426
 GameObject:
   m_ObjectHideFlags: 0
@@ -26068,7 +25999,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 423191175}
+    m_TransformParent: {fileID: 2048204966}
     m_Modifications:
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26080,7 +26011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalRotation.x
@@ -26100,19 +26031,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.029999997
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.029999997
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26120,7 +26051,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 48e7e862672d06a4ba8c44c604a04bfe, type: 2}
     - target: {fileID: 100000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e14269669f0e9054aa3bbd53bd9d61be, type: 3}
@@ -26693,10 +26624,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 479890, guid: fcba5112326a651419ee1626796a1071, type: 2}
       propertyPath: m_LocalPosition.x
       value: -23
@@ -26729,29 +26656,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f1c152a1fd129e44a1681acc9b44675, type: 2}
-    - target: {fileID: 13719498, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8de1ff7f272d1064fa63b5b03750069a, type: 2}
-    - target: {fileID: 11428110, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: bulletSpeed
-      value: 6000
+    - target: {fileID: 443448, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.145
       objectReference: {fileID: 0}
-    - target: {fileID: 12444118, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 183952, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 14345200, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 452794, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.31
       objectReference: {fileID: 0}
-    - target: {fileID: 6474536, guid: fcba5112326a651419ee1626796a1071, type: 2}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 432552, guid: fcba5112326a651419ee1626796a1071, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcba5112326a651419ee1626796a1071, type: 2}
@@ -29261,6 +29180,7 @@ Transform:
   m_Children:
   - {fileID: 1935674679}
   - {fileID: 584396859}
+  - {fileID: 1799036470}
   m_Father: {fileID: 423191175}
   m_RootOrder: 0
 --- !u!23 &2048204967
@@ -29366,16 +29286,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce326c233deb31148a7e3f4ed45fa3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lotucMat: {fileID: 2100000, guid: 48e7e862672d06a4ba8c44c604a04bfe, type: 2}
   coreFix: 0
   speed: 5
   lerpTime: 5
   lerpTimeBall: 2
   shakeFix: 10
+  lotucGo: {fileID: 1799036467}
   maximumScaleBall: {x: 1000, y: 1000, z: 1000}
   st: {fileID: 191705292}
   firstShot: 0
+  followPlayerB: 1
   particelEffect: {fileID: 935899059}
-  rotSpeed: 1
+  timeToFade: 10
+  currTimeToFade: 0
+  rotSpeed: 0.1
   maxSceneChangeTime: 3
 --- !u!1 &2049306947
 GameObject:

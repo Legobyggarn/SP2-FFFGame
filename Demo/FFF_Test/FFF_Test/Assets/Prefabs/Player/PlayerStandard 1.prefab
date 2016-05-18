@@ -504,6 +504,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 470558}
   - 137: {fileID: 13719498}
+  - 114: {fileID: 11439858}
   m_Layer: 0
   m_Name: arms
   m_TagString: Untagged
@@ -2024,6 +2025,7 @@ GameObject:
   - 124: {fileID: 12444118}
   - 81: {fileID: 8144084}
   - 114: {fileID: 11458116}
+  - 114: {fileID: 11451476}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3302,7 +3304,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183952}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: -0.787, z: 0.143}
+  m_LocalPosition: {x: 0, y: -0.787, z: 0.025}
   m_LocalScale: {x: 0.62, y: 7.7, z: 0.47}
   m_Children: []
   m_Father: {fileID: 440560}
@@ -4118,7 +4120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.3, y: -1358.7, z: -121}
+  m_LocalPosition: {x: -23, y: -248.5, z: -121}
   m_LocalScale: {x: 14.965405, y: 14.965399, z: 14.965399}
   m_Children:
   - {fileID: 440560}
@@ -4549,7 +4551,7 @@ MeshCollider:
   m_GameObject: {fileID: 183952}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -4713,9 +4715,28 @@ MonoBehaviour:
   bulletPrefab: {fileID: 156704, guid: ee20ec22d37aa024a9d8646f42901fe8, type: 2}
   reloadTime: 0.3
   chargeTime: 0
-  bulletSpeed: 3500
+  bulletSpeed: 6000
   bulletLifespan: 2
   animSpeed: 1
+--- !u!114 &11439858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6248ba4606415e843b6738bdfb7a7c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testalpha: 0
+  rend: {fileID: 0}
+  fadeInSpeed: 0.7
+  fadeOutSpeed: 0.7
+  alphaValue: 0
+  fadeOut: 0
+  fadeIn: 0
+  TestingModeSet: 0
 --- !u!114 &11440830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4734,6 +4755,47 @@ MonoBehaviour:
   bulletSpeed: 3500
   bulletLifespan: 2
   animSpeed: 0
+--- !u!114 &11451476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02536f33053638549ab5c50ff3ecc0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 1
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 1.5
+  useSrcAlphaAsMask: 0
+  bloomIntensity: 0.2
+  bloomThreshold: 0.5
+  bloomBlurIterations: 2
+  lensflares: 1
+  hollywoodFlareBlurIterations: 2
+  lensflareMode: 1
+  hollyStretchWidth: 3.5
+  lensflareIntensity: 1
+  lensflareThreshold: 0.3
+  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
+  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
+  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
+  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: a9df009a214e24a5ebbf271595f8d5b6, type: 3}
+  addBrightStuffOneOneShader: {fileID: 4800000, guid: f7898d203e9b94c0dbe2bf9dd5cb32c0,
+    type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 53b3960ee3d3d4a5caa8d5473d120187, type: 3}
+  hollywoodFlaresShader: {fileID: 4800000, guid: e2baf3cae8edc4daf94c9adc2154be00,
+    type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 186c4c0d31e314f049595dcbaf4ca129,
+    type: 3}
 --- !u!114 &11458116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4827,7 +4889,8 @@ SkinnedMeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 11dc14bed2e1d13449e44f1c6db42f7a, type: 2}
+  - {fileID: 2100000, guid: 8de1ff7f272d1064fa63b5b03750069a, type: 2}
+  - {fileID: 2100000, guid: 2f1c152a1fd129e44a1681acc9b44675, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
