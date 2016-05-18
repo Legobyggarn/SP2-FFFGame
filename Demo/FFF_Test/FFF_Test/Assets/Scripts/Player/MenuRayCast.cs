@@ -17,7 +17,7 @@ public class MenuRayCast : MonoBehaviour {
 
 	// Private
 	private float timeSinceLastShot;
-	private float maxSceneChangeTime = 3f;
+	public float maxSceneChangeTime;
 	private float sceneChangeTime;
 	private float maxSceneFadeTime;
 	private float sceneFadeTime;
@@ -30,13 +30,34 @@ public class MenuRayCast : MonoBehaviour {
     public Material PlayMat;
     public Material ExitMat;
     public Material OptionMat;
+    private Transform GreenBarTransformPlay;
+    private Transform GreenBarTransformExit;
+    private Transform GreenBarTransformOption;
+    private bool loadingbarStop;
+  
 	// Use this for initialization
 	void Start () 
 	{
-        maxSceneChangeTime = 3f;
+        GreenBarTransformPlay = GameObject.Find("GreenTransPlay").transform;
+        GreenBarTransformExit = GameObject.Find("GreenTransExit").transform;
+        GreenBarTransformOption = GameObject.Find("GreenTransOption").transform;
+        maxSceneChangeTime = 0.5f;
         maxSceneFadeTime = st.getLerpTime();
 	}
-
+    private void setBar(float f, Transform t)
+    {
+        if (!loadingbarStop) { 
+        float maxhigt = 1.66f;
+        float minhight = -0.11f;
+        float dif = maxhigt - minhight;
+        float mult = (f / maxSceneChangeTime);
+        float difadd = mult * dif;
+        float y = difadd + minhight;
+        Debug.Log("f is " +f  +" || mult " + mult + " || dif " + dif + " || difadd " + difadd + " || y is " + y);
+        t.position = new Vector3(t.position.x, y, t.position.z);
+        Debug.Log("greenbar vector is " + GreenBarTransformPlay.position);
+        }
+    }
 	// Update is called once per frame
 	void Update () 
 	{
@@ -59,15 +80,8 @@ public class MenuRayCast : MonoBehaviour {
 
 					float lerp = Mathf.PingPong (Time.time, duration) / duration;
 					go.GetComponent<Renderer>().material.color = Color.Lerp (colorStart, colorEnd, lerp);
-
-					Debug.Log ("sceneChangeTime    " + sceneChangeTime);
-                    float greenColorValue = (255f * sceneChangeTime) / (maxSceneChangeTime*255f);
-                    if(greenColorValue > 255f) greenColorValue = 255f;
-                    Debug.Log("GreenColorvalue " + greenColorValue);
-                    Color finalColor = new Color(0f,greenColorValue, 0f);
-                 //   finalColor = new Color(0f, 10f, 0f);
-                    PlayMat.SetColor("_EmissionColor", finalColor);
-                    Debug.Log("Color value  " + PlayMat.GetColor("_EmissionColor"));
+                  
+                    setBar(sceneChangeTime, GreenBarTransformPlay);
                     if (maxSceneChangeTime < sceneChangeTime) 
 					{
 						//Debug.Log ("Fading");
@@ -76,40 +90,63 @@ public class MenuRayCast : MonoBehaviour {
 							st.fadeToWhite ();
 							fading = false;
 							noNeedToPress = true;
-						}
+                            loadingbarStop = true;
+
+                        }
 					}					
 				}
 
 				else if (hit.transform.tag == "Options") 
 				{
+                    sceneChangeTime += Time.deltaTime;
 
-				}
+                    float lerp = Mathf.PingPong(Time.time, duration) / duration;
+                    go.GetComponent<Renderer>().material.color = Color.Lerp(colorStart, colorEnd, lerp);
+
+                    setBar(sceneChangeTime, GreenBarTransformOption);
+                    if (maxSceneChangeTime < sceneChangeTime)
+                    {
+                        //Debug.Log ("Fading");
+                        if (fading)
+                        {
+                            st.fadeToWhite();
+                            fading = false;
+                            noNeedToPress = true;
+                            loadingbarStop = true;
+                        }
+                    }
+                }
 
 				else if (hit.transform.tag == "Exit") 
 				{
 					sceneChangeTime += Time.deltaTime;
-
-					if (maxSceneChangeTime < sceneChangeTime) 
+                    setBar(sceneChangeTime, GreenBarTransformExit);
+                    if (maxSceneChangeTime < sceneChangeTime) 
 					{
-						Application.Quit ();
+                        loadingbarStop = true;
+                        Debug.Log("Exit now!");
+                        Application.Quit ();
 					}		
 
 				} 
 				else 
 				{
-                    //Color finalColor = new Color(0f, 0f, 0f);
-                   // PlayMat.SetColor("_EmissionColor", finalColor);
+                  
                     sceneChangeTime = 0;
-                    Debug.Log("sceneChangeTime    " + sceneChangeTime);
+                    setBar(sceneChangeTime, GreenBarTransformPlay);
+                    setBar(sceneChangeTime, GreenBarTransformExit);
+                    setBar(sceneChangeTime, GreenBarTransformOption);
+                   
                 }	
 			}
 		} 
 		else 
 		{
-            Color finalColor = new Color(0f, 0f, 0f);
-            PlayMat.SetColor("_EmissionColor", finalColor);
+            
             sceneChangeTime = 0;
-            Debug.Log("sceneChangeTime    " + sceneChangeTime);
+            setBar(sceneChangeTime, GreenBarTransformPlay);
+            setBar(sceneChangeTime, GreenBarTransformExit);
+            setBar(sceneChangeTime, GreenBarTransformOption);
         }
 
 		if(noNeedToPress)
