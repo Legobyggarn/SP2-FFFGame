@@ -505,6 +505,7 @@ GameObject:
   - 4: {fileID: 470558}
   - 137: {fileID: 13719498}
   - 114: {fileID: 11468742}
+  - 114: {fileID: 11471472}
   m_Layer: 0
   m_Name: arms
   m_TagString: Untagged
@@ -1107,7 +1108,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 479890}
   - 143: {fileID: 14345200}
-  - 114: {fileID: 11428110}
   - 114: {fileID: 11470902}
   - 114: {fileID: 11425752}
   - 114: {fileID: 11492900}
@@ -1115,6 +1115,8 @@ GameObject:
   - 95: {fileID: 9551134}
   - 114: {fileID: 11412194}
   - 114: {fileID: 11425172}
+  - 114: {fileID: 11449848}
+  - 114: {fileID: 11483950}
   m_Layer: 0
   m_Name: PlayerStandard 1
   m_TagString: Player
@@ -3109,7 +3111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.762, z: 1.076}
+  m_LocalPosition: {x: 0, y: -0.39, z: 0.454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479890}
@@ -4119,7 +4121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23, y: -1301.2, z: -121}
+  m_LocalPosition: {x: -23, y: -1302.88, z: -121}
   m_LocalScale: {x: 14.965405, y: 14.965399, z: 14.965399}
   m_Children:
   - {fileID: 440560}
@@ -4594,7 +4596,7 @@ Animator:
   m_GameObject: {fileID: 137984}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8bd0254978a83334289587b976634cc5, type: 3}
-  m_Controller: {fileID: 9100000, guid: e40751f6018afa7459753dfe6a7a4909, type: 2}
+  m_Controller: {fileID: 9100000, guid: 294b6095d0aa5894e9a4f137eff089a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4689,8 +4691,8 @@ MonoBehaviour:
   OculusSuperMod: 0
   MaxSpeedStrafe: 30.02
   MinSpeedStrafe: 30.56
-  StaticStrafeSpeed: 0
-  StaticSpeed: 10
+  StaticStrafeSpeed: 1
+  StaticSpeed: 50
   UseSmoothAcceleration: 1
   SmoothAcceleration: 0.1
   SmoothDeacceleration: 0.1
@@ -4699,24 +4701,6 @@ MonoBehaviour:
   SpeedINC: 8.82
   SpeedDEC: 8.04
   RotationSpeed: 51.05
---- !u!114 &11428110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbdc12f82704c9449a3a68b87d857de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 120906}
-  bulletPrefab: {fileID: 156704, guid: ee20ec22d37aa024a9d8646f42901fe8, type: 2}
-  reloadTime: 0.3
-  chargeTime: 0
-  bulletSpeed: 3500
-  bulletLifespan: 2
-  animSpeed: 1
 --- !u!114 &11440830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4735,6 +4719,24 @@ MonoBehaviour:
   bulletSpeed: 3500
   bulletLifespan: 2
   animSpeed: 0
+--- !u!114 &11449848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137984}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed78faf0a188e6458742f0a92f74eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSpeed: 3.74
+  autoSpeedChange: 0.6
+  maxSpeed: 11.61
+  deacceleration: 0.68
+  acceleration: 0.51
+  rotSpeed: 0.34
+  oculusTransform: {fileID: 479890}
 --- !u!114 &11458116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4765,6 +4767,8 @@ MonoBehaviour:
   fadeOut: 0
   fadeIn: 0
   TestingModeSet: 0
+  targetAlpha: 0
+  fadeTowardTarget: 0
 --- !u!114 &11470902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4776,8 +4780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a341f8758835842b7f814657bbba60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeedX: 5
-  rotSpeedY: 5
+  rotSpeedX: 135
+  rotSpeedY: 135
   rotSpeed: 1
   noMouse: 0
   oculusTransform: {fileID: 479890}
@@ -4787,6 +4791,27 @@ MonoBehaviour:
   deacceleration: 0.5
   antiJitterX: 0.05
   antiJitterY: 0.05
+--- !u!114 &11471472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6248ba4606415e843b6738bdfb7a7c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testalpha: 0
+  rend: {fileID: 0}
+  fadeInSpeed: 1
+  fadeOutSpeed: 0.3
+  alphaValue: 0
+  fadeOut: 0
+  fadeIn: 0
+  TestingModeSet: 0
+  targetAlpha: 0
+  fadeTowardTarget: 0
 --- !u!114 &11483158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4801,6 +4826,34 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: 854800fcb32da9040a6c4a4fbd77ff6c, type: 2}
   lerpTime: 5
   white: 1
+--- !u!114 &11483950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d120be803ed2b498e09ae56fa0feb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestingMode: 0
+  Oculus: 0
+  stackBullets: 0
+  timeUntilDecrease: 2
+  overHeatMax: 100
+  overHeatTick: 5
+  overHeatMult: 3
+  coolingTick: 20
+  FireRate: 1
+  bulletSpeed: 3570.2
+  bulletLifespan: 10
+  currentHeatLevel: 0
+  spawnPoint: {fileID: 120906}
+  spawnPoint2: {fileID: 148288}
+  spawnPoint3: {fileID: 165184}
+  bulletPrefab: {fileID: 156704, guid: ee20ec22d37aa024a9d8646f42901fe8, type: 2}
+  TattoScript: {fileID: 0}
 --- !u!114 &11492900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4941,12 +4994,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 0.5
-  m_Radius: 0.5
+  m_Radius: 0.61
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.38, z: 0.19}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
