@@ -1,12 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using FMODUnity;
 
 public class SondAndMusic_Var : MonoBehaviour {
 
 	// TODO: Have two seperate lists, one for cores and one for shells
 	// TODO: Add protection against invalid indexes in methods using an index for looking up a core
+
+	// Added by SoundDesigner
+	public GameObject shellChunk;
+    
+	// Sound
+	//så man kan använda sig av fmodsfunktionalitet
+	[FMODUnity.EventRef]
+	public string SoundEvent;
+
+	FMOD.Studio.EventInstance Sound;
+
 
 	public GameObject player;
 	public List <GameObject> coreList;
@@ -18,7 +29,9 @@ public class SondAndMusic_Var : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		orbitsCenter = orbitsCenterTransform.position;
+		if (orbitsCenterTransform != null) {
+			orbitsCenter = orbitsCenterTransform.position;
+		}
 	}
 	
 	// Update is called once per frame
@@ -85,10 +98,16 @@ public class SondAndMusic_Var : MonoBehaviour {
 	// Returns the value of the players distance to the orbit point 
 	public float getDistanceToCenter() 
 	{
-		Vector3 distanceVector = orbitsCenter - player.transform.position;
-		float distanceToCenter = distanceVector.magnitude;
-		//float temp = 0;
-		return distanceToCenter;
+		if (orbitsCenterTransform != null) {
+			Vector3 distanceVector = orbitsCenter - player.transform.position;
+			float distanceToCenter = distanceVector.magnitude;
+			//float temp = 0;
+			return distanceToCenter;
+		} 
+
+		else { // No center...
+			return -1;
+		}
 	}
 
 	// Returns the value of the core with index i distance to the orbit point.
@@ -135,6 +154,17 @@ public class SondAndMusic_Var : MonoBehaviour {
 	// [Called from a shellChunk script before destroying self]
 	public void shellChunkDestroyed(Vector3 pos) {
 		// Play music/sound or call another funtion...
+
+		//sätter så eventet spelas ifrån objectet som detta script ligger på
+		if (SoundEvent != null) 
+		{
+			Sound.set3DAttributes(RuntimeUtils.To3DAttributes(pos));
+		}
+
+		//startar eventet
+		Sound.start();
+
+		//shellChunk.GetComponent<ShellDestroySound>().Play(pos);
 	}
 
 	// Shell chunk "merges" with core again, called when merging starts
