@@ -27,7 +27,7 @@ MonoBehaviour:
   - {fileID: 11480888}
   - {fileID: 11420912}
   MasterBankRef: {fileID: 11408512}
-  stringsBankWriteTime: 635989463526286424
+  stringsBankWriteTime: 635991822310721060
   cacheVersion: 1
 --- !u!114 &11400450
 MonoBehaviour:
@@ -108,6 +108,21 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &11404028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Progression
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &11404106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,10 +180,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\StreamingAssets\Master Bank.bank
-  lastModified: 635989463494236916
+  lastModified: 635991822310383750
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &11409976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: CapsuleDistanceMid
+  Min: 0
+  Max: 100
+  Default: 100
 --- !u!114 &11410424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +241,21 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+--- !u!114 &11411836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Area
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &11415674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +312,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 11433436}
+  - {fileID: 11404028}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &11423396
@@ -384,6 +429,21 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &11433022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AreaClear
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &11433368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,6 +629,21 @@ MonoBehaviour:
   - {fileID: 11423396}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &11452520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: VO#
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &11453122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,9 +946,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 11470436}
-  - {fileID: 11483182}
-  - {fileID: 11492786}
+  - {fileID: 11433022}
+  - {fileID: 11409976}
+  - {fileID: 11411836}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &11470040
@@ -1139,7 +1214,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 11407824}
+  - {fileID: 11452520}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &11483522

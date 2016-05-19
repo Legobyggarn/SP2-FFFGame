@@ -16,6 +16,7 @@ public class POIManagerScript : MonoBehaviour {
 	[Header("Important POI")]
 	public List<GameObject> importantPointsOfInterest;
 	public List<string> importantPointsOfInterestNames;
+	public List<GameObject> POIClosedRooms;
 
 	// Private variables
 	private int numPOIAtStart;
@@ -62,9 +63,11 @@ public class POIManagerScript : MonoBehaviour {
 			// Find the correct name
 			int nameIndex = pointsOfInterest.IndexOf(go);
 			string name = pointsOfInterestNames[nameIndex];
-			// Remove POI, and name from their respective lists
+
+			// Remove POI and name from their respective lists
 			pointsOfInterest.Remove(go);
 			pointsOfInterestNames.RemoveAt(nameIndex);
+
 			// Notify the sound and music script (if musicAndSound is set)
 			if (soundAndMusic != null) {
 				soundAndMusicScript.POIDiscovered(name);
@@ -78,9 +81,12 @@ public class POIManagerScript : MonoBehaviour {
 			// Find the correct name
 			int nameIndex = importantPointsOfInterest.IndexOf(go);
 			string name = importantPointsOfInterestNames[nameIndex];
-			// Remove POI from the list...
+			// Open up (unlock doors in) room for important POI
+			POIClosedRooms[nameIndex].GetComponent<POIClosedRoom>().unlockDoors();
+			// Remove POI, name and room from their respective lists
 			importantPointsOfInterest.Remove(go);
 			importantPointsOfInterestNames.RemoveAt(nameIndex);
+			POIClosedRooms.RemoveAt(nameIndex);
 			// Notify the sound and music script (if musicAndSound is set)
 			if (soundAndMusic != null) {
 				soundAndMusicScript.importantPOIDiscovered(name);

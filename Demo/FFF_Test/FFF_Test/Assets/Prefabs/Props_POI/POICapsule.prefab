@@ -2138,8 +2138,9 @@ GameObject:
   - 4: {fileID: 492096}
   - 135: {fileID: 13564446}
   - 114: {fileID: 11439822}
+  - 114: {fileID: 11499760}
   m_Layer: 0
-  m_Name: MiniCapsule
+  m_Name: POICapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15160,11 +15161,24 @@ MonoBehaviour:
   explosionForce: 1000
   explosionRadius: 0
   coreGameObjectPrefab: {fileID: 150864, guid: c66338088bf4ca4419a6e21ff92821b3, type: 2}
+  soundAndMusic: {fileID: 0}
   baseShakeTime: 0.2
   shakeTimeMultiplier: 1
   baseShakeAmount: 0.5
   shakeAmountMultiplier: 1
   shellShakeChange: 0.02
+--- !u!114 &11499760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8842810b0751d064d87c87a65a568139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isImportantPOI: 1
 --- !u!135 &13564446
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -15183,7 +15197,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: POICapsule
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161364}
