@@ -9,9 +9,10 @@ public class CutsceneScript : MonoBehaviour {
 	// Public variables
 	public int cutsceneToPlay;
 	public MovieTexture[] cutscenes;
+	public string sceneToLoad; // Will be another variable taken from the level, in the full game.
 
 	// Private variables
-	//...
+	private float elapsedTime = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -33,8 +34,13 @@ public class CutsceneScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
-		// Check if the cutscene is done. If so start new scene...
+
+		elapsedTime += Time.deltaTime;
+
+		// If the cutscene is done start a new scene
+		if (elapsedTime >= cutscenes [cutsceneToPlay].duration) {
+			Application.LoadLevel(sceneToLoad);
+		}
 
 	}
 }

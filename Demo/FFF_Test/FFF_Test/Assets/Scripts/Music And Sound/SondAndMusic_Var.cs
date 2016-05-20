@@ -32,6 +32,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		if (orbitsCenterTransform != null) {
 			orbitsCenter = orbitsCenterTransform.position;
 		}
+
 	}
 	
 	// Update is called once per frame
@@ -155,14 +156,16 @@ public class SondAndMusic_Var : MonoBehaviour {
 	public void shellChunkDestroyed(Vector3 pos) {
 		// Play music/sound or call another funtion...
 
+		//gör så eventet faktiskt funkar
+		Sound = FMODUnity.RuntimeManager.CreateInstance (SoundEvent);
+
 		//sätter så eventet spelas ifrån objectet som detta script ligger på
 		if (SoundEvent != null) 
 		{
 			Sound.set3DAttributes(RuntimeUtils.To3DAttributes(pos));
+			//startar eventet
+			Sound.start();
 		}
-
-		//startar eventet
-		Sound.start();
 
 		//shellChunk.GetComponent<ShellDestroySound>().Play(pos);
 	}
