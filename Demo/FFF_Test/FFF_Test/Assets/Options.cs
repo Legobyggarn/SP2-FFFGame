@@ -24,6 +24,8 @@ public class Options : MonoBehaviour {
     public bool FullScreenMode;
     public int QualitySetting;
     public float TestAlpha;
+    private static float ClickTime;
+    public float pressTimer;
     string[] QualityStrings = { "Fastest", "Fast", "Simple", "Good", "Beautiful", "Fantastic" };
   
     public bool cancel;
@@ -46,6 +48,157 @@ public class Options : MonoBehaviour {
     public TextMesh[] allTexts;
     private int[] X_res = {640, 1024, 1280, 1600, 1920 };
     private int[] Y_res = {480, 576, 720, 900, 1080};
+    private struct InputHandler
+    {
+        private static bool upIsPressed;
+        private static bool downIsPressed;
+        private static bool leftIsPressed;
+        private static bool rightIsPressed;
+        private static bool enterIsPressed;
+        private static bool backIsPressed;
+        private static float coolDown;
+
+        private static bool EnterReseted;
+        private static bool BackReseted;
+
+        public static void CheckInput()
+        {
+            if(Input.GetAxis("EnterAndBack") == 1)
+            {
+                resetInput();
+                enterIsPressed = true;
+                BackReseted = true;
+            }
+            else if(Input.GetAxis("EnterAndBack") == -1)
+            {
+                resetInput();
+                backIsPressed = true;
+                EnterReseted = true;
+            }
+            else if (Input.GetAxis("DpadUpDown") == 1)
+            {
+                resetInput();
+                upIsPressed = true;
+                
+            }
+            else if (Input.GetAxis("DpadUpDown") == -1)
+            {
+                resetInput();
+                downIsPressed = true;
+                
+            }
+            else if (Input.GetAxis("DpadLeftRight") == 1)
+            {
+                resetInput();
+                rightIsPressed = true;
+            }
+            else if (Input.GetAxis("DpadLeftRight") == -1)
+            {
+                resetInput();
+                leftIsPressed = true;
+                
+            }
+            else
+            {
+                resetInput();
+                EnterReseted = true;
+                BackReseted = true;
+                coolDown = 0;
+            }
+
+       //     Debug.Log("Up is " + upIsPressed + " || down is " + downIsPressed + " || right is " + rightIsPressed + " || left is " + leftIsPressed);
+        }
+        private static void resetInput()
+        {
+            upIsPressed = false;
+            downIsPressed = false;
+            leftIsPressed = false;
+            rightIsPressed = false;
+            enterIsPressed = false;
+            backIsPressed = false;
+
+        }
+        public static bool getEnter()
+        {
+            if(enterIsPressed && EnterReseted)         
+            {
+                EnterReseted = false;
+                return true;
+            }
+
+            return false;
+        }
+        public static bool getBack()
+        {
+            if (backIsPressed && BackReseted)
+            {
+                BackReseted = false;
+                return true;
+            }
+
+            return false;
+        }
+        public static bool getLeft()
+        {
+            return leftIsPressed;
+        }
+        public static bool getRight()
+        {
+            return rightIsPressed;
+        }
+        public static bool getDown()
+        {
+            return downIsPressed;
+        }
+        public static bool getUp()
+        {
+            return upIsPressed;
+        }
+        public static bool getClickLeft()
+        {
+            if (leftIsPressed && ClickCoolDown())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool getClickRight()
+        {
+            if (rightIsPressed && ClickCoolDown())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool getClickUp()
+        {
+            if (upIsPressed && ClickCoolDown())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool getClickDown()
+        {
+            if (downIsPressed && ClickCoolDown())
+            {
+                return true;
+            }
+            return false;
+        }
+        private static bool ClickCoolDown()
+        {
+            coolDown -= Time.deltaTime;
+            if (coolDown <= 0)
+            {
+                coolDown = ClickTime;
+
+                return true;
+            }
+            return false;
+        }
+
+    }
     struct StartOptions
     {
         public int x_res;
@@ -56,6 +209,7 @@ public class Options : MonoBehaviour {
     StartOptions StartOPedop;
     // Use this for initialization
     void Start () {
+       // up = KeyCode.joy
         // Fetch all texts allTexts
         allTexts = gameObject.GetComponentsInChildren<TextMesh>();
         otherScript = GameObject.Find("MenuPlayer").GetComponent<MenuRayCast>();
@@ -64,7 +218,7 @@ public class Options : MonoBehaviour {
         StartOPedop.y_res = Screen.currentResolution.height;
         StartOPedop.FullScreenBool = Screen.fullScreen;
         StartOPedop.QualityAnt = QualitySettings.GetQualityLevel();
-        Debug.Log("Quality is now " + StartOPedop.QualityAnt);
+     //   Debug.Log("Quality is now " + StartOPedop.QualityAnt);
         OptionOn = false;
         InitializeTexts();
         OptionList = new List<TextInfo>();
@@ -92,22 +246,40 @@ public class Options : MonoBehaviour {
         applyOptions();
         lollipop();
     }
+    void Update()
+    {
+        ClickTime = pressTimer;
+        // Running Stage
+        if (OptionOn)
+        {
+            InputHandler.CheckInput();            
+            ChangeSettings();
+            UpdateDisplay();
+        }
+        //Fade in Stage
+
+        // Fade out Stage
+        if (fadeOut) lowerAlpha();
+        else if (fadeIn) IncreaseAlpha();
+        //Testing
+        lollipop();
+    }
     private void lollipop()
     {
-        Debug.Log("lollipop! ");
+       // Debug.Log("lollipop! ");
         for (int i = 0; i < allTexts.Length; i++)
         {
             SetAlpha(TestAlpha, allTexts[i]);
-            Debug.Log("NEW ALPHA ON " +allTexts[i].name);
+           // Debug.Log("NEW ALPHA ON " +allTexts[i].name);
         }
     }
     private void lollipop2()
     {
-        Debug.Log("lollipop! ");
+       // Debug.Log("lollipop! ");
         for (int i = 0; i < allTexts.Length; i++)
         {
             SetAlpha(cAlpha, allTexts[i]);
-            Debug.Log("NEW ALPHA ON " + allTexts[i].name);
+          //  Debug.Log("NEW ALPHA ON " + allTexts[i].name);
         }
     }
   
@@ -165,7 +337,7 @@ public class Options : MonoBehaviour {
         MasterSoundInfo = setStandardTextLength(MasterSoundInfo);
         Musicinfo = setStandardTextLength(Musicinfo);
         SoundInfo = setStandardTextLength(SoundInfo);
-        Debug.Log("sound length " + SoundInfo.Textlength + " || music length " + Musicinfo.Textlength);
+        //Debug.Log("sound length " + SoundInfo.Textlength + " || music length " + Musicinfo.Textlength);
         Resolution_X_Info = setStandardTextLength(Resolution_X_Info);
         Resolution_Y_Info = setStandardTextLength(Resolution_Y_Info);
         FullScreenInfo = setStandardTextLength(FullScreenInfo);
@@ -181,7 +353,7 @@ public class Options : MonoBehaviour {
     }
     private void resetOptions()
     {
-        Debug.Log("ResetOption!");
+       // Debug.Log("ResetOption!");
         MasterSoundVolume = 30;
         SoundVolume = 30;
         MusicVolume = 30;
@@ -238,10 +410,10 @@ public class Options : MonoBehaviour {
         // Fix correct variables.
         //AudioListener.volume = (float)MasterSoundVolume / 100;
       
-            Debug.Log("Apply Options!");
+         //   Debug.Log("Apply Options!");
             Screen.SetResolution(VideoResolution_X, VideoResolution_Y, FullScreenMode);
             QualitySettings.SetQualityLevel(QualitySetting, true);
-             Debug.Log("Quality is now " + StartOPedop.QualityAnt);
+          //   Debug.Log("Quality is now " + StartOPedop.QualityAnt);
         // TODO
         //Update Save file!!
 
@@ -253,25 +425,11 @@ public class Options : MonoBehaviour {
         fadeOut = false;
     }
 	// Update is called once per frame
-	void Update () {
-        // Running Stage
-        if(OptionOn)
-        { 
-        UpdateDisplay();
-        ChangeSettings();
-        }
-        //Fade in Stage
 
-        // Fade out Stage
-        if (fadeOut) lowerAlpha();
-        else if (fadeIn) IncreaseAlpha();
-        //Testing
-        lollipop();
-    }
     void ChangeSettings()
     {
         addGlow(OptionList[currentOption]);
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || InputHandler.getClickDown())
         {
 
             RemoveGlow(OptionList[currentOption]);
@@ -280,16 +438,23 @@ public class Options : MonoBehaviour {
             
            
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow) || InputHandler.getClickUp())
         {
             RemoveGlow(OptionList[currentOption]);
             currentOption--;
             if (currentOption == -1) currentOption = OptionList.Count-1;
            
         }
-
-        switch(currentOption)
+        bool GoBack = false;
+        if (InputHandler.getBack())
         {
+            RemoveGlow(OptionList[currentOption]);
+            GoBack = true;
+            currentOption = 7;
+        }
+        switch (currentOption)
+        {
+            
             //Change MasterSound
             case 0:
                 MasterSoundVolume = changeNumberValue(MasterSoundVolume);
@@ -315,11 +480,11 @@ public class Options : MonoBehaviour {
                 break;
                 // FullScreen On/Off
             case 5:
-                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                if (Input.GetKeyDown(KeyCode.LeftArrow) || InputHandler.getClickLeft())
                 {
                     FullScreenMode = !FullScreenMode;
                 }
-                else if (Input.GetKeyDown(KeyCode.RightArrow))
+                else if (Input.GetKeyDown(KeyCode.RightArrow) || InputHandler.getClickRight())
                 {
                     FullScreenMode = !FullScreenMode;
                 }
@@ -330,17 +495,18 @@ public class Options : MonoBehaviour {
                     break;
             // Back To main Menu
             case 7:
-                if (Input.GetKeyDown(KeyCode.KeypadEnter))
+                if (Input.GetKeyDown(KeyCode.KeypadEnter) || InputHandler.getEnter() || GoBack)
                     backToMainMenu();
                
                 break;
                 // ApplyGraphicSettings
             case 8:
-                if (Input.GetKeyDown(KeyCode.KeypadEnter))
+                if (Input.GetKeyDown(KeyCode.KeypadEnter) || InputHandler.getEnter())
                     applyOptions();
                 break;
+                // ResetOption
             case 9:
-                if(Input.GetKeyDown(KeyCode.KeypadEnter))
+                if(Input.GetKeyDown(KeyCode.KeypadEnter) || InputHandler.getEnter())
                 resetOptions();
                 break;
 
@@ -348,20 +514,25 @@ public class Options : MonoBehaviour {
     }
     private void backToMainMenu()
     {
-        Debug.Log("Go Back to main menu!");
+      //  Debug.Log("Go Back to main menu!");
         VideoResolution_X = Screen.currentResolution.width;
         VideoResolution_Y = Screen.currentResolution.height;
         xRes = FindNumbers(VideoResolution_X, X_res);
         YRes = FindNumbers(VideoResolution_Y, Y_res);
         FullScreenMode = Screen.fullScreen;
         QualitySetting = QualitySettings.GetQualityLevel();
+        RemoveGlow(OptionList[currentOption]);
+        currentOption = 0;
         OptionOn = false;
-        
+        fadeIn = false;
+       
         fadeOut = true;
+        
         // Fade out text
         // Disable function with optionon
         // Fade in original Text.
     }
+
     private int FindNumbers(int res, int[] a)
     {
         for (int i = 0; i < a.Length; i++)
@@ -374,11 +545,11 @@ public class Options : MonoBehaviour {
     
     private void GraphicSettings()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || InputHandler.getClickLeft())
         {
             QualitySetting--;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || InputHandler.getClickRight())
         {
             QualitySetting++;
         }
@@ -388,11 +559,11 @@ public class Options : MonoBehaviour {
     private int xRes = 0;
     private void ChangeXres()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || InputHandler.getClickLeft())
         {
             xRes--;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || InputHandler.getClickRight())
         {
             xRes++;
         }
@@ -404,11 +575,11 @@ public class Options : MonoBehaviour {
     private int YRes = 0;
     private void ChangeYres()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || InputHandler.getClickLeft())
         {
             YRes--;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || InputHandler.getClickRight())
         {
             YRes++;
         }
@@ -417,14 +588,15 @@ public class Options : MonoBehaviour {
 
         VideoResolution_Y = Y_res[YRes];
     }
+   
     private int changeNumberValue(int number)
     {
 
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.LeftArrow) || InputHandler.getLeft())
         {
             number--;
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow) || InputHandler.getRight())
         {
             number++;
         }

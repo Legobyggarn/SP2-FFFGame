@@ -38,18 +38,48 @@ public class MenuRayCast : MonoBehaviour {
     private bool InOptionNow;
     private bool FadeInText;
     private bool FadeOut;
+    public bool Bars;
+    public static float ClickTime;
+    
     // Use this for initialization
     void Start () 
 	{
         InOptionNow = false;
         OptionScript = GameObject.Find("OptionsMenu").GetComponent<Options>();
+     
         resetAlpha();
+        if (Bars) { 
         GreenBarTransformPlay = GameObject.Find("GreenTransPlay").transform;
         GreenBarTransformExit = GameObject.Find("GreenTransExit").transform;
         GreenBarTransformOption = GameObject.Find("GreenTransOption").transform;
-        maxSceneChangeTime = 0.5f;
+        }
+        maxSceneChangeTime = 1f;
         maxSceneFadeTime = st.getLerpTime();
 	}
+    void Update()
+    {
+
+
+       
+        if (FadeInText)
+        {
+            //  Debug.Log("Call Function Now " + FadeInText);
+            FadeInAlpha(PlayMat);
+            FadeInAlpha(ExitMat);
+            FadeInAlpha(OptionMat);
+            if (OptionMat.color.a>=1)
+            {
+                
+                FadeInText = false;
+                InOptionNow = false;
+            }
+        }
+        else if (!InOptionNow)
+        {
+            Debug.Log("DONT FUCKING DO IT!!");
+            lotsOffStuff();
+        }
+    }
     void resetAlpha()
     {
         PlayMat.SetColor("_Color", new Color(PlayMat.color.r, PlayMat.color.g, PlayMat.color.b, 1));
@@ -58,6 +88,8 @@ public class MenuRayCast : MonoBehaviour {
     }
     private void setBar(float f, Transform t)
     {
+        if(Bars)
+        { 
         if (!loadingbarStop) { 
         float maxhigt = 1.66f;
         float minhight = -0.11f;
@@ -69,31 +101,16 @@ public class MenuRayCast : MonoBehaviour {
         t.position = new Vector3(t.position.x, y, t.position.z);
       //  Debug.Log("greenbar vector is " + GreenBarTransformPlay.position);
         }
+        }
     }
-	// Update is called once per frame
-	void Update () 
-	{
-        if(!InOptionNow)
-        {
-            lotsOffStuff();
-        }
-		if(FadeInText)
-        {
-            Debug.Log("Call Function Now " + FadeInText);
-            FadeInAlpha(PlayMat);
-            FadeInAlpha(ExitMat);
-            if (FadeInAlpha(OptionMat))
-            {
-                FadeInText = false;
-                InOptionNow = false;
-            }
-        }
-	}
+    
+    // Update is called once per frame
+
     public void GoBackFromOptions()
     {
         FadeInText = true;
         loadingbarStop = false;
-        Debug.Log("FADE IN TEXT NOW " + FadeInText);
+      //  Debug.Log("FADE IN TEXT NOW " + FadeInText);
     }
     private void lotsOffStuff()
     {
@@ -104,6 +121,7 @@ public class MenuRayCast : MonoBehaviour {
 
             // Raycast
             RaycastHit hit;
+            // TODO Change transform to oculus
             if (Physics.Raycast(transform.position, transform.forward, out hit))
             {
                 //Debug
@@ -157,7 +175,7 @@ public class MenuRayCast : MonoBehaviour {
                     if (maxSceneChangeTime < sceneChangeTime)
                     {
                         loadingbarStop = true;
-                        Debug.Log("Exit now!");
+                       // Debug.Log("Exit now!");
                         Application.Quit();
                     }
 
@@ -188,6 +206,7 @@ public class MenuRayCast : MonoBehaviour {
 
             if (FadeAlpha(OptionMat))
             {
+                InOptionNow = true;
                 OptionScript.OptionsOn();
                 FadeOut = false;
             }
@@ -206,7 +225,7 @@ public class MenuRayCast : MonoBehaviour {
     private bool FadeAlpha(Material mat)
 
     {
-        Debug.Log("FADING NOW " + mat.name + " || alpha is " + mat.color.a);
+       // Debug.Log("FADING NOW " + mat.name + " || alpha is " + mat.color.a);
         float alpha = mat.color.a;
         if (alpha <= 0) return true;
         else
@@ -221,7 +240,7 @@ public class MenuRayCast : MonoBehaviour {
     private bool FadeInAlpha(Material mat)
 
     {
-        Debug.Log("FADING In NOW " + mat.name + " || alpha is " + mat.color.a);
+        //Debug.Log("FADING In NOW " + mat.name + " || alpha is " + mat.color.a);
         float alpha = mat.color.a;
         if (alpha >= 1) return true;
         else
