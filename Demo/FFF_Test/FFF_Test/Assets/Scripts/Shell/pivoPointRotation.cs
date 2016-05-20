@@ -5,14 +5,16 @@ public class pivoPointRotation : MonoBehaviour {
 
 	//public 
 	public Material lotucMat;
-	private Color coloTransparent = new Color (0, 0, 0, 0);
-	private Color lotucColor;
 
 	public float coreFix; 
 	public float speed = 5.0f;
 	public float lerpTime = 5.0f;
 	public float lerpTimeBall = 4.0f;
 	public float shakeFix = 50.0f;
+	public float timeToFade = 15.0f;
+	public float currTimeToFade = 0.0f;
+	public float rotSpeed = 1;
+	public float maxSceneChangeTime = 5.0f;
 
 	public GameObject lotucGo;
 
@@ -25,36 +27,29 @@ public class pivoPointRotation : MonoBehaviour {
 
 	public ParticleSystem particelEffect;
 
-	public float timeToFade = 15.0f;
-	public float currTimeToFade = 0.0f;
+	//Private
+	private GameObject rootGo;
 
-	//Lerp variabler
 	private float currentLerpTime;
 	private float currentLerpTimeBall;
 	private float moveDistance;
-	private Vector3 ballStartScale;
+	private float precBall;
 
+	private Vector3 ballStartScale;
 	private Vector3 startPos;
 	private Vector3 endPos;
 	private Vector3 LocusEndSize; 
 
-	public float rotSpeed = 1;
-
-	//Private
-	private GameObject rootGo;
-
-
-	private float precBall;
+	private Color coloTransparent = new Color (0, 0, 0, 0);
+	private Color lotucColor;
 
 	private Vector3 PlayerCordinates;
 
 	private bool fading = true;
 
-	//Screenchange var
 	private float sceneChangeTime = 0.0f;
-	public float maxSceneChangeTime = 5.0f;
 
-	//child var
+	private float currParScale;
 	private float maximumNumberOfChildern;
 	private float childCount;
 	private float numberOfChildren;
@@ -66,6 +61,12 @@ public class pivoPointRotation : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		
+		//scaling
+		coreDistanceScalar = GameObject.Find("GLOBAL_SCALE").GetComponent<GlobalScaleScript>().shellScale;
+
+		shakeFix = shakeFix * coreDistanceScalar; 
+
 		maximumNumberOfChildern = transform.GetChild(1).GetChild(0).transform.childCount;
 		numberOfChildren = transform.GetChild(1).GetChild(0).transform.childCount;
 		childCount = transform.GetChild(1).GetChild(0).transform.childCount;	
@@ -78,13 +79,19 @@ public class pivoPointRotation : MonoBehaviour {
 
 		distanceToMid = Vector3.Distance (Vector3.zero, transform.localPosition);
 
-		coreDistanceScalar = GameObject.Find("GLOBAL_SCALE").GetComponent<GlobalScaleScript>().shellScale;
-		transform.localScale *= coreDistanceScalar;
 
 		ballStartScale = particelEffect.transform.localScale;
 		LocusEndSize = lotucGo.transform.localScale; 
 
 		lotucColor = lotucMat.color;
+
+		//Scaling...
+		currParScale = (particelEffect.transform.localScale.x);
+		particelEffect.transform.localScale = new Vector3 (currParScale * coreDistanceScalar, currParScale * coreDistanceScalar, currParScale * coreDistanceScalar);
+
+		LocusEndSize *= coreDistanceScalar;
+
+		particelEffect.transform.localPosition += new Vector3 (0, coreFix * ((coreDistanceScalar) / 2), 0);
 	}
 	
 	// Update is called once per frame
@@ -121,12 +128,12 @@ public class pivoPointRotation : MonoBehaviour {
 				//Debug.Log ("distanceToMid   "  + distanceToMid);
 
 				transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				//transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//particelEffect.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 
 			} else {		
 				//Debug.Log ("In old lerp");
 				transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				//transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//particelEffect.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 
 			}
 		}

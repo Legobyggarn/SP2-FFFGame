@@ -83,7 +83,7 @@ public class memoryDistance : MonoBehaviour {
 		coreDistanceScalar = GameObject.Find("GLOBAL_SCALE").GetComponent<GlobalScaleScript>().shellScale;
 
 		// Scale up core
-		core.transform.localScale *= coreDistanceScalar;
+		//   core.transform.localScale *= coreDistanceScalar;
 
 		maxSceneChangeTime = st.getLerpTime();
 
@@ -131,31 +131,31 @@ public class memoryDistance : MonoBehaviour {
 				// Change the position of the shell
 
 				//parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 				//parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 				//core.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
 				// Change the position of the core
 				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 		
 
 				//Debug.Log("Prec:   " +prec);
 			} else {
-				numberOfChildren = childCount;
+				//numberOfChildren = childCount;
 				//Debug.Log ("Number Of Children:  " + numberOfChildren);
-				childProcent = (numberOfChildren / maximumNumberOfChildern);
+				//childProcent = (numberOfChildren / maximumNumberOfChildern);
 
 				// Change the position of the shell
 				//parentGo.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
+				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
 				//parentGo.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
 				//core.transform.localPosition = new Vector3(parentGo.transform.localPosition.x, -coreFix * coreDistanceScalar, parentGo.transform.localPosition.z);
 
 				// Change the position of the core
 				//pivoPoint.transform.localPosition = Vector3.Lerp (startPos, endPos, prec);
-				core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
+				//core.transform.localPosition += new Vector3 (0, coreFix * coreDistanceScalar, 0);
 
 				//Debug.Log("Prec:   " +prec);
 			}
