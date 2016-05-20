@@ -1,0 +1,219 @@
+﻿Merge remote-tracking branch 'refs/remotes/origin/Feature-PropsWallsCutscene-Mattias' into Develop
+
+# Conflicts:
+#	Demo/FFF_Test/FFF_Test/Assets/FMODStudioCache.asset
+#	Demo/FFF_Test/FFF_Test/Library/CurrentLayout.dwlt
+#	Demo/FFF_Test/FFF_Test/Library/CurrentMaximizeLayout.dwlt
+#	Demo/FFF_Test/FFF_Test/Library/LastSceneManagerSetup.txt
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll.mdb
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp.dll
+#	Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	Demo/FFF_Test/FFF_Test/Library/assetDatabase3
+#	Demo/FFF_Test/FFF_Test/Library/expandedItems
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000002000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000003000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000004000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000004100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000005000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000005100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000006000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000006100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000007000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000007100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000008000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000008100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000009000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000a000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000a100000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000b000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000c000000000000000
+#	Demo/FFF_Test/FFF_Test/Library/metadata/00/005622a050af0cd4fa5b690b42c92cce.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/48/48e7e862672d06a4ba8c44c604a04bfe.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/65/65d5f7a55e764e6458a55ff8285ed5b0.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/69/69e69920b027bbc49bb9759bcfc04ae6
+#	Demo/FFF_Test/FFF_Test/Library/metadata/6a/6aee3f7e491511149af5880eed80a27f.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/74/749bb3e824cfce24da6a7a4e9fd21e0f.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/85/854800fcb32da9040a6c4a4fbd77ff6c.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/8c/8c042af91535a3d48b07c943aa407315.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/a8/a8ad5ae1dc39a1046ab8c0353ca5e3ef.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/ac/ac0bbe46d00f7d349861526c60b457ff.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/b2/b285ba7519103d444a92b5bb35fd713b.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/bc/bc5beecc5e61325428a8e25fb50f9a72.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/c5/c51b695736b75824cb329639e61a2cbd.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/e9/e95a331fb71228a4382f0fc9d156dc2e.info
+#	Demo/FFF_Test/FFF_Test/Library/metadata/fc/fcba5112326a651419ee1626796a1071.info
+#	Demo/FFF_Test/FFF_Test/Library/shadercompiler-UnityShaderCompiler.exe0.log
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Develop
+# Your branch is up-to-date with 'origin/Develop'.
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/ConvertTest.mp4
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/ConvertTest.mp4.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/Materials.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/Materials/ConvertTest.mat
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/Materials/ConvertTest.mat.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/Thumbs.db
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Cutscenes/CutsceneTest/Thumbs.db.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/FMODStudioCache.asset
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/FMOD_Build.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Materials/Cutscene.mat
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Materials/Cutscene.mat.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Materials/vit.mat
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicPlayer.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicPlayer.prefab.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicTrigger.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicTrigger.prefab.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicTriggerNewArea.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Audio/MusicTriggerNewArea.prefab.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Credits.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Credits/CreditText.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Credits/CreditText.prefab.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Credits/CreditsShellChunk.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Credits/CreditsShellChunk.prefab.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Player/PlayerStandard 1.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Props_POI.meta
+#	renamed:    Demo/FFF_Test/FFF_Test/Assets/Prefabs/Shell/MiniCapsule.prefab -> Demo/FFF_Test/FFF_Test/Assets/Prefabs/Props_POI/POICapsule.prefab
+#	renamed:    Demo/FFF_Test/FFF_Test/Assets/Prefabs/Shell/MiniCapsule.prefab.meta -> Demo/FFF_Test/FFF_Test/Assets/Prefabs/Props_POI/POICapsule.prefab.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Props_POI/POIClosedRoom.prefab
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Props_POI/POIClosedRoom.prefab.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Prefabs/Shell/ShellChunk.prefab
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Resources/FMODStudioSettings.asset
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/Credits.unity
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/Credits.unity.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/CutsceneDevelopScene.unity
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/CutsceneDevelopScene.unity.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/NewLoadingScreen.unity
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/NewLoadingScreen.unity.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/PropClosedRoomDevelop.unity
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scenes/PropClosedRoomDevelop.unity.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Scenes/SmallShellsDevelopScene.unity
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Scenes/new_assets_scene.unity
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditTextScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditTextScript.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/Credits.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/Credits.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditsShellChunkFadeScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditsShellChunkFadeScript.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditsShellChunkSpawnerScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Credits/CreditsShellChunkSpawnerScript.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Cutscenes.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Cutscenes/CutsceneScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Cutscenes/CutsceneScript.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Loading/LoadingScreenDotsScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Loading/LoadingScreenDotsScript.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicArea.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicArea.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicAreas.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicAreas.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicNewArea.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicNewArea.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicPlayer2.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/MusicPlayer2.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/ShellDestroySound.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/ShellDestroySound.cs.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/SondAndMusic_Var.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/VOPlayer.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Music And Sound/VOPlayer.cs.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Player/PlayerControl.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Point of interest/POIClosedRoom.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Point of interest/POIClosedRoom.cs.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Point of interest/POIClosedRoomEntrance.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Point of interest/POIClosedRoomEntrance.cs.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Scripts/Point of interest/POIManagerScript.cs
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/StreamingAssets/Master Bank.bank
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/StreamingAssets/Master Bank.bank.meta
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/StreamingAssets/Master Bank.strings.bank
+#	new file:   Demo/FFF_Test/FFF_Test/Assets/StreamingAssets/Master Bank.strings.bank.meta
+#	modified:   Demo/FFF_Test/FFF_Test/Library/EditorUserBuildSettings.asset
+#	modified:   Demo/FFF_Test/FFF_Test/Library/InspectorExpandedItems.asset
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/50/50a341f8758835842b7f814657bbba60
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/68/684bbcf605468de438284b821871de64
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/7a/7a73d40328a63ce45bb4789eb9fd10bb
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/ba/ba1ccf9acd8013c43a1beb19d775ff7e
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/c5/c51b695736b75824cb329639e61a2cbd
+#	modified:   Demo/FFF_Test/FFF_Test/Library/shadercompiler-UnityShaderCompiler.exe1.log
+#	modified:   Demo/FFF_Test/FFF_Test/Library/shadercompiler-UnityShaderCompiler.exe2.log
+#	modified:   Demo/FFF_Test/FFF_Test/Library/shadercompiler-UnityShaderCompiler.exe3.log
+#	modified:   Demo/FFF_Test/FFF_Test/ProjectSettings/EditorBuildSettings.asset
+#	modified:   Demo/FFF_Test/FFF_Test/ProjectSettings/QualitySettings.asset
+#	modified:   Demo/FFF_Test/FFF_Test/fmod.log
+#	modified:   Demo/FFF_Test/FFF_Test/fmod_editor.log
+#
+# Changes not staged for commit:
+#	modified:   Demo/FFF_Test/FFF_Test/Assets/Resources/FMODStudioSettings.asset
+#	modified:   Demo/FFF_Test/FFF_Test/Library/CurrentLayout.dwlt
+#	modified:   Demo/FFF_Test/FFF_Test/Library/CurrentMaximizeLayout.dwlt
+#	modified:   Demo/FFF_Test/FFF_Test/Library/LastSceneManagerSetup.txt
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   Demo/FFF_Test/FFF_Test/Library/ShaderCache.db
+#	modified:   Demo/FFF_Test/FFF_Test/Library/assetDatabase3
+#	modified:   Demo/FFF_Test/FFF_Test/Library/expandedItems
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000002000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000003000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000004000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000004100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000005000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000005100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000006000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000006100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000007000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000007100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000008000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000008100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/00000000000000009000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000a000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000a100000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000b000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/0000000000000000c000000000000000
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/00/005622a050af0cd4fa5b690b42c92cce.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/0b/0b437a5315e4a7842948377ff1d2ab38.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/2c/2c9daf06da7c3da4f9e85d44891bfbfa
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/2c/2c9daf06da7c3da4f9e85d44891bfbfa.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/48/48e7e862672d06a4ba8c44c604a04bfe.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/65/65d5f7a55e764e6458a55ff8285ed5b0.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/74/749bb3e824cfce24da6a7a4e9fd21e0f.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/85/854800fcb32da9040a6c4a4fbd77ff6c.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/8c/8c042af91535a3d48b07c943aa407315.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/8d/8d9b5f46a635e4d4ca2f98986f32e2c8.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/ac/ac0bbe46d00f7d349861526c60b457ff
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/ac/ac0bbe46d00f7d349861526c60b457ff.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/b2/b285ba7519103d444a92b5bb35fd713b.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/b9/b908ad1b4e0f0be478ec148a497e75ef.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/bc/bc5beecc5e61325428a8e25fb50f9a72.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/bd/bd8d3792650ff01438f632198bf99c25.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/c5/c51b695736b75824cb329639e61a2cbd.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/e9/e95a331fb71228a4382f0fc9d156dc2e.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/metadata/fc/fcba5112326a651419ee1626796a1071.info
+#	modified:   Demo/FFF_Test/FFF_Test/Library/shadercompiler-UnityShaderCompiler.exe0.log
+#
+# Untracked files:
+#	Demo/FFF_Test/FFF_Test/Assets/Prefabs/Shell/core/Thumbs.db
+#	Demo/FFF_Test/FFF_Test/Assets/Prefabs/Shell/core/Thumbs.db.meta
+#
+

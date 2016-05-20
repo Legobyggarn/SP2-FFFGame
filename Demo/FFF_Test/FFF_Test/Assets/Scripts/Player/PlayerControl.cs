@@ -80,8 +80,8 @@ public class PlayerControl : MonoBehaviour
             {
                 ourY = 0.0f;
             }
-            rotX += -ourY * rotSpeedX;
-            rotY += ourX * rotSpeedY;
+            rotX += -ourY * rotSpeedX * Time.deltaTime;
+            rotY += ourX * rotSpeedY * Time.deltaTime;
 
             // Change to get the child that is a camera
             transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f);

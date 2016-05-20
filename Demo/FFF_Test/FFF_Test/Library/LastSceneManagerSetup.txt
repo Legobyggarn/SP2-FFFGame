@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/new_assets_scene.unity
+- path: Assets/Scenes/PropClosedRoomDevelop.unity
   isLoaded: 1
   isActive: 1
