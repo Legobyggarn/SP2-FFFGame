@@ -76,7 +76,6 @@ public class ShellHandlerScript : MonoBehaviour {
 		availSpots.Add(go);
 
 		// Tell script controlling orbit to decrease number of shell parts left
-		memoryDistanceScript.decrementNumChildren();
 		pivoPointRotationScript.decrementNumChildren();
 	}
 
@@ -100,7 +99,6 @@ public class ShellHandlerScript : MonoBehaviour {
 					game_object.GetComponent<MeshRenderer>().enabled = true;
 
 					// Tell script controlling orbit to increase number of shell parts left
-					memoryDistanceScript.incrementNumChildren();
 					pivoPointRotationScript.incrementNumChildren ();
 
 					toDestroy.Add(game_object); // Add object to destroy later

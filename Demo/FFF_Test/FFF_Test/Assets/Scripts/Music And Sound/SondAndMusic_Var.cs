@@ -77,7 +77,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 		{
 			if (i == index) 
 			{
-				return coreList[i].GetComponent<memoryDistance>().getChildCount();
+				return coreList[i].GetComponent<pivoPointRotation>().getChildCount();
 			}
 		}
 		return 0;
@@ -90,7 +90,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 		for(int i = 0; i < coreList.Count; i++)
 		{
-			numberOfShellParts += coreList[i].GetComponent<memoryDistance>().getChildCount();
+			numberOfShellParts += coreList[i].GetComponent<pivoPointRotation>().getChildCount();
 		}
 
 		return numberOfShellParts;
@@ -117,7 +117,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 	{
 
 		Vector3 capsulePos = coreList[index].transform.position;
-		Vector3 orbitPos = coreList[index].GetComponent<memoryDistance>().getOrbitPoint();
+		Vector3 orbitPos = coreList[index].GetComponent<pivoPointRotation>().getOrbitPoint();
 		Vector3 distVec = orbitPos - capsulePos;
 		float distance = distVec.magnitude;
 		return distance;
@@ -129,7 +129,7 @@ public class SondAndMusic_Var : MonoBehaviour {
 	{
 		int numDoneCapsules = 0;
 		foreach (GameObject core in coreList) {
-			if (core.GetComponent<memoryDistance>().isDone()) {
+			if (core.GetComponent<pivoPointRotation>().isDone()) {
 				numDoneCapsules++;
 			}
 		}
@@ -177,19 +177,19 @@ public class SondAndMusic_Var : MonoBehaviour {
 	}
 
 	// Orbit increases
-	// [Called from memoryDistance when number of children are incremented]
+	// [Called from pivoPointRotation when number of children are incremented]
 	public void orbitIncrease() {
 		// Play music/sound or call another funtion...
 	}
 
 	// Orbit decreases
-	// [Called from memoryDistance when number of children are decremented]
+	// [Called from pivoPointRotation when number of children are decremented]
 	public void orbitDecrease() {
 		// Play music/sound or call another funtion...
 	}
 
 	// Core arrives at center
-	// [Called from memoryDistance when core reaches the center]
+	// [Called from pivoPointRotation when core reaches the center]
 	public void coreAtCenter() {
 		// Play music/sound or call another funtion...
 	}
@@ -218,6 +218,28 @@ public class SondAndMusic_Var : MonoBehaviour {
 	// A new important point of interest was discovered
 	public void importantPOIDiscovered(string name) {
 		// Play music/sound or call another function...
+		/*
+		if (name == "Rankor")
+		{
+			musicPlayer.PlayVO(1);
+		}
+		if (name == "Bär")
+		{
+			musicPlayer.PlayVO(2);
+		}
+		if (name == "Fjäril")
+		{
+			musicPlayer.PlayVO(3);
+		}
+		if (name == "Sköldpadda")
+		{
+			musicPlayer.PlayVO(4);
+		}
+		if (name == "Blomknopp")
+		{
+			musicPlayer.PlayVO(5);
+		}
+		*/
 	}
 
 	// When a POI is hit. 

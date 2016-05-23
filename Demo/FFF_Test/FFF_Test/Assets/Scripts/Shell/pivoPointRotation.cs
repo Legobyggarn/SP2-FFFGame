@@ -82,7 +82,8 @@ public class pivoPointRotation : MonoBehaviour {
 		transform.localScale *= coreDistanceScalar;
 
 		ballStartScale = particelEffect.transform.localScale;
-		LocusEndSize = lotucGo.transform.localScale; 
+		LocusEndSize = lotucGo.transform.localScale;
+		Debug.Log ("Lotus size: " + LocusEndSize);
 
 		lotucColor = lotucMat.color;
 	}
@@ -112,7 +113,7 @@ public class pivoPointRotation : MonoBehaviour {
 				childProcent = (numberOfChildren / maximumNumberOfChildern);
 
 
-			//	Debug.Log (childProcent + "       childProcent");
+				//Debug.Log (childProcent + "       childProcent");
 
 
 				startPos = transform.localPosition;
@@ -132,6 +133,8 @@ public class pivoPointRotation : MonoBehaviour {
 		}
 
 		else {
+
+			Debug.Log ("Expanding");
 
 			//Expanding the partical system and spawning in the lotus s
 			expandingBall ();
@@ -158,8 +161,24 @@ public class pivoPointRotation : MonoBehaviour {
 		}
 
 		if (Input.GetKey (KeyCode.P)) {
+
 			expandingBall ();
-			win ();
+
+			currTimeToFade += Time.deltaTime;
+
+			if(timeToFade < currTimeToFade ){
+
+				if (fading) {
+					st.fadeToWhite ();
+					fading = false;
+				}
+
+				sceneChangeTime += Time.deltaTime;
+
+				if (st.getLerpTime() < sceneChangeTime) { 
+					win ();
+				}
+			}
 		}
 	}
 
@@ -189,6 +208,21 @@ public class pivoPointRotation : MonoBehaviour {
 		GameObject.Find("Sound_and_Music_Var").GetComponent<SondAndMusic_Var>().coreAtCenter();
 
 		Application.LoadLevel ("Victory");
+	}
+
+	public float getChildCount() 
+	{
+		return childCount;
+	}
+
+	public bool isDone() 
+	{
+		return childCount <= 0;
+	}
+
+	public Vector3 getOrbitPoint() 
+	{
+		return transform.root.transform.position;
 	}
 
 	public void followPlayer()
