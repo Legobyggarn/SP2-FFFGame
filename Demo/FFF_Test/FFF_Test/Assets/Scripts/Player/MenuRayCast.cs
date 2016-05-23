@@ -40,10 +40,18 @@ public class MenuRayCast : MonoBehaviour {
     private bool FadeOut;
     public bool Bars;
     public static float ClickTime;
-    
+    public Light spotLightExit;
+    public Light spotLightPlay;
+    public Light spotLightOption;
+    public float minIntencity;
+    public float maxIntencity;
+    public float startIntencity;
     // Use this for initialization
     void Start () 
 	{
+        spotLightExit = GameObject.Find("SpotExit").GetComponent<Light>();
+        spotLightPlay = GameObject.Find("SpotPlay").GetComponent<Light>();
+        spotLightOption = GameObject.Find("SpotOption").GetComponent<Light>();
         InOptionNow = false;
         OptionScript = GameObject.Find("OptionsMenu").GetComponent<Options>();
      
@@ -76,7 +84,7 @@ public class MenuRayCast : MonoBehaviour {
         }
         else if (!InOptionNow)
         {
-            Debug.Log("DONT FUCKING DO IT!!");
+           
             lotsOffStuff();
         }
     }
@@ -135,6 +143,9 @@ public class MenuRayCast : MonoBehaviour {
                     go.GetComponent<Renderer>().material.color = Color.Lerp(colorStart, colorEnd, lerp);
 
                     setBar(sceneChangeTime, GreenBarTransformPlay);
+           
+                    spotIntens(sceneChangeTime, spotLightPlay);
+                    
                     if (maxSceneChangeTime < sceneChangeTime)
                     {
                         //Debug.Log ("Fading");
@@ -157,6 +168,8 @@ public class MenuRayCast : MonoBehaviour {
 
 
                     setBar(sceneChangeTime, GreenBarTransformOption);
+                  
+                    spotIntens(sceneChangeTime, spotLightOption);
                     if (maxSceneChangeTime < sceneChangeTime)
                     {
                         onOption = true;
@@ -172,6 +185,8 @@ public class MenuRayCast : MonoBehaviour {
                 {
                     sceneChangeTime += Time.deltaTime;
                     setBar(sceneChangeTime, GreenBarTransformExit);
+                    spotIntens(sceneChangeTime, spotLightExit);
+                    
                     if (maxSceneChangeTime < sceneChangeTime)
                     {
                         loadingbarStop = true;
@@ -183,10 +198,7 @@ public class MenuRayCast : MonoBehaviour {
                 else
                 {
 
-                    sceneChangeTime = 0;
-                    setBar(sceneChangeTime, GreenBarTransformPlay);
-                    setBar(sceneChangeTime, GreenBarTransformExit);
-                    setBar(sceneChangeTime, GreenBarTransformOption);
+                    resetVisual();
 
                 }
             }
@@ -194,10 +206,8 @@ public class MenuRayCast : MonoBehaviour {
         else
         {
 
-            sceneChangeTime = 0;
-            setBar(sceneChangeTime, GreenBarTransformPlay);
-            setBar(sceneChangeTime, GreenBarTransformExit);
-            setBar(sceneChangeTime, GreenBarTransformOption);
+       
+            resetVisual();
         }
         if (onOption && FadeOut)
         {
@@ -219,6 +229,18 @@ public class MenuRayCast : MonoBehaviour {
                 //   Debug.Log("GO TO LOADING SCREEN!");
                 Application.LoadLevel("Loading_screen");
             }
+        }
+    }
+    private void resetVisual()
+    {
+        sceneChangeTime = 0;
+        setBar(sceneChangeTime, GreenBarTransformPlay);
+        setBar(sceneChangeTime, GreenBarTransformExit);
+        setBar(sceneChangeTime, GreenBarTransformOption);
+        if (!loadingbarStop) { 
+        spotLightExit.intensity = minIntencity;
+        spotLightOption.intensity = minIntencity;
+        spotLightPlay.intensity = minIntencity;
         }
     }
     public float alphaMult;
@@ -252,6 +274,21 @@ public class MenuRayCast : MonoBehaviour {
         }
         return false;
     }
+    public float test;
+    public void spotIntens(float f, Light l)
+    {
+      
+        float maxI = maxIntencity;
+        float minI = minIntencity;
+        float dif = maxI - minI;
+        float mult = (f / maxSceneChangeTime);
+     
+        float difadd = mult * dif;
+        float add = difadd + minI;
+        l.intensity = f + test;
+    }
+   
+  
 }
 
 
