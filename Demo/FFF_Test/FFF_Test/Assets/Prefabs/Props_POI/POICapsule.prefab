@@ -5216,8 +5216,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.197196, y: 0.92, z: 4.8239384}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 432326}
   m_Father: {fileID: 0}
@@ -15158,13 +15158,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToDestroy: 3
-  explosionForce: 1000
+  explosionForce: 10
   explosionRadius: 0
   coreGameObjectPrefab: {fileID: 150864, guid: c66338088bf4ca4419a6e21ff92821b3, type: 2}
   soundAndMusic: {fileID: 0}
   baseShakeTime: 0.2
   shakeTimeMultiplier: 1
-  baseShakeAmount: 0.5
+  baseShakeAmount: 0.05
   shakeAmountMultiplier: 1
   shellShakeChange: 0.02
 --- !u!114 &11499760

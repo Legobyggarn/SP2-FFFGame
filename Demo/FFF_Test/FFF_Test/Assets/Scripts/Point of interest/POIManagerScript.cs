@@ -82,11 +82,15 @@ public class POIManagerScript : MonoBehaviour {
 			int nameIndex = importantPointsOfInterest.IndexOf(go);
 			string name = importantPointsOfInterestNames[nameIndex];
 			// Open up (unlock doors in) room for important POI
-			POIClosedRooms[nameIndex].GetComponent<POIClosedRoom>().unlockDoors();
+			if (POIClosedRooms.Count >= nameIndex) {
+				POIClosedRooms [nameIndex].GetComponent<POIClosedRoom> ().unlockDoors ();
+			}
 			// Remove POI, name and room from their respective lists
 			importantPointsOfInterest.Remove(go);
 			importantPointsOfInterestNames.RemoveAt(nameIndex);
-			POIClosedRooms.RemoveAt(nameIndex);
+			if (POIClosedRooms.Count >= nameIndex) {
+				POIClosedRooms.RemoveAt (nameIndex);
+			}
 			// Notify the sound and music script (if musicAndSound is set)
 			if (soundAndMusic != null) {
 				soundAndMusicScript.importantPOIDiscovered(name);
