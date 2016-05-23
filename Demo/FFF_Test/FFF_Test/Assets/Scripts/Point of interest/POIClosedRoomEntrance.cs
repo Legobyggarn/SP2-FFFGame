@@ -14,8 +14,11 @@ public class POIClosedRoomEntrance : MonoBehaviour {
 
 		// If player has entered
 		if (collider.gameObject.tag == "Player") {
-			transform.root.GetComponent<POIClosedRoom>().lockDoors();
+			transform.parent.GetComponent<POIClosedRoom>().lockDoors();
 		}
+
+		// Disable the entrance
+		//gameObject.SetActive(false);
 
 	}
 

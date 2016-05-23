@@ -228,10 +228,10 @@ public class pivoPointRotation : MonoBehaviour {
 	public void followPlayer()
 	{
 
-		float distanceToPlayer = Vector3.Distance (transform.position, GameObject.Find("PlayerStandard 1").transform.position);
+		float distanceToPlayer = Vector3.Distance (transform.position, GameObject.FindWithTag("Player").transform.position);
 
 		if(distanceToPlayer > shakeFix){
-			Quaternion targetRotation = Quaternion.LookRotation(GameObject.Find("PlayerStandard 1").transform.position - transform.position);
+			Quaternion targetRotation = Quaternion.LookRotation(GameObject.FindWithTag("Player").transform.position - transform.position);
 
 			transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
 		}

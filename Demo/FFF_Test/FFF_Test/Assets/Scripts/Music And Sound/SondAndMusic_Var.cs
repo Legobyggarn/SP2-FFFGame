@@ -222,10 +222,6 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 	// A new important point of interest was discovered
 	public void importantPOIDiscovered(string name) {
-
-		// Debug
-		Debug.Log("[SondAndMusic_Var] Important POI discovered: " + name);
-
 		// Play music/sound or call another function...
 		if (name == "Rankor")
 		{

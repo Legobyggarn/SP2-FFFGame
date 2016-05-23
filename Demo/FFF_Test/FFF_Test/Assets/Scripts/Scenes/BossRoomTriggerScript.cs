@@ -34,9 +34,6 @@ public class BossRoomTriggerScript : MonoBehaviour {
 			// Start screen transition (fade to white)
 			screenTransition.GetComponent<ScenesTransision>().fadeToWhite();
 
-			// Debug
-			Debug.Log("[BossRoomTriggerScript] Fading to white...");
-
 			// Begin to move the player towards 'target' with the speed 'moveSpeed'
 			lerpStartPos = player.transform.position;
 			StartCoroutine("moveToTarget");
@@ -57,9 +54,6 @@ public class BossRoomTriggerScript : MonoBehaviour {
 		// [Byt scen till boss rum]
 		// Change scene to boss room
 		Application.LoadLevel(BossRoomSceneName);
-
-		// Debug
-		Debug.Log("[BossRoomTriggerScript] Switching scene to boss room...");
 	}
 
 }
