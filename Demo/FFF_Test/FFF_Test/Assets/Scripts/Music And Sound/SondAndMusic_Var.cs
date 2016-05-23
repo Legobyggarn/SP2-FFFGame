@@ -11,6 +11,9 @@ public class SondAndMusic_Var : MonoBehaviour {
 	// Added by SoundDesigner
 	public GameObject shellChunk;
     
+	//Added by Music
+	private MusicPlayer2 musicPlayer;
+
 	// Sound
 	//så man kan använda sig av fmodsfunktionalitet
 	[FMODUnity.EventRef]
@@ -33,6 +36,10 @@ public class SondAndMusic_Var : MonoBehaviour {
 			orbitsCenter = orbitsCenterTransform.position;
 		}
 
+		//Added by music. Reference to MusicPlayer Script.
+		GameObject musicPlayerObject = GameObject.FindWithTag("Sound");
+		musicPlayer = musicPlayerObject.GetComponent<MusicPlayer2>();
+
 	}
 	
 	// Update is called once per frame
@@ -48,7 +55,6 @@ public class SondAndMusic_Var : MonoBehaviour {
 	public float getPlayerSpeed()
 	{
 		float playerSpeed = player.GetComponent<CharacterController>().velocity.magnitude;
-		//float temp = 0;
 		return playerSpeed;
 	}
 
@@ -102,7 +108,6 @@ public class SondAndMusic_Var : MonoBehaviour {
 		if (orbitsCenterTransform != null) {
 			Vector3 distanceVector = orbitsCenter - player.transform.position;
 			float distanceToCenter = distanceVector.magnitude;
-			//float temp = 0;
 			return distanceToCenter;
 		} 
 
@@ -217,8 +222,11 @@ public class SondAndMusic_Var : MonoBehaviour {
 
 	// A new important point of interest was discovered
 	public void importantPOIDiscovered(string name) {
+
+		// Debug
+		Debug.Log("[SondAndMusic_Var] Important POI discovered: " + name);
+
 		// Play music/sound or call another function...
-		/*
 		if (name == "Rankor")
 		{
 			musicPlayer.PlayVO(1);
@@ -239,7 +247,6 @@ public class SondAndMusic_Var : MonoBehaviour {
 		{
 			musicPlayer.PlayVO(5);
 		}
-		*/
 	}
 
 	// When a POI is hit. 

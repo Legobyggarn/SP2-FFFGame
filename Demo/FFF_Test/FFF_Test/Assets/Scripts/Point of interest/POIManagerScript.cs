@@ -30,9 +30,7 @@ public class POIManagerScript : MonoBehaviour {
 		numPOIAtStart = pointsOfInterest.Count;
 		numImportantPOIAtStart = importantPointsOfInterest.Count;
 
-		if (soundAndMusic != null) {
-			soundAndMusicScript = soundAndMusic.GetComponent<SondAndMusic_Var>();
-		}
+		soundAndMusicScript = soundAndMusic.GetComponent<SondAndMusic_Var>();
 
 
 		// Error if # POIs and # POI names don't match
@@ -69,9 +67,7 @@ public class POIManagerScript : MonoBehaviour {
 			pointsOfInterestNames.RemoveAt(nameIndex);
 
 			// Notify the sound and music script (if musicAndSound is set)
-			if (soundAndMusic != null) {
-				soundAndMusicScript.POIDiscovered(name);
-			}
+			soundAndMusicScript.POIDiscovered(name);
 		}
 	}
 
@@ -92,9 +88,7 @@ public class POIManagerScript : MonoBehaviour {
 				POIClosedRooms.RemoveAt (nameIndex);
 			}
 			// Notify the sound and music script (if musicAndSound is set)
-			if (soundAndMusic != null) {
-				soundAndMusicScript.importantPOIDiscovered(name);
-			}
+			soundAndMusicScript.importantPOIDiscovered(name);
 		}
 	}
 

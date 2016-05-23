@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.5, y: 18.5, z: 48.7}
+  m_LocalPosition: {x: -13.5, y: 9.03, z: 36.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,7 +55,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 38.2, y: 33.1, z: 1}
+  m_Size: {x: 2.53, y: 14.1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11422482
 MonoBehaviour:
@@ -68,7 +68,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f57e89904df754f95cb09772c5d14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaNumber: 0
+  changeTo1: 0
+  changeTo2: 0
+  changeTo3: 0
+  parameterToChange1: 
+  parameterToChange2: 
+  parameterToChange3: 
   musicPlayer: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:

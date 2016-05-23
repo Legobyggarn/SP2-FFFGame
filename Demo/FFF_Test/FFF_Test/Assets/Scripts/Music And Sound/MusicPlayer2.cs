@@ -6,11 +6,17 @@ public class MusicPlayer2 : MonoBehaviour
     private SondAndMusic_Var soundAndMusic;
 
     public string eventMusic;
-    public string eventVo;
+    public string eventVo1;
+    public string eventVo2;
+    public string eventVo3;
+    public string eventVo4;
+    public string eventVo5;
+    public string eventVo6;
     public string eventStinger1;
     public string eventStinger2;
     public string eventStinger3;
-    private float areasCleared;
+
+    //String som bestämer vilket av all VO som ska spelas.
     private float capsuleDistanceMid;
     //private float areaIn;
     //float voPlay;
@@ -25,22 +31,56 @@ public class MusicPlayer2 : MonoBehaviour
     [FMODUnity.EventRef]
 	FMOD.Studio.EventInstance levelInstance;
     FMOD.Studio.EventInstance stingerInstance;
-    //FMOD.Studio.EventInstance voInstance;
-    FMOD.Studio.ParameterInstance paramInstance;
+    FMOD.Studio.EventInstance voInstance1;
+    FMOD.Studio.EventInstance voInstance2;
+    FMOD.Studio.EventInstance voInstance3;
+    FMOD.Studio.EventInstance voInstance4;
+    FMOD.Studio.EventInstance voInstance5;
+    FMOD.Studio.EventInstance voInstance6;
+    FMOD.Studio.ParameterInstance paramInstanceMusic;
+    FMOD.Studio.ParameterInstance paramInstanceVO;
 
 
 
-	// Use this for initialization
-	void Start () 
+
+    // Use this for initialization
+    void Start () 
 	{	
 		
 		levelInstance = FMODUnity.RuntimeManager.CreateInstance (eventMusic);
-        //voInstance = FMODUnity.RuntimeManager.CreateInstance(eventVo);
+
+        if (!string.IsNullOrEmpty(eventVo1))
+        {
+            voInstance1 = FMODUnity.RuntimeManager.CreateInstance(eventVo1);
+        }
+
+
+        if (!string.IsNullOrEmpty(eventVo2))
+        {
+            voInstance2 = FMODUnity.RuntimeManager.CreateInstance(eventVo2);
+        }
+        if (!string.IsNullOrEmpty(eventVo3))
+        {
+            voInstance3 = FMODUnity.RuntimeManager.CreateInstance(eventVo3);
+
+        }
+        if (!string.IsNullOrEmpty(eventVo4))
+        {
+            voInstance4 = FMODUnity.RuntimeManager.CreateInstance(eventVo4);
+        }
+        if (!string.IsNullOrEmpty(eventVo5))
+        {
+            voInstance5 = FMODUnity.RuntimeManager.CreateInstance(eventVo5);
+        }
+        if (!string.IsNullOrEmpty(eventVo6))
+        {
+            voInstance6 = FMODUnity.RuntimeManager.CreateInstance(eventVo6);
+        }
+
         //Starts Event if you choose "true"
         if (startOnAwake == true)
         {
             levelInstance.start();
-            //voInstance.start();
         }
 
         //Reference to SoundAndMusic Variables
@@ -89,10 +129,9 @@ public class MusicPlayer2 : MonoBehaviour
     {
         if (eventName == "Music_Level")
         {
-            levelInstance.getParameter(paramName, out paramInstance);
-            paramInstance.setValue(value);
+            levelInstance.getParameter(paramName, out paramInstanceMusic);
+            paramInstanceMusic.setValue(value);
         }
-
     }
 
     //Spelar upp den stingern man anger. Används i andra script (bl.a. triggers)
@@ -114,6 +153,35 @@ public class MusicPlayer2 : MonoBehaviour
             stingerInstance.start();
         }
         //utöka när det behövs
+    }
+
+
+    public void PlayVO(int voNumber)
+    {
+        if (voNumber == 1)
+        {
+            voInstance1.start();
+        }
+        if (voNumber == 2)
+        {
+            voInstance2.start();
+        }
+        if (voNumber == 3)
+        {
+            voInstance3.start();
+        }
+        if (voNumber == 4)
+        {
+            voInstance4.start();
+        }
+        if (voNumber == 5)
+        {
+            voInstance5.start();
+        }
+        if (voNumber == 6)
+        {
+            voInstance6.start();
+        }
     }
 
     public void PrintTest()

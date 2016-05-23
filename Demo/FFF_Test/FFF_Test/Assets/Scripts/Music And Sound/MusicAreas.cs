@@ -4,7 +4,12 @@ using System.Collections;
 public class MusicAreas : MonoBehaviour
 {
 
-    public float areaNumber;
+    public float changeTo1;
+    public float changeTo2;
+    public float changeTo3;
+    public string parameterToChange1;
+    public string parameterToChange2;
+    public string parameterToChange3;
     public MusicPlayer2 musicPlayer;
 
 
@@ -19,9 +24,21 @@ public class MusicAreas : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            musicPlayer.ChangeParameter("Music_Level", "Area", areaNumber);
             //musicPlayer.PrintTest();
             //print("Player triggered");
+            if (!string.IsNullOrEmpty(parameterToChange1))
+            {
+                musicPlayer.ChangeParameter("Music_Level", parameterToChange1, changeTo1);
+            }
+
+            if (!string.IsNullOrEmpty(parameterToChange2))
+            {
+                musicPlayer.ChangeParameter("Music_Level", parameterToChange2, changeTo2);
+            }
+            if (!string.IsNullOrEmpty(parameterToChange3))
+            {
+                musicPlayer.ChangeParameter("Music_Level", parameterToChange3, changeTo3);
+            }
         }
     }
 }
