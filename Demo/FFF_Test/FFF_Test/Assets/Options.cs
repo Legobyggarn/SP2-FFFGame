@@ -11,6 +11,7 @@ public class Options : MonoBehaviour {
         public int Textlength;
 
     }
+
     private MenuRayCast otherScript;
     public Color StandardColor;
     public Color TargetColor;
@@ -46,6 +47,8 @@ public class Options : MonoBehaviour {
     public TextInfo BackInfo;
     public List<TextInfo> OptionList;
     public TextMesh[] allTexts;
+    public Material standardMat;
+    public Material glowMat;
     private int[] X_res = {640, 1024, 1280, 1600, 1920 };
     private int[] Y_res = {480, 576, 720, 900, 1080};
     private struct InputHandler
@@ -211,7 +214,7 @@ public class Options : MonoBehaviour {
     void Start () {
        // up = KeyCode.joy
         // Fetch all texts allTexts
-        allTexts = gameObject.GetComponentsInChildren<TextMesh>();
+      //  allTexts = gameObject.GetComponentsInChildren<TextMesh>();
         otherScript = GameObject.Find("MenuPlayer").GetComponent<MenuRayCast>();
 
         StartOPedop.x_res = Screen.currentResolution.width;
@@ -244,10 +247,12 @@ public class Options : MonoBehaviour {
         QualitySetting = StartOPedop.QualityAnt;
 
         applyOptions();
-        lollipop();
+        lollipop3();
     }
+    public float testalpha;
     void Update()
     {
+        //SetMaterialAlpha(testalpha, standardMat);
         ClickTime = pressTimer;
         // Running Stage
         if (OptionOn)
@@ -262,8 +267,9 @@ public class Options : MonoBehaviour {
         if (fadeOut) lowerAlpha();
         else if (fadeIn) IncreaseAlpha();
         //Testing
-        lollipop();
+     //   lollipop();
     }
+    /*
     private void lollipop()
     {
        // Debug.Log("lollipop! ");
@@ -282,7 +288,12 @@ public class Options : MonoBehaviour {
           //  Debug.Log("NEW ALPHA ON " + allTexts[i].name);
         }
     }
-  
+  */
+  private void lollipop3()
+    {
+        SetMaterialAlpha(0, standardMat);
+        SetMaterialAlpha(0, glowMat);
+    }
     private float cAlpha;
     public float AlphaMult;
     private bool fadeIn;
@@ -298,8 +309,10 @@ public class Options : MonoBehaviour {
             fadeOut = false;
             otherScript.GoBackFromOptions();
         }
-        lollipop2();
-     
+        SetMaterialAlpha(cAlpha, glowMat);
+        SetMaterialAlpha(cAlpha, standardMat);
+        //  lollipop2();
+
     }
     void IncreaseAlpha()
     {
@@ -310,17 +323,25 @@ public class Options : MonoBehaviour {
             cAlpha = 1;
             fadeIn = false;
         }
-        lollipop2();
+        SetMaterialAlpha(cAlpha, glowMat);
+        SetMaterialAlpha(cAlpha, standardMat);
+        //  lollipop2();
     }
     void SetAlpha(float f, TextMesh t)
     {
         TestAlpha = f;
-        t.color = new Color(t.color.r, t.color.g, t.color.b, f);
+       
+     //   t.color = new Color(t.color.r, t.color.g, t.color.b, f);
         
-        
-        
+
+
+
+
     }
-   
+    void SetMaterialAlpha(float f, Material m)
+    {
+        m.color = new Color(m.color.r, m.color.g, m.color.b, f);
+    }
     void InitializeTexts()
     {
         MasterSoundInfo.textMesh = GameObject.Find("MasterSoundText").GetComponent<TextMesh>();
@@ -606,12 +627,16 @@ public class Options : MonoBehaviour {
     }
     private TextInfo addGlow(TextInfo t)
     {
-        t.textMesh.color = TargetColor;
+        // t.textMesh.color = TargetColor;
+        MeshRenderer r = t.textMesh.gameObject.GetComponent<MeshRenderer>();
+        r.material = glowMat;
         return t;
     }
     private TextInfo RemoveGlow(TextInfo t)
     {
         t.textMesh.color = StandardColor;
+        MeshRenderer r = t.textMesh.gameObject.GetComponent<MeshRenderer>();
+        r.material = standardMat;
         return t;
     }
 }
