@@ -80,6 +80,7 @@ public class MenuRayCast : MonoBehaviour {
                 
                 FadeInText = false;
                 InOptionNow = false;
+                loadingbarStop = false;
             }
         }
         else if (!InOptionNow)
@@ -117,7 +118,7 @@ public class MenuRayCast : MonoBehaviour {
     public void GoBackFromOptions()
     {
         FadeInText = true;
-        loadingbarStop = false;
+        
       //  Debug.Log("FADE IN TEXT NOW " + FadeInText);
     }
     private void lotsOffStuff()
