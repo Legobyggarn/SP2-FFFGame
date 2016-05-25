@@ -35,7 +35,7 @@ public class PangPang : MonoBehaviour {
         }
         else
         {
-            ScriptPath = "/PlayerOculus_Sprint6/CenterEyeAnchor/mainchar/arms";
+            ScriptPath = "/PlayerOculus_AlmostFinal/CenterEyeAnchor/mainchar/arms";
         }
         BulletList = new List<GameObject>();
         anim = GetComponent<Animator>();
@@ -230,7 +230,7 @@ public class PangPang : MonoBehaviour {
             heatPerc = 1f;
         }
         heatPerc = 1f - heatPerc;
-        TattoScript.setTargetAlpha(heatPerc);
+        //TattoScript.setTargetAlpha(heatPerc);
     }
 
     private void UpdateTattooAlpha()

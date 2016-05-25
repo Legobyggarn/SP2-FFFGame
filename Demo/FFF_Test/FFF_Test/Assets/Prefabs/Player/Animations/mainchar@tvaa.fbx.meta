@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fffa0680e4ee6d4449ca43304c03b0c8
-timeCreated: 1461311825
+guid: 6ea444c923a382a499e0f0f5cf8c5dfa
+timeCreated: 1464176024
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -309,7 +309,7 @@ ModelImporter:
     400298: root_ctrl
     400300: root_ctrl_grp
     400302: root_joint
-    7400000: shoot_6
+    7400000: tvaa
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -333,7 +333,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: shoot_6
+      name: tvaa
       takeName: Take 001
       firstFrame: 1
       lastFrame: 15
@@ -343,7 +343,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -356,7 +356,15 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.7756098
+      - time: 0.4
+        functionName: spawnBullet
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a8e0c07100d5ab84f93a9f5ba9f2d2c2,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.58181816
         functionName: fireBullet
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: a8e0c07100d5ab84f93a9f5ba9f2d2c2,

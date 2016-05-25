@@ -33,35 +33,20 @@ public class BirthdayBoy : MonoBehaviour {
        // Debug.Log("Inpute Axis Check " + Input.GetAxis("FlyTowards"));
         if (Input.GetAxis("FlyTowards") != 0)
         {
-          /*  // Update the direction the player is flying towards.
+            // Update the direction the player is flying towards.
             lookDirection = oculusTransform.forward;
-            //TESTING, some code was bracketet out
-            currentDirection = lookDirection;*/
+            currentDirection = Vector3.RotateTowards(currentDirection, lookDirection, rotSpeed * Time.deltaTime, 0.0f);
 
             // Check if the player is accelerating or deaccelerating
             if (Input.GetAxis("FlyTowards") > axisThreshold)
             {
-                // Update the direction the player is flying towards.
-                lookDirection = oculusTransform.forward;
-                //TESTING, some code was bracketet out
-                currentDirection = lookDirection;
                 //Debug.Log("Update speed, increase it!");
-                currentSpeed += acceleration * Time.deltaTime * Input.GetAxis("FlyTowards");
-                if(currentSpeed > maxSpeed)
-                {
-                    currentSpeed = maxSpeed;
-                
-                }
+                currentSpeed += acceleration * Time.deltaTime * Mathf.Abs(Input.GetAxis("FlyTowards"));
             }
             else if (Input.GetAxis("FlyTowards") < -axisThreshold)
             {
-                Debug.Log("Update speed, lower it!");
+               // Debug.Log("Update speed, lower it!");
                 currentSpeed -= deacceleration * Time.deltaTime * Mathf.Abs(Input.GetAxis("FlyTowards"));
-                if (currentSpeed < 0)
-                {
-                    currentSpeed = 0;
-
-                }
             }
         }
         else
@@ -76,15 +61,24 @@ public class BirthdayBoy : MonoBehaviour {
             else if (currentSpeed < (normalSpeed - autoSpeedChange * Time.deltaTime))
             {
                 currentSpeed += autoSpeedChange * Time.deltaTime;
-              //  Debug.Log("CurrentSpeed is now " + currentSpeed + " and was increased by " + autoSpeedChange * Time.deltaTime);
+               // Debug.Log("CurrentSpeed is now " + currentSpeed + " and was increased by " + autoSpeedChange * Time.deltaTime);
             }
             else
             {
-              // Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
+               // Debug.Log("CurrentSpeed is now " + currentSpeed + " and was lowered by " + autoSpeedChange * Time.deltaTime);
                 currentSpeed = normalSpeed;
             }
         }
-        //currentDirection = Vector3.RotateTowards(currentDirection, lookDirection, rotSpeed * Time.deltaTime, 0.0f);
+        if (currentSpeed > maxSpeed)
+        {
+            currentSpeed = maxSpeed;
+
+        }
+        if (currentSpeed < 0)
+        {
+            currentSpeed = 0;
+
+        }
     }
     public void move()
     {
