@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4888369f2bedfa848bb1a142a71144e0
-timeCreated: 1462526729
+guid: b5c9ed1f43ddf344c9cc84d7fa24cba3
+timeCreated: 1464188874
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -309,7 +309,7 @@ ModelImporter:
     400298: root_ctrl
     400300: root_ctrl_grp
     400302: root_joint
-    7400000: idle_10
+    7400000: MenuPoint
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -333,17 +333,17 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle_10
+      name: MenuPoint
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 301
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -687,7 +687,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
@@ -700,8 +700,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8bd0254978a83334289587b976634cc5,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

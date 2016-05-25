@@ -46,14 +46,21 @@ public class MenuRayCast : MonoBehaviour {
     public float minIntencity;
     public float maxIntencity;
     public float startIntencity;
+    public Animator anim;
+    private bool loadExit;
+    private bool loadPlay;
+    private bool loadOption;
+    public ChangeTattooAlpha changeAlpha;
     // Use this for initialization
     void Start () 
 	{
+        anim = GameObject.Find("mainchar").GetComponent<Animator>();
         spotLightExit = GameObject.Find("SpotExit").GetComponent<Light>();
         spotLightPlay = GameObject.Find("SpotPlay").GetComponent<Light>();
         spotLightOption = GameObject.Find("SpotOption").GetComponent<Light>();
         InOptionNow = false;
         OptionScript = GameObject.Find("OptionsMenu").GetComponent<Options>();
+        
      
         resetAlpha();
         if (Bars) { 
@@ -64,11 +71,24 @@ public class MenuRayCast : MonoBehaviour {
         maxSceneChangeTime = 1f;
         maxSceneFadeTime = st.getLerpTime();
 	}
+    public bool found = false;
+    private void getAlphaScript()
+    {
+      //  Debug.Log(changeAlpha == GetComponentInChildren<ChangeTattooAlpha>());
+        if (found == false &&  changeAlpha == GameObject.Find("arms").GetComponent<ChangeTattooAlpha>())
+        {
+            changeAlpha = GetComponentInChildren<ChangeTattooAlpha>();
+            changeAlpha.setAlpha(0);
+            found = true;
+            //Debug.Log("PRINT");
+        }
+    }
     void Update()
     {
+        getAlphaScript();
+        
+        //changeAlpha.setAlpha(0);
 
-
-       
         if (FadeInText)
         {
             //  Debug.Log("Call Function Now " + FadeInText);
@@ -118,16 +138,32 @@ public class MenuRayCast : MonoBehaviour {
     public void GoBackFromOptions()
     {
         FadeInText = true;
-        
-      //  Debug.Log("FADE IN TEXT NOW " + FadeInText);
+        changeAlpha.setFadeOutTattoo();
+        //  Debug.Log("FADE IN TEXT NOW " + FadeInText);
     }
+    public void playAnimation()
+    { 
+       if (Input.GetAxis("Fire1") >= 0.2f && !loadingbarStop)
+        {
+          
+            anim.SetBool("FireIsPressed", true);
+        }
+        else {
+                   
+            anim.SetBool("FireIsPressed", false);
+            
+            
+        }
+    }
+  
     private void lotsOffStuff()
     {
+        playAnimation();
         // Shoot            
         if (0.2f < Mathf.Abs(Input.GetAxis("Fire1")))
         { // Keyboard input (Use button instead?)
           // Shot
-
+           
             // Raycast
             RaycastHit hit;
             // TODO Change transform to oculus
@@ -138,6 +174,14 @@ public class MenuRayCast : MonoBehaviour {
 
                 if (hit.transform.tag == "Play")
                 {
+                    setFadeInTatto();
+                    loadPlay = true;
+                    if(loadExit || loadOption)
+                    {
+                        loadExit = false;
+                        loadOption = false;
+                        resetVisual();
+                    }
                     sceneChangeTime += Time.deltaTime;
 
                     float lerp = Mathf.PingPong(Time.time, duration) / duration;
@@ -163,6 +207,14 @@ public class MenuRayCast : MonoBehaviour {
 
                 else if (hit.transform.tag == "Options")
                 {
+                    setFadeInTatto();
+                    loadOption = true;
+                    if (loadExit || loadPlay)
+                    {
+                        loadExit = false;
+                        loadPlay = false;
+                        resetVisual();
+                    }
                     sceneChangeTime += Time.deltaTime;
 
 
@@ -184,6 +236,14 @@ public class MenuRayCast : MonoBehaviour {
 
                 else if (hit.transform.tag == "Exit")
                 {
+                    setFadeInTatto();
+                    loadExit = true;
+                    if (loadOption || loadPlay)
+                    {
+                        loadOption = false;
+                        loadPlay = false;
+                        resetVisual();
+                    }
                     sceneChangeTime += Time.deltaTime;
                     setBar(sceneChangeTime, GreenBarTransformExit);
                     spotIntens(sceneChangeTime, spotLightExit);
@@ -198,7 +258,7 @@ public class MenuRayCast : MonoBehaviour {
                 }
                 else
                 {
-
+                    setFadeOutTatto();
                     resetVisual();
 
                 }
@@ -207,7 +267,7 @@ public class MenuRayCast : MonoBehaviour {
         else
         {
 
-       
+            setFadeOutTatto();
             resetVisual();
         }
         if (onOption && FadeOut)
@@ -230,6 +290,20 @@ public class MenuRayCast : MonoBehaviour {
                 //   Debug.Log("GO TO LOADING SCREEN!");
                 Application.LoadLevel("Loading_screen");
             }
+        }
+    }
+    private void setFadeOutTatto()
+    {
+        if (!loadingbarStop)
+        {
+            changeAlpha.setFadeOutTattoo();
+        }
+    }
+    private void setFadeInTatto()
+    {
+        if(!loadingbarStop)
+        {
+            changeAlpha.setFadeInTattoo();
         }
     }
     private void resetVisual()

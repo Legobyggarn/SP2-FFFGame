@@ -215,8 +215,8 @@ public class Options : MonoBehaviour {
        // up = KeyCode.joy
         // Fetch all texts allTexts
       //  allTexts = gameObject.GetComponentsInChildren<TextMesh>();
-        otherScript = GameObject.Find("MenuPlayer").GetComponent<MenuRayCast>();
-
+        otherScript = GameObject.FindWithTag("MenuPlayer").GetComponent<MenuRayCast>();
+        
         StartOPedop.x_res = Screen.currentResolution.width;
         StartOPedop.y_res = Screen.currentResolution.height;
         StartOPedop.FullScreenBool = Screen.fullScreen;

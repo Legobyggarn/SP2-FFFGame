@@ -11,6 +11,7 @@ TagManager:
   - Options
   - Play
   - Exit
+  - MenuPlayer
   layers:
   - Default
   - TransparentFX
