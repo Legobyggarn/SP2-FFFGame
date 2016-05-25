@@ -74,8 +74,9 @@ public class MenuRayCast : MonoBehaviour {
     public bool found = false;
     private void getAlphaScript()
     {
-      //  Debug.Log(changeAlpha == GetComponentInChildren<ChangeTattooAlpha>());
-        if (found == false &&  changeAlpha == GameObject.Find("arms").GetComponent<ChangeTattooAlpha>())
+        //Debug.Log(changeAlpha == GetComponentInChildren<ChangeTattooAlpha>());
+        if(null != GetComponentInChildren<ChangeTattooAlpha>())
+        if (found == false &&  changeAlpha != GetComponentInChildren<ChangeTattooAlpha>())
         {
             changeAlpha = GetComponentInChildren<ChangeTattooAlpha>();
             changeAlpha.setAlpha(0);
@@ -138,7 +139,8 @@ public class MenuRayCast : MonoBehaviour {
     public void GoBackFromOptions()
     {
         FadeInText = true;
-        changeAlpha.setFadeOutTattoo();
+        //  changeAlpha.setFadeOutTattoo();
+        changeAlpha.setTargetAlpha(sceneChangeTime / maxSceneChangeTime);
         //  Debug.Log("FADE IN TEXT NOW " + FadeInText);
     }
     public void playAnimation()
@@ -296,14 +298,16 @@ public class MenuRayCast : MonoBehaviour {
     {
         if (!loadingbarStop)
         {
-            changeAlpha.setFadeOutTattoo();
+           // changeAlpha.setFadeOutTattoo();
+            changeAlpha.setTargetAlpha(sceneChangeTime / maxSceneChangeTime);
         }
     }
     private void setFadeInTatto()
     {
         if(!loadingbarStop)
         {
-            changeAlpha.setFadeInTattoo();
+            //changeAlpha.setFadeInTattoo();
+            changeAlpha.setTargetAlpha(sceneChangeTime / maxSceneChangeTime);
         }
     }
     private void resetVisual()
