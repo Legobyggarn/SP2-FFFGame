@@ -51,9 +51,16 @@ public class MenuRayCast : MonoBehaviour {
     private bool loadPlay;
     private bool loadOption;
     public ChangeTattooAlpha changeAlpha;
+    public Transform trans;
     // Use this for initialization
     void Start () 
 	{
+        if (GameObject.Find("CenterEyeAnchor") != null && GameObject.Find("CenterEyeAnchor").activeSelf)
+        {
+          
+            trans = GameObject.Find("CenterEyeAnchor").transform;
+        }
+        else trans = transform;
         anim = GameObject.Find("mainchar").GetComponent<Animator>();
         spotLightExit = GameObject.Find("SpotExit").GetComponent<Light>();
         spotLightPlay = GameObject.Find("SpotPlay").GetComponent<Light>();
@@ -169,7 +176,7 @@ public class MenuRayCast : MonoBehaviour {
             // Raycast
             RaycastHit hit;
             // TODO Change transform to oculus
-            if (Physics.Raycast(transform.position, transform.forward, out hit))
+            if (Physics.Raycast(trans.position, trans.forward, out hit))
             {
                 //Debug
                 //	Debug.Log ("Debug: Object: [" + hit.transform.name + "] was hit");
