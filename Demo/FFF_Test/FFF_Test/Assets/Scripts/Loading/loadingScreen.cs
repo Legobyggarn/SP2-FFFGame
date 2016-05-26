@@ -67,12 +67,12 @@ public class loadingScreen : MonoBehaviour {
 		asyncLoad = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Single);
 		asyncLoad.allowSceneActivation = false;
 		while (!loaded) {
-			Debug.Log("Loading: " + asyncLoad.progress + "%");
-            Debug.Log("Go to shitTown!");
+		//	Debug.Log("Loading: " + asyncLoad.progress + "%");
+            
 			yield return null;
 			// Work around for bug stopping loading at 0.9
 			if (asyncLoad.progress >= 0.9f) {
-				Debug.Log("Loading complete");
+			//	Debug.Log("Loading complete");
 				loaded = true;
 			}
 		}
