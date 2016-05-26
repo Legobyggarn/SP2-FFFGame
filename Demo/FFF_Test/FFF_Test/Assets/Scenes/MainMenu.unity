@@ -393,7 +393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &99096866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7592,27 +7592,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 127602, guid: bc5beecc5e61325428a8e25fb50f9a72, type: 2}
   m_PrefabInternal: {fileID: 1660582520}
---- !u!114 &1523861801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1523861800}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6248ba4606415e843b6738bdfb7a7c33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testalpha: 0
-  rend: {fileID: 0}
-  fadeInSpeed: 0
-  fadeOutSpeed: 0
-  alphaValue: 0
-  fadeOut: 0
-  fadeIn: 0
-  TestingModeSet: 0
-  targetAlpha: 0
-  fadeTowardTarget: 0
 --- !u!4 &1523861804 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442900, guid: bc5beecc5e61325428a8e25fb50f9a72, type: 2}
