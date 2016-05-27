@@ -608,6 +608,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 190066, guid: 367689b3be479a14c878a3cb2468b97b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 367689b3be479a14c878a3cb2468b97b, type: 2}
   m_IsPrefabParent: 0
@@ -13379,7 +13383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1780308313
 Transform:
   m_ObjectHideFlags: 0
@@ -13422,26 +13426,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1780308312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d120be803ed2b498e09ae56fa0feb5, type: 3}
+  m_Script: {fileID: 11500000, guid: a8e0c07100d5ab84f93a9f5ba9f2d2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TestingMode: 0
   Oculus: 0
   stackBullets: 0
-  timeUntilDecrease: 2
-  overHeatMax: 100
-  overHeatTick: 5
-  overHeatMult: 3
-  coolingTick: 20
+  timeUntilDecrease: 1
+  overHeatMax: 20
+  overHeatTick: 11
+  overHeatMult: 0
+  coolingTick: 0
   FireRate: 1
-  bulletSpeed: 3570.2
+  bulletSpeed: 10000
   bulletLifespan: 10
   currentHeatLevel: 0
-  spawnPoint: {fileID: 1887433093}
-  spawnPoint2: {fileID: 1741240947}
-  spawnPoint3: {fileID: 491429811}
+  spawnPoint: {fileID: 1780308312}
+  spawnPoint2: {fileID: 0}
+  spawnPoint3: {fileID: 0}
   bulletPrefab: {fileID: 156704, guid: ee20ec22d37aa024a9d8646f42901fe8, type: 2}
-  TattoScript: {fileID: 0}
+  TattoScript: {fileID: 1036305547}
 --- !u!114 &1780308316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15142,23 +15146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d120be803ed2b498e09ae56fa0feb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestingMode: 0
-  Oculus: 1
-  stackBullets: 0
-  timeUntilDecrease: 1
-  overHeatMax: 100
-  overHeatTick: 0
-  overHeatMult: 0
-  coolingTick: 25
-  FireRate: 0.1
-  bulletSpeed: 3500
-  bulletLifespan: 5
-  currentHeatLevel: 0
-  spawnPoint: {fileID: 683671860}
-  spawnPoint2: {fileID: 1853494847}
-  spawnPoint3: {fileID: 1332186274}
-  bulletPrefab: {fileID: 156704, guid: ee20ec22d37aa024a9d8646f42901fe8, type: 2}
-  TattoScript: {fileID: 0}
 --- !u!114 &2053594278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15239,7 +15226,7 @@ Transform:
   - {fileID: 1823457385}
   - {fileID: 573874027}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!1 &2063522674
 GameObject:
   m_ObjectHideFlags: 0

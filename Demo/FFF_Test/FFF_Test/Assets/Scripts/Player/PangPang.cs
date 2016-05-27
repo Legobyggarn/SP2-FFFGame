@@ -28,7 +28,9 @@ public class PangPang : MonoBehaviour {
    
     Animator anim;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        /*
         if(!Oculus)
         {
             ScriptPath = "/PlayerStandard1/mainchar/arms";
@@ -37,11 +39,15 @@ public class PangPang : MonoBehaviour {
         {
             ScriptPath = "/PlayerOculus_AlmostFinal/CenterEyeAnchor/mainchar/arms";
         }
+
+        TattoScript = GameObject.Find(ScriptPath).GetComponent<ChangeTattooAlpha>();*/
+        ChangeTattooAlpha[] a = GetComponentsInChildren<ChangeTattooAlpha>();
+        TattoScript = a[0];
         BulletList = new List<GameObject>();
         anim = GetComponent<Animator>();
         currentHeatMult = 0;
-        TattoScript = GameObject.Find(ScriptPath).GetComponent<ChangeTattooAlpha>();
     }
+   
 	
 	// Update is called once per frame
 	void Update () {
